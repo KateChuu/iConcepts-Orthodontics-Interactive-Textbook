@@ -7,6 +7,7 @@ Project iConcepts is aimed at developing an interactive textbook in orthodontics
 ## Additional Note
 
 This project was initially developed by the previous group for the subject, and now Team RedBack both works on the codebase and maintains the project. All development work is committed directly to the [repository](https://github.com/FEIT-COMP90082-2025-SM1/IC-RedBack/tree/main/src). Please refer to the information in the shared repository for setting up and running the project. The code in the shared repo is integrated as Git submodules. This team repository will be responsible for documentation updates.
+Project milestones and issues can be checked to the [Issues](https://github.com/orgs/FEIT-COMP90082-2025-SM1/projects/33/views/2?layout=roadmap)
 
 ## Project Contacts
 
