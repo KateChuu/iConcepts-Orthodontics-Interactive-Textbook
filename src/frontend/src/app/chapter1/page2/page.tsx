@@ -60,6 +60,10 @@ export default function Page2() {
           <div className='w-full text-right text-lg md:text-xl font-sans text-blue-100 leading-8 px-4 md:px-8'>
             <p>Shazia</p>
           </div>
+
+          <iframe width="420" height="315"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          </iframe>
         </div>
 
         {/* Right Container */}
