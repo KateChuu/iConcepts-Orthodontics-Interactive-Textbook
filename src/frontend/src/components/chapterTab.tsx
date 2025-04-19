@@ -1,18 +1,30 @@
 'use client';
 
+import Link from 'next/link';
+
 export default function ChapterTab() {
     const chapters = [
         {
             title: 'Preface',
             description: 'Before everything begins...',
             image: '/preface.jpg',
+            href: '/chapters/preface',
         },
         {
             title: 'Chapter 1',
             description: 'Introduction Orthodontics NOW!',
             image: '/chapter1.jpg',
+            href: '/chapters/chapter1',
+        },
+        {
+            title: 'Chapter 2',
+            description: 'Class I Malocclusion',
+            image: '/chapter2.jpg',
+            href: '/chapters/chapter2',
         },
     ];
+    
+    
 
     return (
         <div className="p-4">
@@ -22,10 +34,10 @@ export default function ChapterTab() {
             </p>
 
             <div className="flex flex-col gap-4">
-                {chapters.map((item, index) => (
+            {chapters.map((item, index) => (
+                <Link key={index} href={item.href}>
                     <div
-                    key={index}
-                    className="flex items-center p-4 min-h-[96px] bg-zinc-100 dark:bg-zinc-800 rounded-2xl shadow-sm"
+                        className="flex items-center p-4 min-h-[96px] bg-zinc-100 dark:bg-zinc-800 rounded-2xl shadow-sm hover:bg-gray-200 dark:hover:bg-zinc-700 transition"
                     >
                         <img
                             src={item.image}
@@ -44,8 +56,8 @@ export default function ChapterTab() {
                             &gt;
                         </span>
                     </div>
-                
-                ))}
+                </Link>
+            ))}
             </div>
         </div>
     );

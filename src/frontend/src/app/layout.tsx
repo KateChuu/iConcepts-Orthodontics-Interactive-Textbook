@@ -3,14 +3,15 @@
 
 import { useState, useEffect } from 'react';
 import Sidebar from '../components/sidebar';
+import Header from '../components/header';
+import Footer from '../components/footer';
 import './globals.css';
 
 export default function RootLayout({
     children,
 }: {
     children: React.ReactNode;
-}) 
-{
+}) {
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [darkMode, setDarkMode] = useState(false);
 
@@ -20,38 +21,32 @@ export default function RootLayout({
     // 다크모드 클래스 <html>에 적용
     useEffect(() => {
         if (darkMode) {
-        document.documentElement.classList.add('dark');
+            document.documentElement.classList.add('dark');
         } else {
-        document.documentElement.classList.remove('dark');
+            document.documentElement.classList.remove('dark');
         }
     }, [darkMode]);
 
     return (
         <html lang="en" suppressHydrationWarning>
             <body className="w-full min-h-screen bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100">
-                <div className="flex min-h-screen">
-                {/* 햄버거 버튼 */}
-                <button
-                    onClick={toggleSidebar}
-                    className="fixed top-4 left-4 z-50 p-2 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white shadow-md rounded-md lg:hidden"
-                >
-                    {sidebarOpen ? '✕' : '☰'}
-                </button>
+                {/* 상단 고정 헤더 */}
+                <Header
+                    onToggleSidebar={toggleSidebar}
+                    onToggleDarkMode={toggleDarkMode}
+                    isSidebarOpen={sidebarOpen}
+                    isDarkMode={darkMode}
+                />
 
-                {/* 다크모드 버튼 */}
-                <button
-                    onClick={toggleDarkMode}
-                    className="fixed top-4 right-4 z-50 p-2 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white shadow-md rounded-md"
-                >
-                    {darkMode ? '☀️' : '🌙'}
-                </button>
-
-                {/* 사이드바 */}
-                <Sidebar isOpen={sidebarOpen} onToggle={toggleSidebar} />
-
-                {/* 콘텐츠 영역 */}
-                <main className="flex-1 p-6">{children}</main>
+                {/* 전체 레이아웃 */}
+                <div className="flex min-h-screen pt-8">
+                    <Sidebar isOpen={sidebarOpen} onToggle={toggleSidebar} />
+                    <main className="flex-1 p-6 lg:pl-64 flex flex-col">
+                        {children}
+                        <Footer />
+                    </main>
                 </div>
+
             </body>
         </html>
     );

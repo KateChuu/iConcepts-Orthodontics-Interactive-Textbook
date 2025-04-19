@@ -1,4 +1,4 @@
-export default function ChapterPreface() {
+export default function chapterPreface() {
     return (
         <div className="p-4">
             <h2 className="text-xl font-bold mb-2 text-zinc-900 dark:text-white">Preface</h2>
