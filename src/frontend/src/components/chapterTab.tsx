@@ -22,12 +22,6 @@ export default function ChapterTab() {
             image: '/chapter2.jpg',
             href: '/chapters/chapter2',
         },
-        {
-            title: 'Chapter 3',
-            description: 'Chapter 333333',
-            image: '/chapter3.jpg',
-            href: '/chapters/chapter3',
-        },
     ];
     
     
