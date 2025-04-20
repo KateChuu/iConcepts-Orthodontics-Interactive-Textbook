@@ -7,19 +7,19 @@ export default function ChapterTab() {
         {
             title: 'Preface',
             description: 'Before everything begins...',
-            image: '/preface.jpg',
+            image: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114784/butterfly-world-map-mark-ashkenazi-21_y7gc6j.jpg',
             href: '/chapters/preface',
         },
         {
             title: 'Chapter 1',
             description: 'Introduction Orthodontics NOW!',
-            image: '/chapter1.jpg',
+            image: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114795/GrassRollerHD-30_eupxdh.jpg',
             href: '/chapters/chapter1',
         },
         {
             title: 'Chapter 2',
             description: 'Class I Malocclusion',
-            image: '/chapter2.jpg',
+            image: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114814/IMG_1790-179_alhphp.jpg',
             href: '/chapters/chapter2',
         },
     ];
