@@ -284,6 +284,17 @@ export default function Section5() {
                 Gallery 1.3: Class I Skeletal and Dental Crowding (Slide image here)
             </div>
 
+            <video
+                className="w-full h-[300px] mb-4 border border-gray-400"
+                controls
+            >
+                <source
+                    src="https://res.cloudinary.com/difs4tswt/video/upload/v1745114806/AlMajazSharjah-60_hblm7d.mp4"
+                    type="video/mp4"
+                />
+                Your browser does not support the video tag.
+            </video>
+
         </SectionPage>
 
     );
