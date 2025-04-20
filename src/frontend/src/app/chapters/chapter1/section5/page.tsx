@@ -1,12 +1,12 @@
 import SectionPage from '@/components/sectionPage';
 
-export default function Section4() {
+export default function Section5() {
     return (
         <SectionPage
             title="Section 5: Prevalence of Malocclusion in Global Regions"
             subtitle="Published in 2024 · Views: 19892 · Average Reading Time: 15min"
             prevHref="/chapters/chapter1/section4"
-            nextHref="/chapters/chapter2/section1"
+            nextHref="/chapters/chapter1/video1"
             chapterHref="/chapters/chapter1"
         >
             {/*page 7*/}
@@ -220,8 +220,8 @@ export default function Section4() {
                 <strong>Intra-Oral:</strong> habit-related changes like proclined upper incisors, narrow maxillary arch, fish mouth appearance.
             </p>
 
-            {/* 이미지 삽입 위치: Anterior Open Bite 관련 이미지 들어갈 자리 */}
-            {/* 예: <img src="/path/to/image.jpg" alt="AOB Clinical Photo" className="w-full my-4" /> */}
+            {/* Image: Anterior Open Bite  */}
+            {/* ex: <img src="/path/to/image.jpg" alt="AOB Clinical Photo" className="w-full my-4" /> */}
 
             <h3 className="text-lg font-semibold text-gray-600 mt-4">Treatment Options</h3>
             <p>
@@ -244,7 +244,7 @@ export default function Section4() {
                 Bilateral, functionally stable crossbites may not require correction (Harradine & Birnie, 1998).
             </p>
 
-            {/* 이미지 삽입 위치: Transverse correction 방법 관련 예시 사진 자리 */}
+            {/* Image: Transverse correction */}
 
             <h3 className="text-lg font-semibold text-gray-600 mt-4">Treatment Planning Resource</h3>
             <p>
@@ -254,7 +254,7 @@ export default function Section4() {
                 Explore components of initial orthodontic examination and investigations.
             </p>
 
-            {/* 이미지 삽입 위치: Prezi 썸네일 자리 */}
+            {/* Image: Prezi Thumbnail */}
             {/* <img src="/chapter1/page9/prezi-thumbnail.png" alt="Prezi Thumbnail" className="my-4 w-1/2 mx-auto" /> */}
 
             <p className="text-red-500">
@@ -267,55 +267,22 @@ export default function Section4() {
                 Standard investigations for Orthodontics with OPG for full mouth dental age assessment and Lateral Ceph provides the important data related to skeletal dental and soft tissues.
             </p>
 
-            {/* 이미지 삽입 위치 – OPG */}
+            {/* Image – OPG */}
             <div className="w-full h-[200px] border border-dashed border-gray-400 flex items-center justify-center text-sm text-gray-500 italic my-4">
-                이미지 삽입 예정: OPG for full mouth dental age assessment
+                OPG for full mouth dental age assessment - Image here
             </div>
 
-            {/* 이미지 삽입 위치 – Lateral Ceph */}
+            {/* Image – Lateral Ceph */}
             <div className="w-full h-[200px] border border-dashed border-gray-400 flex items-center justify-center text-sm text-gray-500 italic mb-4">
-                이미지 삽입 예정: Lateral Ceph
+                Lateral Ceph - Image here
             </div>
 
-            {/* 영상 삽입 위치 – TipTorque Biomechanics */}
-            <div className="w-full h-[200px] border border-dashed border-gray-400 flex items-center justify-center text-sm text-gray-500 italic my-4">
-                인터랙티브 영상 삽입 예정: TipTorque Biomechanics
-            </div>
 
-            {/* 영상 삽입 위치 – Anterior Open Bite Simulation */}
-            <div className="w-full h-[200px] border border-dashed border-gray-400 flex items-center justify-center text-sm text-gray-500 italic mb-2">
-                인터랙티브 영상 삽입 예정: Anterior Open Bite Simulation video (Align Tech patient)
-            </div>
 
-            <p className="text-sm italic text-gray-500 text-center">
-                Anterior Open Bite Simulation video Align Tech patient<br />
-                Dr Shazia Naser ud Din 2022
-            </p>
-
-            {/* 이미지 슬라이드 삽입 위치 */}
+            {/* Image Slide */}
             <div className="w-full h-[300px] border border-dashed border-gray-400 flex items-center justify-center text-sm text-gray-500 italic my-4">
-                Gallery 1.3: Class I Skeletal and Dental Crowding (슬라이드 이미지 삽입 예정)
+                Gallery 1.3: Class I Skeletal and Dental Crowding (Slide image here)
             </div>
-
-            {/* Learner Notes 입력 영역 */}
-            <div className="w-full h-[200px] border border-dashed border-yellow-400 bg-yellow-50 text-center flex items-center justify-center text-gray-500 italic mb-4">
-                Learner Notes 영역 (TypeableLearnerNotes 삽입 예정)
-            </div>
-
-            {/* 비디오 삽입 위치 */}
-            <h3 className="font-sans text-base md:text-lg font-bold mb-2 text-gray-700">
-                Movie 1.1{" "}
-                <span className="text-gray-500 font-normal">
-                Moment to Enjoy Al Majaz WaterFront Sharjah UAE
-                </span>
-            </h3>
-            <div className="w-full h-[300px] border border-dashed border-gray-400 flex items-center justify-center text-sm text-gray-500 italic mb-4">
-                Video 삽입 예정: AlMajazSharjah-60.m4v
-            </div>
-            <p className="font-sans text-sm md:text-base leading-relaxed text-center text-gray-600">
-                Fountain Fun Water Front
-            </p>
-
 
         </SectionPage>
 
