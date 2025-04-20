@@ -1,4 +1,4 @@
-'use client';
+import Link from 'next/link';
 
 type HeaderProps = {
     onToggleSidebar: () => void;
@@ -18,12 +18,13 @@ export default function Header({ onToggleSidebar, onToggleDarkMode, isSidebarOpe
                 {isSidebarOpen ? '✕' : '☰'}
             </button>
 
-            <span className="font-semibold  text-zinc-900 dark:text-white text-lg">iConcepts</span>
+            <Link href="/" className="font-semibold text-zinc-900 dark:text-white text-lg">
+                iConcepts
+            </Link>
 
             <button onClick={onToggleDarkMode} className="text-xl text-zinc-900 dark:text-white">
                 {isDarkMode ? '☀️' : '🌙'}
             </button>
         </header>
-
     );
 }

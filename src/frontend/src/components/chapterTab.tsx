@@ -28,10 +28,6 @@ export default function ChapterTab() {
 
     return (
         <div className="p-4">
-            <p className="text-center text-sm text-zinc-700 dark:text-zinc-300 mb-4">
-                Welcome to the Chapters page, where you’ll find contents<br />
-                related to dentistry and Orthodontics!
-            </p>
 
             <div className="flex flex-col gap-4">
             {chapters.map((item, index) => (
