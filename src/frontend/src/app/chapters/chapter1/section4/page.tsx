@@ -8,7 +8,19 @@ const gallery1Images = [
     'https://res.cloudinary.com/difs4tswt/image/upload/v1745114792/IMG_5912-42_ph525z.jpg',
     'https://res.cloudinary.com/difs4tswt/image/upload/v1745114793/IMG_5916-44_n6yof7.jpg',
     'https://res.cloudinary.com/difs4tswt/image/upload/v1745114793/IMG_5918-46_exubvx.jpg',
+    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114791/IMG_5919-48_aovemb.jpg',
+    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114790/BG_QH-34_hcnejq.jpg',
+    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114791/IMG_5926-52_rdn6v9.jpg',
+    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114788/IMG_5927-54_c9rqol.jpg',
+    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114790/IMG_5921-56_iaqfpu.jpg',
 ];
+
+const gallery2Images = [
+    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114788/Modified_BlueGrass_HD-28_lszhnm.jpg',
+    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114795/GrassRollerHD-30_eupxdh.jpg',
+    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114790/BG_Expansion-32_zuh74w.jpg',
+    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114790/BG_QH-34_hcnejq.jpg',
+]
 
 export default function Section4() {
     return (
@@ -28,15 +40,15 @@ export default function Section4() {
                 <li>Using space maintainers in case of early loss of deciduous teeth.</li>
             </ul>
 
-            <h3 className="font-bold mt-4">Gallery 1.1 (백엔드 처리 예정 - 이미지 위치)</h3>
+            <h3 className="font-bold mt-4">Gallery 1.1</h3>
             <ImageGallery images={gallery1Images} />
 
             <p className="italic text-sm text-gray-500">
                 10 Year Old presenting with Normal Skeletal and Normal Dental development
             </p>
 
-            <h3 className="font-bold mt-4">Gallery 1.2 (백엔드 처리 예정 - 이미지 위치)</h3>
-            {/* <ImageGallery images={gallery2Images} /> */}
+            <h3 className="font-bold mt-4">Gallery 1.2</h3>
+            <ImageGallery images={gallery2Images} />
             <p className="italic text-sm text-gray-500">Interceptive Orthodontics</p>
 
             <p className="mt-4">
