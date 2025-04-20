@@ -12,9 +12,16 @@ export default function Video1Page() {
             chapterHref="/chapters/chapter1"       
         >
             {/* Video here */}
-            <div className="w-full h-[200px] border border-dashed border-gray-400 flex items-center justify-center text-sm text-gray-500 italic">
-                TipTorque Biomechanics - video here
-            </div>
+            <video 
+                className="w-full h-[200px] border border-dashed border-gray-400 flex items-center justify-center text-sm text-gray-500 italic"
+                controls
+            >
+                <source
+                    src="https://res.cloudinary.com/difs4tswt/video/upload/v1745119559/TipTorqueBiomechanics_d5aiip.mov"
+                    type="video/mp4"
+                />
+                Your browser does not support the video tag.
+            </video>
         </SectionPage>
     );
 }

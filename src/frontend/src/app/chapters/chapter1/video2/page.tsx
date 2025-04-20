@@ -2,7 +2,7 @@
 
 import SectionPage from '@/components/sectionPage';
 
-export default function Video1Page() {
+export default function Video2Page() {
     return (
         <SectionPage
             title="Video 2: Anterior Open Bite Simulation"
@@ -12,9 +12,16 @@ export default function Video1Page() {
             chapterHref="/chapters/chapter1"       
         >
             {/* Video here */}
-            <div className="w-full h-[200px] border border-dashed border-gray-400 flex items-center justify-center text-sm text-gray-500 italic">
-                Anterior Open Bite Simulation - video here
-            </div>
+            <video 
+                className="w-full h-[200px] border border-dashed border-gray-400 flex items-center justify-center text-sm text-gray-500 italic"
+                controls
+            >
+                <source
+                    src="https://res.cloudinary.com/difs4tswt/video/upload/v1745119467/AnteriorOpenBite_tvmya8.mov"
+                    type="video/mp4"
+                />
+                Your browser does not support the video tag.
+            </video>
 
             <p className="text-sm italic text-gray-500 text-center">
                 Anterior Open Bite Simulation video Align Tech patient<br />
