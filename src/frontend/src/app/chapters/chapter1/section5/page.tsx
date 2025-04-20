@@ -1,4 +1,20 @@
 import SectionPage from '@/components/sectionPage';
+import ImageGallery from '@/components/ImageGallery'; 
+
+const gallery1Images = [
+    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114780/BR_F_photo-62_caf1tz.jpg',
+    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114781/BR_F_Smiling-64_pxylmw.jpg',
+    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114779/BR_Profile-66_rotvt7.jpg',
+    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114780/BR_3_Q_Profile_Smiling-68_krj0nb.jpg',
+    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114780/BR_Occlusal_Front-70_i9snet.jpg',
+    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114781/BR_RtS-72_bsnkrr.jpg',
+    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114780/BR_Left-74_thlrhe.jpg', 
+    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114781/BR_UOccl-76_sejmto.jpg',
+    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114783/BR_L_Occl-78_mgv5g0.jpg',
+    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114779/BR_Casts-80_k46wlp.jpg',
+    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114782/OPG_BR_copy-82_wjoakt.jpg',
+    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114779/lateralCeph_BR_copy-84_mw8siy.jpg',
+];
 
 export default function Section5() {
     return (
@@ -255,7 +271,7 @@ export default function Section5() {
             </p>
 
             {/* Image: Prezi Thumbnail */}
-            {/* <img src="/chapter1/page9/prezi-thumbnail.png" alt="Prezi Thumbnail" className="my-4 w-1/2 mx-auto" /> */}
+            <img src="https://res.cloudinary.com/difs4tswt/image/upload/v1745114794/Screenshot_2024-09-14_at_4.16.24_PM-177_ilqlzq.png" alt="Prezi Thumbnail" className="my-4 w-1/2 mx-auto" />
 
             <p className="text-red-500">
                 <a href="https://prezi.com/view/hPL2WfYULE86wMYXe7c9/" target="_blank" className="text-red-500 underline">
@@ -268,22 +284,32 @@ export default function Section5() {
             </p>
 
             {/* Image – OPG */}
-            <div className="w-full h-[200px] border border-dashed border-gray-400 flex items-center justify-center text-sm text-gray-500 italic my-4">
-                OPG for full mouth dental age assessment - Image here
+            <div className="w-full flex flex-col items-center justify-center text-sm text-gray-500 italic my-8">
+                OPG for full mouth dental age assessment
+                <img
+                    src="https://res.cloudinary.com/difs4tswt/image/upload/v1745114784/Orthodontics_with_OPG_1_qvkiy7.jpg"
+                    alt="OPG for full mouth dental age assessment"
+                    className="my-4 w-1/2 mx-auto"
+                />
             </div>
 
             {/* Image – Lateral Ceph */}
-            <div className="w-full h-[200px] border border-dashed border-gray-400 flex items-center justify-center text-sm text-gray-500 italic mb-4">
-                Lateral Ceph - Image here
+            <div className="w-full flex flex-col items-center justify-center text-sm text-gray-500 italic my-8">
+                Lateral Ceph
+                <img 
+                    src="https://res.cloudinary.com/difs4tswt/image/upload/v1745114783/Orthodontics_with_OPG_2_rjc39p.jpg" 
+                    alt="Lateral Ceph" 
+                    className="my-4 w-1/2 mx-auto"
+                />
             </div>
-
-
 
             {/* Image Slide */}
-            <div className="w-full h-[300px] border border-dashed border-gray-400 flex items-center justify-center text-sm text-gray-500 italic my-4">
-                Gallery 1.3: Class I Skeletal and Dental Crowding (Slide image here)
+            <div className="w-full flex flex-col items-center justify-center text-sm text-gray-500 italic my-8">
+                <p className="mb-4">Gallery 1.3: Class I Skeletal and Dental Crowding (Slide image here)</p>
+                <ImageGallery images={gallery1Images} />
             </div>
 
+            
         </SectionPage>
 
     );
