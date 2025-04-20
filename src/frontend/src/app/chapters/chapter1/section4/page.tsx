@@ -18,13 +18,13 @@ export default function Section4() {
                 <li>Using space maintainers in case of early loss of deciduous teeth.</li>
             </ul>
 
-            <h3 className="font-bold mt-4">Gallery 1.1 (백엔드 처리 예정 - 이미지 위치)</h3>
+            <h3 className="font-bold mt-4">Gallery 1.1</h3>
             {/* <ImageGallery images={gallery1Images} /> */}
             <p className="italic text-sm text-gray-500">
                 10 Year Old presenting with Normal Skeletal and Normal Dental development
             </p>
 
-            <h3 className="font-bold mt-4">Gallery 1.2 (백엔드 처리 예정 - 이미지 위치)</h3>
+            <h3 className="font-bold mt-4">Gallery 1.2</h3>
             {/* <ImageGallery images={gallery2Images} /> */}
             <p className="italic text-sm text-gray-500">Interceptive Orthodontics</p>
 

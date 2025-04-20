@@ -69,7 +69,7 @@ export default function SectionPage({
                     <div className="flex justify-center gap-4 text-sm text-zinc-500 dark:text-zinc-400">
                         {chapterHref && (
                             <Link href={chapterHref} className="hover:underline">
-                                Chapter Main
+                                Chapter
                             </Link>
                         )}
                         <Link href="/" className="hover:underline">
