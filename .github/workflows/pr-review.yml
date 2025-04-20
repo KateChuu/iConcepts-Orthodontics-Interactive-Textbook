@@ -9,8 +9,8 @@ jobs:
         steps:
             - uses: agogear/chatgpt-pr-review@0.0.13
               with:
-                    openai_api_key: ${{ secrets.OPENAI_API_KEY }}
-                    github_token: ${{ secrets.GITHUB_TOKEN }}
-                    github_pr_id: ${{ github.event.number }}
-                    files: "*.js, *..ts, *.tsx, *.tsx, *.py, *.cpp, *.java"
-                    openai_model: gpt-4o-mini
+                  openai_api_key: ${{ secrets.OPENAI_API_KEY }}
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  github_pr_id: ${{ github.event.number }}
+                  files: "*.js, *.ts, *.tsx, *.py, *.cpp, *.java"
+                  openai_model: gpt-4o-mini

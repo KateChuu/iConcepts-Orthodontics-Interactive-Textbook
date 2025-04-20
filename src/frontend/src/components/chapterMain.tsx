@@ -42,7 +42,7 @@ export default function ChapterMain({ title, description, sections }: ChapterMai
                         />
                         <div className="flex flex-col">
                             <span className="font-semibold text-lg text-zinc-800 dark:text-white">
-                                Section {index + 1}
+                                {index === 0 ? 'Intro' : `Section ${index}`}
                             </span>
                             <span className="text-base text-zinc-500 dark:text-zinc-400">
                                 {section.title}
@@ -54,7 +54,7 @@ export default function ChapterMain({ title, description, sections }: ChapterMai
                 <div className="pt-4 text-center">
                     <Link href="/" className="text-sm text-zinc-500 dark:text-zinc-400">
                         Home
-                     </Link>
+                    </Link>
                 </div>
             </div>
         </div>
