@@ -2,8 +2,13 @@
 
 import { useState } from 'react';
 
+type ImageItem = {
+    src: string;
+    caption?: string;
+};
+
 type Props = {
-    images: string[];
+    images: ImageItem[];
 };
 
 export default function ImageGallery({ images }: Props) {
@@ -20,15 +25,20 @@ export default function ImageGallery({ images }: Props) {
     return (
         <div className="relative w-full max-w-xs mx-auto">
             <img
-                src={images[currentIndex]}
+                src={images[currentIndex].src}
                 alt={`Gallery ${currentIndex + 1}`}
                 className="rounded shadow-md w-full"
             />
-
+            {images[currentIndex].caption && (
+                <p className="text-sm italic text-zinc-500 mt-2 text-center">
+                    {images[currentIndex].caption}
+                </p>
+            )}
+            
             {/* Left Arrow */}
             <button
                 onClick={goToPrev}
-                className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white/70 hover:bg-white p-2 rounded-full shadow"
+                className="absolute -left-6 top-1/2 transform -translate-y-1/2 bg-white/70 hover:bg-white p-2 rounded-full shadow"
                 aria-label="Previous image"
             >
                 ‹
@@ -37,7 +47,7 @@ export default function ImageGallery({ images }: Props) {
             {/* Right Arrow */}
             <button
                 onClick={goToNext}
-                className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white/70 hover:bg-white p-2 rounded-full shadow"
+                className="absolute -right-6 top-1/2 transform -translate-y-1/2 bg-white/70 hover:bg-white p-2 rounded-full shadow"
                 aria-label="Next image"
             >
                 ›

@@ -7,7 +7,7 @@ export default function Video1Page() {
         <SectionPage
             title="Video 1: Tip Torque Biomechanics"
             subtitle=""
-            prevHref="/chapters/chapter1/section5"              
+            prevHref="/chapters/chapter1/section6"              
             nextHref="/chapters/chapter1/video2"  
             chapterHref="/chapters/chapter1"       
         >
