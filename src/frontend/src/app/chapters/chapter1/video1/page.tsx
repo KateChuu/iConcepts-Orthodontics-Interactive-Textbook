@@ -13,7 +13,7 @@ export default function Video1Page() {
         >
             {/* Video here */}
             <video 
-                className="w-full h-[200px] border border-dashed border-gray-400 flex items-center justify-center text-sm text-gray-500 italic"
+                className="w-full border border-gray-400 flex items-center object-cover justify-center text-sm text-gray-500 italic"
                 controls
             >
                 <source
