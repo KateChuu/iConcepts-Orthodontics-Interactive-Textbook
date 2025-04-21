@@ -1,20 +1,4 @@
 import SectionPage from '@/components/sectionPage';
-import ImageGallery from '@/components/ImageGallery'; 
-
-const gallery1Images = [
-    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114780/BR_F_photo-62_caf1tz.jpg',
-    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114781/BR_F_Smiling-64_pxylmw.jpg',
-    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114779/BR_Profile-66_rotvt7.jpg',
-    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114780/BR_3_Q_Profile_Smiling-68_krj0nb.jpg',
-    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114780/BR_Occlusal_Front-70_i9snet.jpg',
-    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114781/BR_RtS-72_bsnkrr.jpg',
-    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114780/BR_Left-74_thlrhe.jpg', 
-    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114781/BR_UOccl-76_sejmto.jpg',
-    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114783/BR_L_Occl-78_mgv5g0.jpg',
-    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114779/BR_Casts-80_k46wlp.jpg',
-    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114782/OPG_BR_copy-82_wjoakt.jpg',
-    'https://res.cloudinary.com/difs4tswt/image/upload/v1745114779/lateralCeph_BR_copy-84_mw8siy.jpg',
-];
 
 export default function Section5() {
     return (
@@ -22,30 +6,27 @@ export default function Section5() {
             title="Section 5: Prevalence of Malocclusion in Global Regions"
             subtitle="Published in 2024 · Views: 19892 · Average Reading Time: 15min"
             prevHref="/chapters/chapter1/section4"
-            nextHref="/chapters/chapter1/video1"
+            nextHref="/chapters/chapter1/section6"
             chapterHref="/chapters/chapter1"
         >
-            {/*page 7*/}
-            <h2 className="text-2xl font-bold mb-1 text-black dark:text-white">
-                PREVALENCE OF MALOCCLUSION
-            </h2>
-            <div className="mb-10">
-                <p>
+
+            <div className="mb-8">
+                <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
                     Prevalence of malocclusion in general human population is taken from U.S Public Health Service Survey conducted on a large scale in 1970. 
                     It is important to realize that distribution of malocclusion types varies among racial, national and ethnic groups and even more complex with miscegenation, 
                     hence be aware of the norms applied in the past. Caucasian data is presented in the table across.
                 </p>
             </div>
 
-            <div className="mb-12">
-                <p className="text-lg font-semibold text-zinc-700 dark:text-zinc-200 mb-1">
+            <div className="mb-8">
+                <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                     INCREASED PREVALENCE OF MALOCCLUSION
-                </p>
-                <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200">
+                </h3>
+                <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
                     There are several reasons for increased prevalence of malocclusion. Firstly, and perhaps the most important being reduced function of masticatory apparatus. 
                     In the past hard and fibrous foods were ingested, but today children hardly get the opportunity to chew – most of them are given processed meals.
                 </p>
-                <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200">
+                <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
                     Second reason quoted is the evolutionary trend. There has been steady reduction in the size of anterior and posterior teeth, along with their numbers. 
                     The third incisors, third premolars and fourth molars have disappeared. At present the human third molars, second premolars and second incisors often fail to develop. 
                     Like high blood pressure, heart diseases, diabetes – malocclusion is termed the “Disease of Civilization”. Moreover, OSA (Obstructive Sleep Apnea) and Bruxism 
@@ -53,11 +34,19 @@ export default function Section5() {
                 </p>
             </div>
 
-            <div className="mb-12">
-                <p className="text-lg font-semibold text-zinc-700 dark:text-zinc-200 mb-1 mt-6">
-                    DEMAND OF ORTHODONTIC TREATMENT
+            <div className="mb-8">
+                <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
+                    Prevalence of malocclusion in general human population is taken from U.S Public Health Service Survey conducted on a large scale in 1970. 
+                    It is important to realize that distribution of malocclusion types varies among racial, national and ethnic groups and even more complex with miscegenation, 
+                    hence be aware of the norms applied in the past. Caucasian data is presented in the table across.
                 </p>
-                <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200">
+            </div>
+
+            <div className="mb-8">
+                <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
+                    DEMAND OF ORTHODONTIC TREATMENT
+                </h3>
+                <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
                     Demand for Orthodontic treatment is indicated by the number of patients who actually make appointments and seek care. 
                     Orthodontics is no longer just confined to the child population and adolescents. Adults are now seeking Orthodontic treatment. 
                     In a survey conducted in 1989 in USA, just over 25% of new patients were age 18 or older. 
@@ -65,17 +54,13 @@ export default function Section5() {
                     However, it is also important to provide complete information regarding risk and benefit ratios to patients demanding unrealistic ideal occlusions 
                     that have limitations in long term stability.
                 </p>
-            </div>
 
-            <div className="overflow-x-auto mb-18">
-                <table className="w-full border-collapse border border-gray-300 text-sm text-zinc-800 dark:text-zinc-100">
-                    <thead>
-                        <tr className="bg-zinc-100 dark:bg-zinc-800">
+                <table className="w-full border my-4 border-zinc-300 text-sm text-zinc-800 dark:text-zinc-100">
+                    <tbody>
+                        <tr>
                             <th className="border border-gray-300 p-2 text-left font-bold">NORMAL OCCLUSION</th>
                             <th className="border border-gray-300 p-2 text-left font-bold">30%</th>
                         </tr>
-                    </thead>
-                    <tbody>
                         <tr>
                             <td className="border border-gray-300 p-2">CLASS I MALOCCLUSION</td>
                             <td className="border border-gray-300 p-2">50–55%</td>
@@ -91,296 +76,6 @@ export default function Section5() {
                     </tbody>
                 </table>
             </div>
-
-            <div className="mb-12 mt-4">
-                <h2 className="text-2xl font-bold mb-1 text-black dark:text-white mt-6">
-                    CLASS I MALOCCLUSION
-                </h2>
-            </div>
-
-            <div className="mb-12">
-                <h3 className="text-lg font-semibold text-gray-600 mt-4">Definition</h3>
-                <p className="text-justify leading-relaxed">
-                    It is defined on the basis of the first permanent molar relationship i.e. mesio-buccal cusp of the upper first permanent molar lies in the mid-buccal groove 
-                    of the lower first permanent molar (Angle’s Classification).
-                </p>
-                <p className="text-justify leading-relaxed">
-                    While the incisor classification is such that the lower incisal edge lies on or below the cingulum plateau of the palatal surface of the upper incisors.
-                </p>
-            </div>
-
-            <div className="mb-12">
-                <h3 className="text-lg font-semibold text-gray-600 mt-4">Incidence</h3>
-                <p className="text-justify leading-relaxed">
-                    55–60% of the population is found to have Class I malocclusion (Todd & Dodd 1975).
-                </p>
-            </div>
-
-            <div className="mb-12">
-                <h3 className="text-lg font-semibold text-gray-600 mt-4">Clinical Features of Class I Malocclusion</h3>
-                <p className="text-justify leading-relaxed">
-                    <strong>Skeletal:</strong><br />
-                    Generally the Class I malocclusion will be found on a skeletal I base. However, mild Class II or Class III skeletal bases with dento-alveolar compensations are not rare to find. 
-                    Overall the skeletal pattern is favourable.
-                </p>
-                <p className="text-justify leading-relaxed">
-                    <strong>Soft Tissues:</strong><br />
-                    The soft tissue profile is pleasing and lips, tongue and cheek pressures are well balanced.
-                </p>
-            </div>
-
-            <div className="mb-12">
-                <h3 className="text-lg font-semibold text-gray-600 mt-4">Dental</h3>
-                <p className="text-justify leading-relaxed">
-                    Malocclusion is usually caused by local dental factors alone. <strong>Crowding</strong> is the most common problem, 
-                    which may be due to local factors or premature loss of deciduous units. <strong>Spacing</strong> can also occur, 
-                    but is generally rare. Most common reasons being tooth-jaw size discrepancy, fleshy frenum, missing teeth, 
-                    malformed teeth etc. <strong>Bimaxillary proclination</strong> is more a racial variant. 
-                    Care should be taken to diagnose the exact cause. <strong>Vertical anomalies</strong> such as anterior openbites 
-                    may also occur in Class I malocclusions, thus the Class I incisor relationship does not imply them. 
-                    <strong>Transverse Anomalies</strong> commonly present with crossbites and scissors bite.
-                </p>
-            </div>
-
-            <div className="mb-12">
-                <h3 className="text-lg font-semibold text-gray-600 mt-4">Facial Growth Pattern</h3>
-                <p className="text-justify leading-relaxed">
-                    The growth pattern for Class I subjects is usually favorable. Although, it must be borne in mind that vertical 
-                    discrepancy such as an anterior openbite tends to get worse with further growth, 
-                    as dento-alveolar compensation is already at its limits.
-                </p>
-            </div>
-
-            <div className="mb-12">
-                <h3 className="text-lg font-semibold text-gray-600 mt-4">TREATMENT OPTIONS</h3>
-                <p className="text-justify leading-relaxed">
-                    Apart from functional appliances and Orthognathic surgery per se, the other 3 treatment modalities i.e.
-                </p>
-                <ul className="list-disc pl-5 mb-2 text-justify leading-relaxed">
-                    <li className="text-pink-500 font-bold">Clear Aligner Therapy</li>
-                    <li className="text-pink-500 font-bold">Fixed appliances</li>
-                    <li className="text-pink-500 font-bold">Removable appliances</li>
-                </ul>
-                <p className="text-justify leading-relaxed">
-                    are the most commonly applied treatment mechanics for Class I malocclusions. Various etiologic factors shall be discussed in detail.
-                </p>
-            </div>
-
-
-            <div className="mb-12">
-                <h3 className="text-lg font-semibold text-gray-600 mt-4 mb-1">Crowding</h3>
-                <p className="text-justify leading-relaxed">
-                    In a significant proportion of Class I cases, the only feature of malocclusion is crowding. 
-                    Where dental crowding alone is responsible for malocclusion with no other local factor, such as crossbites etc., 
-                    it may be possible to treat in limited number of cases without any appliance through timely extraction of teeth alone. 
-                    Serial extraction was one such extraction protocol used extensively in the past, 
-                    but has lost much application in present day Orthodontics as young patients are not subjected to repeated extractions routinely.
-                </p>
-                <p className="mt-4 text-justify leading-relaxed">
-                    <strong>Extractions for Class I malocclusion</strong><br />
-                    In a crowded case, general guidelines for extractions are:<br />
-                    If the space discrepancy is up to 4mm, it is usually resolved without extractions (except third molars).
-                </p>
-                <p className="text-justify leading-relaxed">
-                    Discrepancy in the range of 5–9mm are best treated without extractions by:
-                </p>
-                <ul className="list-disc pl-5 mb-2 text-justify leading-relaxed">
-                    <li>Arch expansion</li>
-                    <li>Molar anchorage TAD (Temporary Anchorage Devices)</li>
-                    <li>Enamel reduction IPR (InterProximal Reduction)</li>
-                </ul>
-                <p className="text-justify leading-relaxed">
-                    Patients with space discrepancy of 10mm or more almost always require premolar extractions with reinforced anchorage. 
-                    Other extraction patterns are asymmetrical and single ectopic dental units. 
-                    In certain crowded cases with premature loss of primary teeth, space maintainers may be required to ensure the space for permanent successor. 
-                    However, such cases always require two-phase orthodontic treatment. 
-                    Patients should be made aware of future full scope to make an informed decision.
-                </p>
-            </div>
-
-            <div className="mb-12">
-                <h3 className="text-lg font-semibold text-gray-600 mt-4 mb-1">Spacing</h3>
-                <p className="text-justify leading-relaxed">
-                    In Class I case with spacing, the decision has to be made whether to:
-                </p>
-                <ul className="list-disc pl-5 mb-2 text-justify leading-relaxed">
-                    <li>Open spaces and place prosthesis for missing dental units</li>
-                    <li>Close space with appliance therapy to reduce restorative cycle in future</li>
-                </ul>
-                <p className="text-justify leading-relaxed">
-                    If spacing is excessive, then it is best to close generalized spacing and concentrate on the space where a prosthesis such as a bridge, 
-                    partial denture or acid etch bridge can be placed. 
-                    The major problem is to maintain such prosthesis throughout life, especially in children who have a whole life ahead of them, 
-                    affecting quality of life and the cost incurred with frequent replacements. 
-                    To close spaces is perhaps the best option, but can only be done with spacing that is not too gross. 
-                    However, aesthetics may be compromised e.g. when a missing lateral incisor space is closed with a more bulkier 
-                    and yellow shaded canine tooth in the maxillary arch.
-                </p>
-            </div>
-
-            <div className="mb-12">
-                <h3 className="text-lg font-semibold text-gray-600 mt-4 mb-1">Bimaxillary Proclination</h3>
-                <p className="text-justify leading-relaxed">
-                    Concomitant proclination of upper and lower labial dental units is usually racial i.e. common feature in Afro-Caribbean, Orientals, 
-                    and Negroid population and is best left untreated. However, if treatment is required to improve facial aesthetics and reduce overjet 
-                    or enhance lip competence, it is essential to assess each case on its own merits i.e. soft tissue like flaccid or everted lips or skeletal pattern. 
-                    Usually, these cases are treated with extractions of premolars in crowded cases, 
-                    but it is important to note that extractions should not be done only for incisor retraction, 
-                    as long-term response is poor and risk of overjet returning and reopening the extraction space is always present. 
-                    Best long-term stability is seen with joint Orthodontic and Orthognathic approach in severe skeletal cases.
-                </p>
-            </div>
-
-            <div className="mb-12">
-                <h3 className="text-lg font-semibold text-gray-600 mt-4 mb-1">Vertical Anomalies</h3>
-                <p className="text-justify leading-relaxed">
-                    The most common vertical anomaly in Class I malocclusion is the Anterior Open Bite (AOB).
-                </p>
-            </div>
-
-            <div className="mb-12">
-                <h3 className="text-lg font-semibold text-gray-600 mt-4 mb-1">Definition</h3>
-                <p className="text-justify leading-relaxed">
-                    Condition where upper incisor crowns fail to overlap the incisal third of the lower incisor crowns when the mandible is brought into full occlusion (Mizrahi 1978).
-                </p>
-            </div>
-
-            <div className="mb-12">
-                <h3 className="text-lg font-semibold text-gray-600 mt-4 mb-1">Etiology</h3>
-                <p className="text-justify leading-relaxed">It is broadly divided into:</p>
-                <ul className="list-disc pl-5 text-justify leading-relaxed">
-                    <li>Genetic: inherent cant of the maxillary plane, increased vertical dimension of the mandibular plane.</li>
-                    <li>Environmental: habits like digit sucking (more common).</li>
-                </ul>
-            </div>
-
-            <div className="mb-12">
-                <h3 className="text-lg font-semibold text-gray-600 mt-4 mb-1">Environmental</h3>
-                <p className="text-justify leading-relaxed">
-                    Includes prolonged oral habits, abnormal tongue function, trauma/pathology involving condyle, neurological disturbances, or iatrogenic causes like extrusion of molars.
-                </p>
-            </div>
-
-            <div className="mb-12">
-                <h3 className="text-lg font-semibold text-gray-600 mt-4 mb-1">Classification</h3>
-                <p className="text-justify leading-relaxed">Anterior Open Bite (AOB) can be classified as:</p>
-                <ul className="list-disc pl-5 text-justify leading-relaxed">
-                    <li>Skeletal</li>
-                    <li>Dental</li>
-                </ul>
-            </div>
-
-            <div className="mb-12">
-                <h3 className="text-lg font-semibold text-gray-600 mt-4 mb-1">Clinical Features of Skeletal AOB</h3>
-                <p className="text-justify leading-relaxed">
-                    <strong>Extra-Oral:</strong> long face, incompetent lips, steep FMPA, ante-gonial notch, and altered facial height ratios. <br />
-                    <strong>Intra-Oral:</strong> mild crowding, upright incisors, or only posterior occlusion. Mouth breathing common.
-                </p>
-            </div>
-
-            <div className="mb-12">
-                <h3 className="text-lg font-semibold text-gray-600 mt-4 mb-1">Clinical Features of Dental AOB</h3>
-                <p className="text-justify leading-relaxed">
-                    <strong>Extra-Oral:</strong> generally normal appearance. <br />
-                    <strong>Intra-Oral:</strong> habit-related changes like proclined upper incisors, narrow maxillary arch, fish mouth appearance.
-                </p>
-            </div>
-
-            <div className="mb-12">
-                <h3 className="text-lg font-semibold text-gray-600 mt-4 mb-1">Treatment Options</h3>
-                <p className="text-justify leading-relaxed">
-                    Dental AOB: treatable with fixed appliances. Habit-breaking appliances (e.g., tongue cribs) are often used. <br />
-                    Recent advancements include magnetic bite blocks. Severe skeletal AOBs require Orthodontic + Orthognathic treatment.
-                </p>
-            </div>
-
-            <div className="mb-12">
-                <h3 className="text-lg font-semibold text-gray-600 mt-4 mb-1">Transverse Anomalies</h3>
-                <p className="text-justify leading-relaxed">
-                    Crossbites or scissors bite in Class I cases can be corrected via maxillary expansion:
-                </p>
-                <ul className="list-disc pl-5 mb-2 text-justify leading-relaxed">
-                    <li>URA with midline expansion screw</li>
-                    <li>Quad Helix</li>
-                    <li>RME (Rapid Maxillary Expansion)</li>
-                    <li>TAD-based expansion systems</li>
-                </ul>
-                <p className="text-justify leading-relaxed">
-                    URAs are useful for occlusal interferences with bite blocks. Quad Helix/RME are often used with fixed appliances. 
-                    Bilateral, functionally stable crossbites may not require correction (Harradine & Birnie, 1998).
-                </p>
-            </div>
-
-
-            <div className="mb-12">
-                <h3 className="text-lg font-semibold text-gray-600 mt-4 mb-1">Treatment Planning Resource</h3>
-                <p className="text-justify leading-relaxed">
-                    <a href="https://prezi.com/dc8rk8kod4dj/examination-treatment-planning/?utm_campaign=share&utm_medium=copy" 
-                    target="_blank" 
-                    className="text-blue-600 underline">
-                        Interactive Prezi: Examination & Treatment Planning
-                    </a><br />
-                    Explore components of initial orthodontic examination and investigations.
-                </p>
-                <img 
-                    src="https://res.cloudinary.com/difs4tswt/image/upload/v1745114794/Screenshot_2024-09-14_at_4.16.24_PM-177_ilqlzq.png" 
-                    alt="Prezi Thumbnail" 
-                    className="my-4 w-1/2 mx-auto" 
-                />
-                <p className="text-red-500 text-justify leading-relaxed">
-                    <a href="https://prezi.com/view/hPL2WfYULE86wMYXe7c9/" 
-                    target="_blank" 
-                    className="text-red-500 underline">
-                        Treatment Planning on Prezi
-                    </a>
-                </p>
-                <p className="text-justify leading-relaxed">
-                    Standard investigations for Orthodontics with OPG for full mouth dental age assessment and Lateral Ceph provides the important data related to skeletal dental and soft tissues.
-                </p>
-            </div>
-
-            <div className="mb-12">
-                <div className="w-full flex flex-col items-center justify-center text-sm text-gray-500 italic">
-                    OPG for full mouth dental age assessment
-                    <img
-                        src="https://res.cloudinary.com/difs4tswt/image/upload/v1745114784/Orthodontics_with_OPG_1_qvkiy7.jpg"
-                        alt="OPG for full mouth dental age assessment"
-                        className="my-4 w-1/2 mx-auto"
-                    />
-                </div>
-            </div>
-
-            <div className="mb-12">
-                <div className="w-full flex flex-col items-center justify-center text-sm text-gray-500 italic">
-                    Lateral Ceph
-                    <img 
-                        src="https://res.cloudinary.com/difs4tswt/image/upload/v1745114783/Orthodontics_with_OPG_2_rjc39p.jpg" 
-                        alt="Lateral Ceph" 
-                        className="my-4 w-1/2 mx-auto"
-                    />
-                </div>
-            </div>
-
-            <div className="mb-12">
-                <div className="w-full flex flex-col items-center justify-center text-sm text-gray-500 italic">
-                    <p className="mb-4">Gallery 1.3: Class I Skeletal and Dental Crowding (Slide image here)</p>
-                    <ImageGallery images={gallery1Images} />
-                </div>
-            </div>
-
-            {/*
-            <video
-                className="w-full h-[300px] mb-4 border border-gray-400"
-                controls
-            >
-                <source
-                    src="https://res.cloudinary.com/difs4tswt/video/upload/v1745114806/AlMajazSharjah-60_hblm7d.mp4"
-                    type="video/mp4"
-                />
-                Your browser does not support the video tag.
-            </video>
-            */}
-
         </SectionPage>
 
     );
