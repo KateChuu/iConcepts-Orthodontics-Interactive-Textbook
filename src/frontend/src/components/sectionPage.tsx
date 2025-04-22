@@ -22,9 +22,9 @@ export default function SectionPage({
 }: SectionPageProps) {
     return (
         <div className="w-full max-w-screen-md mx-auto px-4 py-10">
-            <div className="w-full bg-white dark:bg-zinc-900 rounded-2xl shadow-md px-6 py-4 space-y-8">
+            <div className="w-full bg-white dark:bg-zinc-900 rounded-2xl shadow-md px-6 py-4">
                 {/* title & subtitle */}
-                <div className="border-b pb-4">
+                <div className="border-b pb-4 mb-8">
                     <h1 className="text-2xl font-bold text-zinc-900 dark:text-white text-left py-2">
                         {title}
                     </h1>
@@ -34,7 +34,7 @@ export default function SectionPage({
                 </div>
 
                 {/* Main contents */}
-                <div className="text-base leading-relaxed text-zinc-800 dark:text-zinc-200 space-y-4">
+                <div className="text-base leading-relaxed">
                     {children}
                 </div>
 

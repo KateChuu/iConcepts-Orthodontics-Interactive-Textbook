@@ -8,7 +8,7 @@ export default function Video2Page() {
             title="Video 2: Anterior Open Bite Simulation"
             subtitle=""
             prevHref="/chapters/chapter1/video1"              
-            nextHref="/chapters/chapter2/section1"  
+            nextHref="/chapters/chapter2/intro"  
             chapterHref="/chapters/chapter1"       
         >
             {/* Video here */}
