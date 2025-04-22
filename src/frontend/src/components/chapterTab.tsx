@@ -25,7 +25,7 @@ export default function ChapterTab() {
         {
             title: 'Chapter 3',
             description: 'Class III Malocclusion',
-            image: '/chapter3.jpg',
+            image: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114847/IMG_8015-94_o7tbmn.jpg',
             href: '/chapters/chapter3',
         },
     ];
