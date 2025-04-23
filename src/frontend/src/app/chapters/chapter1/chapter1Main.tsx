@@ -7,9 +7,9 @@ export default function Chapter1Page() {
     { id: 0, title: '', href: '/chapters/chapter1/intro', icon: '' },
     { id: 1, title: 'Definition of Orthodontics', href: '/chapters/chapter1/section1', icon: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114337/section1_dxosw4.png' },
     { id: 2, title: 'Brief Historical Background', href: '/chapters/chapter1/section2', icon: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114338/section2_qdnkex.png' },
-    { id: 3, title: 'List Orthodontic Treatment Modalities', href: '/chapters/chapter1/section3', icon: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114338/section5_lolktb.png' },
+    { id: 3, title: 'List Orthodontic Treatment Modalities', href: '/chapters/chapter1/section3', icon: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114338/section3_vmgqen.png' },
     { id: 4, title: 'Occlustion Classification', href: '/chapters/chapter1/section4', icon: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114338/section4_c14ay8.png' },
-    { id: 5, title: 'Prevalence of Malocclusion in Global regions', href: '/chapters/chapter1/section5', icon: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114338/section3_vmgqen.png' },
+    { id: 5, title: 'Prevalence of Malocclusion in Global regions', href: '/chapters/chapter1/section5', icon: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114338/section5_lolktb.png' },
     { id: 6, title: 'Class I Malocclusion', href: '/chapters/chapter1/section6', icon: '' },
   ];
 
