@@ -16,6 +16,30 @@ export default function VideoTab() {
             thumbnail: '/video2.jpg',
             href: '/chapters/chapter1/video2',
         },
+        {
+            title: 'Video 3: Class II/2',
+            description: 'Chapter 2',
+            thumbnail: '/video3.jpg',
+            href: '/chapters/chapter2/intro',
+        },
+        {
+            title: 'Video 4: Depp Traumatic Bite',
+            description: 'Chapter 2',
+            thumbnail: '/video4.jpg',
+            href: '/chapters/chapter2/section4',
+        },
+        {
+            title: 'Video 5: Class II Div 1',
+            description: 'Chapter 2',
+            thumbnail: '/video5.jpg',
+            href: '/chapters/chapter2/section4',
+        },
+        {
+            title: 'Video 6: Itero Cross Bite',
+            description: 'Chapter 3',
+            thumbnail: '/video6.jpg',
+            href: '/chapters/chapter3/section5',
+        },
     ];
 
     return (
