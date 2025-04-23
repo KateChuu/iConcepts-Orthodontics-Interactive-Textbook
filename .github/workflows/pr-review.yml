@@ -12,5 +12,9 @@ jobs:
                   openai_api_key: ${{ secrets.OPENAI_API_KEY }}
                   github_token: ${{ secrets.GITHUB_TOKEN }}
                   github_pr_id: ${{ github.event.number }}
+<<<<<<< HEAD
                   files: "src/frontend/src/app/chapters/chapter2/**/*.tsx"
+=======
+                  files: "src/frontend/src/app/chapters/chapter4/**/*.tsx"
+>>>>>>> origin/feat/chapter4/code-review
                   openai_model: gpt-4o-mini

@@ -1,19 +1,4 @@
 import SectionPage from '@/components/sectionPage';
-import ImageGallery from '@/components/ImageGallery';
-
-const gallery1Images = [
-    {
-        src: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114811/pasted-image-209_uz7ifa.jpg',
-        caption: 'Functional Appliance'
-    }
-]
-
-const gallery2Images = [
-    {
-        src: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114813/pasted-image-small-212_mcncz4.png',
-        caption: 'Fixed appliances labial metal.'
-    }
-]
 
 export default function page() {
     return (
@@ -21,7 +6,7 @@ export default function page() {
             title="Section 5: Appliances"
             subtitle="Published in 2024 · Views: 19723 · Average Reading Time: 17min"
             prevHref="/chapters/chapter2/section4"
-            nextHref="/chapters/chapter3/section1"
+            nextHref="/chapters/chapter3/intro"
             chapterHref="/chapters/chapter2"
         >
         <div className="mb-8">
