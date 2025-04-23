@@ -28,6 +28,12 @@ export default function ChapterTab() {
             image: '/chapter3.jpg',
             href: '/chapters/chapter3',
         },
+        {
+            title: 'Chapter 4',
+            description: 'Functional Orthopaedic Appliances',
+            image: '/chapter4.jpg',
+            href: '/chapters/chapter4',
+        },
     ];
     
     

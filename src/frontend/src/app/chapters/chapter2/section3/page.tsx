@@ -10,7 +10,7 @@ export default function page() {
             chapterHref="/chapters/chapter2"
         >
         <div className="mb-8">
-            <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+            <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                 DEFINITION
             </h3>
             <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
@@ -21,7 +21,7 @@ export default function page() {
         </div>
 
         <div className="mb-8">
-            <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+            <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                 INCIDENCE
             </h3>
             <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
@@ -31,7 +31,7 @@ export default function page() {
         </div>
 
         <div className="mb-8">
-            <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+            <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                 AETIOLOGY
             </h3>
             <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">              
@@ -45,10 +45,10 @@ export default function page() {
         </div>
 
         <div className="mb-8">
-            <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+            <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                 CLINICAL FEATURES
             </h3>
-            <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+            <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                 SKELETAL
             </h3>
             <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
@@ -60,7 +60,7 @@ export default function page() {
         </div>
 
         <div className="mb-8">
-            <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+            <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                 SOFT TISSUES
             </h3>
             <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
@@ -70,7 +70,7 @@ export default function page() {
         </div>
 
         <div className="mb-8">
-            <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+            <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                 DENTAL
             </h3>
             <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
@@ -82,7 +82,7 @@ export default function page() {
         </div>
 
         <div className="mb-8">
-            <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+            <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                 FACIAL GROWTH
             </h3>
             <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
@@ -91,7 +91,7 @@ export default function page() {
         </div>
 
         <div className="mb-8"> 
-            <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+            <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                 TREATMENT OPTIONS
             </h3>
             <ul className="list-disc list-outside pl-5 mt-1 text-zinc-800 dark:text-zinc-100">
@@ -103,7 +103,7 @@ export default function page() {
         </div>
 
         <div className="mb-8">
-            <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+            <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                 TREATMENT AIMS
             </h3>
             <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
@@ -126,6 +126,7 @@ export default function page() {
                 At the time of writing majority of removable appliances have been superseded by CAT.
             </p> 
         </div>
+        
         </SectionPage>
     );
 }

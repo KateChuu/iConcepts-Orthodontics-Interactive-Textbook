@@ -1,14 +1,6 @@
 import SectionPage from '@/components/sectionPage';
 import ImageGallery from '@/components/ImageGallery';
 
-const gallery1Images = [
-    {
-        src: 'https://res.cloudinary.com/difs4tswt/video/upload/v1745114829/Screen_Recording_2024-09-16_at_4.31.58_AM-207_mocrwx.mov',
-        caption: 'CAT Clear Aligenr Therapy with locked positions in grey in lower buccal segments prevents future impactions for 8"s. This patient has congenitally missing 35 45.'
-    }
-]
-
-
 const gallery2Images = [
     {
         src: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114813/IMG_2720-183_hdmjlm.jpg',
@@ -33,6 +25,7 @@ export default function page() {
             nextHref="/chapters/chapter2/section3"
             chapterHref="/chapters/chapter2"
         >
+
         <div className="mb-8">
             <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                 REMOVABLE APPLIANCES
@@ -154,18 +147,6 @@ export default function page() {
             </div>
         </div>
 
-        {/*
-        <div className="mb-12">
-                <div className="w-full flex flex-col items-center justify-center text-sm text-gray-500 italic">
-                    <strong>Gallery 2.3</strong> CAT Clear Aligenr Therapy with locked positions in grey in lower buccal segments prevents future impactions for 8's. This patient has congenitally missing 35 45.
-                    <img 
-                        src=""
-                        alt="VIDEO" 
-                        className="my-4 w-1/2 mx-auto"
-                    />
-                </div>
-        </div>
-        */}
         </SectionPage>
     );
 }

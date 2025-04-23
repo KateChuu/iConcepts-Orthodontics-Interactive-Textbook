@@ -1,19 +1,6 @@
 import SectionPage from '@/components/sectionPage';
 import ImageGallery from '@/components/ImageGallery';
 
-const gallery1Images = [
-    {
-        src: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114811/pasted-image-209_uz7ifa.jpg',
-        caption: 'Functional Appliance'
-    }
-]
-
-const gallery2Images = [
-    {
-        src: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114813/pasted-image-small-212_mcncz4.png',
-        caption: 'Fixed appliances labial metal.'
-    }
-]
 
 export default function page() {
     return (

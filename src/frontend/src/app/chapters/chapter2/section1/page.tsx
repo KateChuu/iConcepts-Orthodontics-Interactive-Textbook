@@ -22,7 +22,7 @@ export default function page() {
             </div>
 
             <div className="mb-8">
-                <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+                <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                     INCIDENCE:
                 </h3>
                 <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">                
@@ -32,10 +32,10 @@ export default function page() {
             </div>
 
             <div className="mb-8">
-                <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+                <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                     ETIONLOGY:
                 </h3>
-                <p>
+                <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">                
                     The classical Class II/1 occurs in 20% of the population, while its intermediate forms appear in 10% 
                     (Todd & Dodd 1975; Williams and Stephens 1992).
                 </p>
@@ -47,10 +47,10 @@ export default function page() {
             </div>
             
             <div className="mb-8">
-                <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+                <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                     ClINICAL FEAUTRES OF CLASS II / 1 MALOCCLUSION
                 </h3>
-                <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+                <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                     SKELETAL
                 </h3>
                 <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
@@ -62,7 +62,7 @@ export default function page() {
             </div>
             
             <div className="mb-8">
-                <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+                <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                     SOFT TISSUES
                 </h3>
                 <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
@@ -74,7 +74,7 @@ export default function page() {
             </div>
             
             <div className="mb-8">
-                <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+                <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                     DENTAL
                 </h3>
                 <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
@@ -85,7 +85,7 @@ export default function page() {
             </div>
             
             <div className="mb-8">
-                <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+                <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                     SUNDAY BITE
                 </h3>
                 <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
@@ -97,7 +97,7 @@ export default function page() {
             </div>
             
             <div className="mb-8">
-                <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+                <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                     FACIAL GROWTH
                 </h3>
                 <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
@@ -107,7 +107,7 @@ export default function page() {
             </div>
             
             <div className="mb-8">
-                <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+                <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                     TREATMENT OPTIONS
                 </h3>
                 <ul className="list-disc list-outside pl-5 mt-1 text-zinc-800 dark:text-zinc-100">
@@ -119,7 +119,7 @@ export default function page() {
             </div>
             
             <div className="mb-8">
-                <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+                <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                     TREATMENT AIMS
                 </h3>
                 <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
@@ -128,13 +128,13 @@ export default function page() {
                     first premolars and lower second premolars bilaterally.
                 </p>
                 <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
-                Overjet is excessive, which needs to be reduced within the normal range. Deep overbites are
-                corrected to edge centroid relationship i.e. lower incisor edge should lie an-
-                terior to the upper root centroid (Houston 1989). This ensures stable final
-                overbite reduction. Lastly the treatment should aim towards correcting the
-                buccal segment relationship. If a Class I molar relationship is too ambitious
-                to achieve, a functional full unit Class II is also acceptable. ½ and ¼ Unit
-                molar relationships are not functionally stable and should be avoided and/or corrected.
+                    Overjet is excessive, which needs to be reduced within the normal range. Deep overbites are
+                    corrected to edge centroid relationship i.e. lower incisor edge should lie an-
+                    terior to the upper root centroid (Houston 1989). This ensures stable final
+                    overbite reduction. Lastly the treatment should aim towards correcting the
+                    buccal segment relationship. If a Class I molar relationship is too ambitious
+                    to achieve, a functional full unit Class II is also acceptable. ½ and ¼ Unit
+                    molar relationships are not functionally stable and should be avoided and/or corrected.
                 </p>
             </div> 
         </SectionPage>
