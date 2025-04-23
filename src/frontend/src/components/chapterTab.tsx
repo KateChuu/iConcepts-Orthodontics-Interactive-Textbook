@@ -34,6 +34,12 @@ export default function ChapterTab() {
             image: '/chapter4.jpg',
             href: '/chapters/chapter4',
         },
+        {
+            title: 'Chapter 5',
+            description: 'LEAN Study Methodology for Effective Learning',
+            image: '/chapter5.jpg',
+            href: '/chapters/chapter5',
+        },
     ];
     
     
