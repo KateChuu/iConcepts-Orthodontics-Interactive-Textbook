@@ -31,7 +31,7 @@ export default function ChapterTab() {
         {
             title: 'Chapter 4',
             description: 'Functional Orthopaedic Appliances',
-            image: '/chapter4.jpg',
+            image: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114944/chapter4_frontpage_1_joun81.jpg',
             href: '/chapters/chapter4',
         },
     ];
