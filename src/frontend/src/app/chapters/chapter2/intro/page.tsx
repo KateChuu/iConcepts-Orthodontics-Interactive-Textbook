@@ -5,7 +5,7 @@ export default function page() {
         <SectionPage
             title="Chapter 2: Class II Malocclusion"
             subtitle="Published in 2024 · Views: 19723 · Average Reading Time: 17min"
-            prevHref={undefined}
+            prevHref="/chapters/chapter1/video2"
             nextHref="/chapters/chapter2/section1"
             chapterHref="/chapters/chapter2"
         >

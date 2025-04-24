@@ -1,6 +1,4 @@
 import SectionPage from '@/components/sectionPage';
-import ImageGallery from '@/components/ImageGallery';
-
 
 export default function page() {
     return (
@@ -8,7 +6,7 @@ export default function page() {
             title="Section 5: Appliances"
             subtitle="Published in 2024 · Views: 19723 · Average Reading Time: 17min"
             prevHref="/chapters/chapter2/section4"
-            nextHref="/chapters/chapter3/section1"
+            nextHref="/chapters/chapter3/intro"
             chapterHref="/chapters/chapter2"
         >
         <div className="mb-8">

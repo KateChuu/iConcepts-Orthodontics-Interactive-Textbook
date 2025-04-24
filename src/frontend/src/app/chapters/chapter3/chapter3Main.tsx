@@ -10,6 +10,8 @@ export default function Chapter3Page() {
         { id: 3, title: 'Appliances', href: '/chapters/chapter3/section3', icon: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114338/section3_vmgqen.png' },
         { id: 4, title: 'Clinical Examples', href: '/chapters/chapter3/section4', icon: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114338/section4_c14ay8.png' },
         { id: 5, title: 'Self Test', href: '/chapters/chapter3/section5', icon: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114338/section5_lolktb.png' },
+        { id: 5, title: 'Self Test', href: '/chapters/chapter3/section5', icon: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745402546/Section6_ChatGPT_Image_dqrhey.png' },
+
     ];
 
     return <ChapterMain title={title} description={description} sections={sections} />;

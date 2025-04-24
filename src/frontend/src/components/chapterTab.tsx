@@ -7,31 +7,31 @@ export default function ChapterTab() {
         {
             title: 'Preface',
             description: 'Before everything begins...',
-            image: '/preface.jpg',
+            image: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114784/butterfly-world-map-mark-ashkenazi-21_y7gc6j.jpg',
             href: '/chapters/preface',
         },
         {
             title: 'Chapter 1',
             description: 'Introduction Orthodontics NOW!',
-            image: '/chapter1.jpg',
+            image: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114795/GrassRollerHD-30_eupxdh.jpg',
             href: '/chapters/chapter1',
         },
         {
             title: 'Chapter 2',
             description: 'Class I Malocclusion',
-            image: '/chapter2.jpg',
+            image: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114814/IMG_1790-179_alhphp.jpg',
             href: '/chapters/chapter2',
         },
         {
             title: 'Chapter 3',
             description: 'Class III Malocclusion',
-            image: '/chapter3.jpg',
+            image: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114847/IMG_8015-94_o7tbmn.jpg',
             href: '/chapters/chapter3',
         },
         {
             title: 'Chapter 4',
             description: 'Functional Orthopaedic Appliances',
-            image: '/chapter4.jpg',
+            image: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114944/chapter4_frontpage_1_joun81.jpg',
             href: '/chapters/chapter4',
         },
     ];

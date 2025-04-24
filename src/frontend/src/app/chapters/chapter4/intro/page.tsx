@@ -5,7 +5,7 @@ export default function page() {
         <SectionPage
             title="Chapter 4: Functional Orthopaedic Appliances"
             subtitle="Published in 2024 · Views: 19723 · Average Reading Time: 17min"
-            prevHref={undefined}
+            prevHref="/chapters/chapter3/section5"
             nextHref="/chapters/chapter4/section1"
             chapterHref="/chapters/chapter4"
         >
