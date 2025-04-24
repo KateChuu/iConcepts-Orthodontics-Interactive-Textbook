@@ -1,4 +1,28 @@
 import SectionPage from '@/components/sectionPage';
+import ImageGallery from '@/components/ImageGallery';
+
+const galleryImages = [
+    {
+        src: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114847/IMG_8015-94_o7tbmn.jpg',
+        caption: 'Class III Mechanics on MBT System with Class III elastics also correction of upper midline with undertie and powerchain'
+    },
+    {
+        src: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114845/IMG_8016-96_t4ljhs.jpg',
+        caption: 'Class III Elastic vector and undertie maxillary teeth'
+    },
+    {
+        src: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114846/IMG_8017-98_gyfy7g.jpg',
+        caption: 'Left side Class III elastic with maxillary teeth powerchain'
+    },
+    {
+        src: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114846/IMG_8018-100_mrkchz.jpg',
+        caption: 'Maxillary occlusal view mirror image'
+    },
+    {
+        src: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114845/IMG_8019-102_u0dyl1.jpg',
+        caption: 'Class III Mechanics with MBT prescription Class III elastics Differential correction of upper midline with undertie and powerchain Mandibular mirror image'
+    },
+];
 
 export default function page() {
     return (
@@ -72,11 +96,10 @@ export default function page() {
                 </p>
 
                 {/* Image Gallery 3.1 */}
-                {/*
+                
                 <div className="flex justify-center my-4">
                     <ImageGallery images={galleryImages} />
                 </div>
-                */}
                 
             </div>
 
