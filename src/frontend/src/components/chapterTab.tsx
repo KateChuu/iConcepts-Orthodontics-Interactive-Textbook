@@ -34,6 +34,12 @@ export default function ChapterTab() {
             image: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114944/chapter4_frontpage_1_joun81.jpg',
             href: '/chapters/chapter4',
         },
+        {
+            title: 'Chapter 5',
+            description: 'LEAN Study Methodology for Effective Learning',
+            image: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114944/paint_zot9yc.jpg',
+            href: '/chapters/chapter5',
+        },
     ];
     
     

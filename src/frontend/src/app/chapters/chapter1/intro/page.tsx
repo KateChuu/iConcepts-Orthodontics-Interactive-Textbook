@@ -5,7 +5,7 @@ export default function page() {
         <SectionPage
             title="Chapter 1: An Introduction to Orthodontics"
             subtitle="Published in 2024 · Views: 19723 · Average Reading Time: 17min"
-            prevHref={undefined}
+            prevHref="/chapters/preface"
             nextHref="/chapters/chapter1/section1"
             chapterHref="/chapters/chapter1"
         >

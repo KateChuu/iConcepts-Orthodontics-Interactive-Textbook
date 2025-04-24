@@ -27,7 +27,7 @@ export default function Video2Page() {
                 <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
                     Anterior Open Bite Simulation video Align Tech patient<br />
                     Dr Shazia Naser ud Din 2022
-            </p>
+                </p>
             </div>
         </SectionPage>
     );
