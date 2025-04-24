@@ -11,7 +11,6 @@ export default function Chapter1Page() {
     { id: 4, title: 'Occlustion Classification', href: '/chapters/chapter1/section4', icon: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114338/section4_c14ay8.png' },
     { id: 5, title: 'Prevalence of Malocclusion in Global regions', href: '/chapters/chapter1/section5', icon: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114338/section5_lolktb.png' },
     { id: 6, title: 'Class I Malocclusion', href: '/chapters/chapter1/section6', icon: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745402546/Section6_ChatGPT_Image_dqrhey.png' },
-  ];
 
   return <ChapterMain title={title} description={description} sections={sections} />;
 }
