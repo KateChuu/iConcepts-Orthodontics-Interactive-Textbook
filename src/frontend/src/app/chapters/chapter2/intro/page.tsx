@@ -15,7 +15,7 @@ export default function page() {
             </h3>
             
             <video 
-                className="w-full border border-gray-400 flex items-center object-cover justify-center text-sm text-gray-500 italic"
+                className="w-full border border-gray-400 flex items-center object-cover justify-center text-sm text-gray-500 italic mb-4"
                 controls
             >
                 <source

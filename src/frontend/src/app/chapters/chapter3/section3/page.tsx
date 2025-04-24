@@ -87,7 +87,7 @@ export default function page() {
         </div>
 
         <div className="mb-8">
-            <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
+            <p className="text-sm leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
                 De Clerck, H., Cevidanes, L., & Baccetti, T. (2010). Dentofacial effects of bone-anchored 
                 maxillary protraction: a controlled study of consecutively treated Class III patients. 
                 American journal of orthodontics and dentofacial orthopedics : official publication of 
@@ -95,7 +95,7 @@ export default function page() {
                 Board of Orthodontics, 138(5), 577–581.{" "}
                 <a
                     href="https://doi.org/10.1016/j.ajodo.2009.10.037"
-                    className="text-red-500 underline"
+                    className="text-blue-600 underline hover:text-blue-800"
                     target="_blank"
                     rel="noopener noreferrer"
                 >

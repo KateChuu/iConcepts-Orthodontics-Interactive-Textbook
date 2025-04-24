@@ -49,7 +49,7 @@ export default function page() {
                 <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
                     Following links lead to interactive learning experience:
                 </p>
-                <p className="text-base leading-relaxed text-center text-red-500">
+                <p className="text-base leading-relaxed text-red-500">
                     <a
                         href="https://prezi.com/pxkw_tbmyodl/functional-orthopaedic-appliances/?utm_campaign=share&utm_medium=copy"
                         target="_blank"
@@ -58,7 +58,7 @@ export default function page() {
                         Prezi Functional Orthopedic Appliances (FOA)
                     </a>
                 </p>
-                <p className="text-base leading-relaxed text-center text-red-500">
+                <p className="text-base leading-relaxed text-red-500">
                     <a
                         href="https://prezi.com/view/gk10GBMEdxbROB7hY33Y/"
                         target="_blank"
@@ -67,7 +67,7 @@ export default function page() {
                         Functional Orthopaedic Appliances
                     </a>
                 </p>
-                <p className="text-base leading-relaxed text-center text-red-500">
+                <p className="text-base leading-relaxed text-red-500">
                     <a
                         href="https://prezi.com/bfc-j5jqgfva/orofacial-muscles-applied/?utm_campaign=share&utm_medium=copy&rc=ex0share"
                         target="_blank"
@@ -79,14 +79,16 @@ export default function page() {
             </div>
 
         <div className="mb-8">
-                <div className="flex justify-center my-4">
-                    <img
-                        src="https://unimelb.h5p.com/content/1291914114391997729/embed"
-                        alt="Different Components of FOA"
-                        className="w-1/2 mx-auto"
-                    />
-                </div>
-                <p className="text-sm italic text-zinc-500 mt-2 text-center">
+            <div className="relative w-full max-w-2xl" style={{ paddingTop: '75%' }}>
+                <iframe
+                    src="https://unimelb.h5p.com/content/1291908039474101649/embed"
+                    title="Ectopic / Impacted Dental Units"
+                    allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
+                    allowFullScreen
+                    className="absolute top-0 left-0 w-full h-full border border-zinc-300 dark:border-zinc-700 rounded-md"
+                ></iframe>
+            </div>
+            <p className="text-sm leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
                     Bidjan, D., Sallmann, R., Eliades, T., & Papageorgiou, S. N. (2020). Orthopedic Treatment for Class II Malocclusion with Functional
                     Appliances and Its Effect on Upper Airways: A Systematic Review with Meta-Analysis. <em> Journal of clinical medicine</em>, 9(12), 3806.
                 <a
@@ -97,7 +99,7 @@ export default function page() {
                 >
                     https://doi.org/10.3390/jcm9123806
                 </a>
-                </p>
+            </p>
         </div>
 
         <div className="mb-8">

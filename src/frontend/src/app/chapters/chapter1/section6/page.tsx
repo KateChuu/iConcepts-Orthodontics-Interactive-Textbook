@@ -151,10 +151,12 @@ export default function Section6() {
                     Serial extraction was one such extraction protocol used extensively in the past, 
                     but has lost much application in present day Orthodontics as young patients are not subjected to repeated extractions routinely.
                 </p>
+            </div>
 
-                <h4 className="text-justify font-bold leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1 mt-2">
+            <div className="mb-8">
+                <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                     Extractions for Class I malocclusion
-                </h4>
+                </h3>
                 <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
                     In a crowded case, general guidelines for extractions are:<br />
                     If the space discrepancy is up to 4mm, it is usually resolved without extractions (except third molars).

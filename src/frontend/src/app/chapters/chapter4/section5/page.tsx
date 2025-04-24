@@ -1,6 +1,5 @@
 import SectionPage from '@/components/sectionPage';
-import ImageGallery from '@/components/ImageGallery';
-
+import React from 'react';
 
 export default function page() {
     return (
@@ -12,15 +11,57 @@ export default function page() {
             chapterHref="/chapters/chapter4"
         >
         <div className="mb-8">
-            <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+            <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                 H5P Learning Experience
             </h3>
-            <div className="flex justify-center my-4">
-                <img
+        </div>
+
+  
+        <div className="mb-8 flex justify-center w-full">
+            <div className="relative w-full max-w-2xl" style={{ paddingTop: '75%' }}>
+                <iframe
                     src="https://unimelb.h5p.com/content/1291914216397877129/embed"
-                    alt="H5P"
-                    className="w-1/2 mx-auto"
-                />
+                    title="CAD CAM Digital Work Flow"
+                    allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
+                    allowFullScreen
+                    className="absolute top-0 left-0 w-full h-full border border-zinc-300 dark:border-zinc-700 rounded-md"
+                ></iframe>
+            </div>
+        </div>
+
+        <div className="mb-8 flex justify-center w-full">
+            <div className="relative w-full max-w-2xl" style={{ paddingTop: '90%' }}>
+                <iframe
+                    src="https://unimelb.h5p.com/content/1291914168756258079/embed"
+                    title="Tooth Wear"
+                    allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
+                    allowFullScreen
+                    className="absolute top-0 left-0 w-full h-full border border-zinc-300 dark:border-zinc-700 rounded-md"
+                ></iframe>
+            </div>
+        </div>
+
+        <div className="mb-8 flex justify-center w-full">
+            <div className="relative w-full max-w-2xl" style={{ paddingTop: '90%' }}>
+                <iframe
+                    src="https://unimelb.h5p.com/content/1292276390804310689/embed"
+                    title="Case 4 - Frontal Anterior Occlusal - before and after"
+                    allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
+                    allowFullScreen
+                    className="absolute top-0 left-0 w-full h-full border border-zinc-300 dark:border-zinc-700 rounded-md"
+                ></iframe>
+            </div>
+        </div>
+
+        <div className="mb-8 flex justify-center w-full">
+            <div className="relative w-full max-w-2xl" style={{ paddingTop: '75%' }}>
+                <iframe
+                    src="https://unimelb.h5p.com/content/1291908039474101649/embed"
+                    title="Ectopic / Impacted Dental Units"
+                    allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
+                    allowFullScreen
+                    className="absolute top-0 left-0 w-full h-full border border-zinc-300 dark:border-zinc-700 rounded-md"
+                ></iframe>
             </div>
         </div>
 
