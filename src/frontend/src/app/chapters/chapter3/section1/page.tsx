@@ -5,43 +5,81 @@ export default function page() {
         <SectionPage
             title="Section 1: An Introduction to Class II Malocclusion"
             subtitle="Published in 2024 · Views: 19723 · Average Reading Time: 17min"
-            prevHref={undefined}
-            nextHref="/chapters/chapter1/section2"
-            chapterHref="/chapters/chapter1"
+            prevHref="/chapters/chapter3/intro"
+            nextHref="/chapters/chapter3/section2"
+            chapterHref="/chapters/chapter3"
         >
-            <p>
-                <strong>Orthodontics</strong> is a highly specialized field of Dentistry, aiming
-                towards esthetic and functional enhancement of the dentition. Considered first
-                specialty of dentistry introduced a century ago. However, rapid advancements
-                have taken place in the last two decades making it a major leading discipline
-                of Dental Surgery.
-            </p>
+            <div className="mb-8">
+                <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
+                    CLASS III MALOCCLUSIONS
+                </h3>
+                <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
+                    Mesio-buccal cusp of first permanent molar is at least one cusp width distal to the lower first permanent molar. Incisor relationship is such that lower incisors edges lie anterior to the cingulum plateau, overjet is reduced or reversed.
+                </p>
+            </div>
 
-            <h3 className="text-lg font-semibold mt-6 mb-2 text-gray-700">DEFINITION</h3>
-            <p>
-                <strong>Orthodontics (Dentofacial Orthopedics)</strong> can be defined as:
-                <br /><br />
-                &quot;The area of dentistry concerned with the supervision, guidance and correction of growing and mature dentofacial structures, including those conditions that require movement of teeth or correction of malrelationships and malformations of related structures by adjustment of relationship between and among teeth and facial bones, by the application of forces and/or the stimulation and re-direction of the functional forces within the craniofacial complex&quot;. (Proffit 1993)
-            </p>
+            <div className="mb-8">
+                <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
+                    INCIDENCE
+                </h3>
+                <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
+                    It is said to occur in 1% of American population, 3% in Japanese and 5% in British population (Todd & Dodd 1975).
+                </p>
+            </div>
 
-            <p>
-                A simpler version for defining Orthodontics is as follows:
-                <br /><br />
-                <em>
-                    &quot;Orthodontics is that branch of Dental Sciences which is concerned with genetic variations, development and growth of facial forms and the manner in which these factors affect the occlusion of the teeth and their function.&quot;
-                </em>
-            </p>
+            <div className="mb-8">
+                <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
+                    ETIOLOGY
+                </h3>
+                <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
+                    It is primarily due to genetics with a dominant skeletal III pattern.
+                </p>
+            </div>
 
-            <p>
-                Orthodontic techniques are concerned with treatment of irregularities of the teeth.
-                The study of Orthodontics includes entire craniofacial complex and addresses:
-            </p>
+            <div className="mb-8">
+                <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
+                    CLINICAL FEATURES - SKELETAL
+                </h3>
+                <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
+                    Usually a Skeletal Class III base relationship is present. The cranial base angle is acute, hence the forward positioning of the mandible. 73% of the cases have large mandibles, the rest have small maxilla or a combination of both. At times the maxilla is usually short, small and narrow relative to the mandible. The mandible tends to be broad and thus the greater incidence of crossbites.
+                </p>
+            </div>
 
-            <ul className="list-disc list-inside pl-4">
-                <li>Growth</li>
-                <li>Development</li>
-                <li>Function</li>
-            </ul>
+            <div className="mb-8">
+                <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
+                    CLINICAL FEATURES - SOFT TISSUES
+                </h3>
+                <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
+                    Soft tissues per se are not involved in the etiology of Class III malocclusion, but lips do play a role in dento-alveolar decompensation. Lower lip is usually full and pendulous.
+                </p>
+            </div>
+
+            <div className="mb-8">
+                <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
+                    CLINICAL FEATURES - DENTAL
+                </h3>
+                <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
+                    There is usually a Class III molar relationship (full unit) tendency towards a complete reverse overjet (anterior crossbite) reduced overbite or AOB may also exist. Incisors compensate for skeletal base disharmony by proclination of maxillary incisors and retroclination of mandibular incisors. Maxilla may be crowded, while it is unlikely to have crowding in the mandible. Whenever crossbites exist, it is important to assess displacement / deviations. Most common in Class III is the anterior displacement in order to obtain a posterior functional occlusion which is not possible with edge-to-edge incisor contact. Another cause of displacement could be unsatisfactory transverse buccal segment relationship.
+                </p>
+            </div>
+
+            <div className="mb-8">
+                <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
+                    GALLERY 3.1
+                </h3>
+                <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
+                    Class III Fixed Appliance Treatment
+                </p>
+
+                {/* Image Gallery 3.1 */}
+                {/*
+                <div className="flex justify-center my-4">
+                    <ImageGallery images={galleryImages} />
+                </div>
+                */}
+                
+            </div>
+
 
         </SectionPage>
     );
