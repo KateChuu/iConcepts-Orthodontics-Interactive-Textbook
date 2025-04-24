@@ -80,11 +80,13 @@ export default function page() {
 
         <div className="mb-8">
                 <div className="flex justify-center my-4">
-                    <img
+                    <iframe
                         src="https://unimelb.h5p.com/content/1291914114391997729/embed"
-                        alt="Different Components of FOA"
-                        className="w-1/2 mx-auto"
-                    />
+                        aria-label="Removable Orthodontic"
+                        width="480"
+                        height="850"
+                        allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
+                    ></iframe>
                 </div>
                 <p className="text-sm italic text-zinc-500 mt-2 text-center">
                     Bidjan, D., Sallmann, R., Eliades, T., & Papageorgiou, S. N. (2020). Orthopedic Treatment for Class II Malocclusion with Functional
@@ -148,4 +150,3 @@ export default function page() {
         </SectionPage>
     );
 }
-

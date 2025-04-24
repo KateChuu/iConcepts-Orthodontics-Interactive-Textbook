@@ -7,37 +7,37 @@ export default function VideoTab() {
         {
             title: 'Video 1: Tip Torque Biomechanics',
             description: 'Chapter 1',
-            thumbnail: '/video1.jpg',
+            thumbnail: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745503312/TipTorqueBio_xsnidv.png',
             href: '/chapters/chapter1/video1',
         },
         {
             title: 'Video 2: Anterior Open Bite Simulation',
             description: 'Chapter 1',
-            thumbnail: '/video2.jpg',
+            thumbnail: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745503310/Anterior-video_abwjde.png',
             href: '/chapters/chapter1/video2',
         },
         {
             title: 'Video 3: Class II/2',
             description: 'Chapter 2',
-            thumbnail: '/video3.jpg',
+            thumbnail: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745503311/class-ii-2_cau2lv.png',
             href: '/chapters/chapter2/intro',
         },
         {
             title: 'Video 4: Depp Traumatic Bite',
             description: 'Chapter 2',
-            thumbnail: '/video4.jpg',
+            thumbnail: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745503310/DeepTraumaticBite_vgdczo.png',
             href: '/chapters/chapter2/section4',
         },
         {
             title: 'Video 5: Class II Div 1',
             description: 'Chapter 2',
-            thumbnail: '/video5.jpg',
+            thumbnail: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745503310/ClassIIDiv1_ayrlbc.png',
             href: '/chapters/chapter2/section4',
         },
         {
             title: 'Video 6: Itero Cross Bite',
             description: 'Chapter 3',
-            thumbnail: '/video6.jpg',
+            thumbnail: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745503311/IteroPosteriorCrossbite_l7ze6b.png',
             href: '/chapters/chapter3/section5',
         },
     ];
