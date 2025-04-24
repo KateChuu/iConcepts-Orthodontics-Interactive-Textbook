@@ -31,9 +31,17 @@ export default function page() {
             </div>
 
             {/* Image */}
-            <div className='my-4 flex justify-center'>
-                image here
+            <div className="my-4 flex justify-center space-x-4">
+                <img
+                    src="https://res.cloudinary.com/difs4tswt/image/upload/v1745114785/Dubai2013-22_vqkmqe.jpg"
+                    className="h-64 w-auto object-contain"
+                />
+                <img
+                    src="https://res.cloudinary.com/difs4tswt/image/upload/v1745114784/butterfly-world-map-mark-ashkenazi-21_y7gc6j.jpg"
+                    className="h-64 w-auto object-contain"
+                />
             </div>
+
         </SectionPage>
     );
 }
