@@ -32,7 +32,10 @@ export default function page() {
             </div>
 
             <div className='my-4 flex justify-center'>
-                First image here
+                <img
+                    src="https://res.cloudinary.com/difs4tswt/image/upload/v1745114944/paint_zot9yc.jpg"
+                    className="w-1/2 mx-auto"
+                />
             </div>
 
 
