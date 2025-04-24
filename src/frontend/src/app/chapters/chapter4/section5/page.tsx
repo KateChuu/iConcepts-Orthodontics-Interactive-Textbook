@@ -28,7 +28,7 @@ export default function page() {
                     src="https://unimelb.h5p.com/content/1291914168756258079/embed"
                     aria-label="Tooth Wear"
                     width="683"
-                    height="580"
+                    height="620"
                     allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
                     className="w-full"
                 ></iframe>
@@ -38,7 +38,7 @@ export default function page() {
                     src="https://unimelb.h5p.com/content/1292276390804310689/embed"
                     aria-label="Case 4 - Frontal Anterior Occlusal - before and after"
                     width="683"
-                    height="560"
+                    height="650"
                     allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
                     className="w-full"
                 ></iframe>
@@ -48,7 +48,7 @@ export default function page() {
                     src="https://unimelb.h5p.com/content/1291908039474101649/embed"
                     aria-label="Ectopic / Impacted Dental Units"
                     width="683"
-                    height="500"
+                    height="540"
                     allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
                     className="w-full"
                 ></iframe>
