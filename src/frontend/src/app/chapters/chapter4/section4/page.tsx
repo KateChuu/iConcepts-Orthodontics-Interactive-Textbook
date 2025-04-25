@@ -79,16 +79,16 @@ export default function page() {
             </div>
 
         <div className="mb-8">
-            <div className="relative w-full max-w-2xl" style={{ paddingTop: '75%' }}>
-                <iframe
-                    src="https://unimelb.h5p.com/content/1291908039474101649/embed"
-                    title="Ectopic / Impacted Dental Units"
-                    allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
-                    allowFullScreen
-                    className="absolute top-0 left-0 w-full h-full border border-zinc-300 dark:border-zinc-700 rounded-md"
-                ></iframe>
-            </div>
-            <p className="text-sm leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
+                <div className="flex justify-center my-4">
+                    <iframe
+                        src="https://unimelb.h5p.com/content/1291914114391997729/embed"
+                        aria-label="Removable Orthodontic"
+                        width="480"
+                        height="850"
+                        allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
+                    ></iframe>
+                </div>
+                <p className="text-sm italic text-zinc-500 mt-2 text-center">
                     Bidjan, D., Sallmann, R., Eliades, T., & Papageorgiou, S. N. (2020). Orthopedic Treatment for Class II Malocclusion with Functional
                     Appliances and Its Effect on Upper Airways: A Systematic Review with Meta-Analysis. <em> Journal of clinical medicine</em>, 9(12), 3806.
                 <a
@@ -150,4 +150,3 @@ export default function page() {
         </SectionPage>
     );
 }
-

@@ -15,7 +15,7 @@ export default function page() {
                     controls
                 >
                     <source
-                        // src="https://res.cloudinary.com/difs4tswt/video/upload/v1745114806/AlMajazSharjah-60_hblm7d.mp4"
+                        src="https://res.cloudinary.com/difs4tswt/video/upload/v1745115007/lecture-video-compressed_oiht5b.mp4"
                         type="video/mp4"
                     />
                     Your browser does not support the video tag.
