@@ -18,7 +18,7 @@ export default function page() {
                 />
             </div>
 
-            {/* Dentist Image */}
+            {/* Skeleton Image */}
             <div className='my-4 flex justify-center'>
                 <img 
                     src="https://res.cloudinary.com/difs4tswt/image/upload/v1745114848/LateralCeph-92_r6tjrt.jpg"
