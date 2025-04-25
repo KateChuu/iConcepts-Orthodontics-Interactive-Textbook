@@ -61,14 +61,14 @@ export default function Home() {
     return (
         <div className="flex flex-col items-center">
             {/* 이미지 영역 */}
-            <div className="relative w-full w-full px-4 mb-6">
+            <div className="relative w-full overflow-hidden mb-6 px-4">
                 <div className="flex gap-4 animate-slide whitespace-nowrap">
                     {slides.concat(slides).map((slide, i) => (
                         <img
                             key={i}
                             src={slide.image}
                             alt={slide.title}
-                            className="relative w-[300px] aspect-[16/9] flex-shrink-0 rounded-xl object-cover aspect-[16/9] opacity-60"
+                            className="w-[240px] md:w-[280px] lg:w-[300px] aspect-[16/9] flex-shrink-0 rounded-xl object-cover opacity-60"
                         />
                     ))}
                 </div>
@@ -76,17 +76,15 @@ export default function Home() {
                 {/* 중앙에 고정된 제목 */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                     <h2
-                        className="
-                            text-black text-5xl font-extrabold text-center tracking-wide
-                            drop-shadow-[2px_2px_2px_rgba(0,0,0,0.3)]
-                            dark:text-white dark:drop-shadow-[2px_2px_2px_rgba(255,255,255,0.2)]
-                        "
+                        className="text-black text-5xl font-extrabold text-center tracking-wide
+                                drop-shadow-[2px_2px_2px_rgba(0,0,0,0.3)]
+                                dark:text-white dark:drop-shadow-[2px_2px_2px_rgba(255,255,255,0.2)]"
                     >
                         iConcepts in Orthodontics
                     </h2>
                 </div>
-
             </div>
+
 
             {/* 탭 + 콘텐츠 영역 */}
             <div className="w-full px-4 mb-8">
