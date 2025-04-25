@@ -19,7 +19,7 @@ export default function SelfTestPage() {
 
     return (
         <SectionPage
-            title="Section4: Self Test"
+            title="Section 4: Self Test"
             subtitle=""
             prevHref="/chapters/chapter2/section3"              
             nextHref="/chapters/chapter2/section5"  

@@ -1,9 +1,38 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ChapterTab from '../components/chapterTab';
 import VideoTab from '../components/videoTab';
 import QuizTab from '../components/quizTab';
+
+
+const slides = [
+    {
+        title: 'Preface',
+        image: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114784/butterfly-world-map-mark-ashkenazi-21_y7gc6j.jpg',
+    },
+    {
+        title: 'Chapter 1',
+        image: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114795/GrassRollerHD-30_eupxdh.jpg',
+    },
+    {
+        title: 'Chapter 2',
+        image: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114814/IMG_1790-179_alhphp.jpg',
+    },
+    {
+        title: 'Chapter 3',
+        image: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114847/IMG_8015-94_o7tbmn.jpg',
+    },
+    {
+        title: 'Chapter 4',
+        image: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114944/chapter4_frontpage_1_joun81.jpg',
+    },
+    {
+        title: 'Chapter 5',
+        image: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114944/paint_zot9yc.jpg',
+    },
+];
+
 
 export default function Home() {
     const [activeTab, setActiveTab] = useState<'chapters' | 'videos' | 'quizzes'>('chapters');
@@ -19,13 +48,44 @@ export default function Home() {
         }
     };
 
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setIndex((prev) => (prev + 1) % slides.length);
+        }, 4000); // 4초마다 전환
+
+        return () => clearInterval(timer);
+    }, []);
+
     return (
         <div className="flex flex-col items-center">
             {/* 이미지 영역 */}
-            <div className="w-full px-4 mb-6">
-                <div className="max-w-screen-xl mx-auto bg-gray-300 dark:bg-gray-700 rounded-xl h-60 flex items-center justify-center">
-                    <span className="text-xl text-zinc-600 dark:text-zinc-200">[ Image Area ]</span>
+            <div className="relative w-full w-full px-4 mb-6">
+                <div className="flex gap-4 animate-slide whitespace-nowrap">
+                    {slides.concat(slides).map((slide, i) => (
+                        <img
+                            key={i}
+                            src={slide.image}
+                            alt={slide.title}
+                            className="relative w-[300px] aspect-[16/9] flex-shrink-0 rounded-xl object-cover aspect-[16/9] opacity-60"
+                        />
+                    ))}
                 </div>
+
+                {/* 중앙에 고정된 제목 */}
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <h2
+                        className="
+                            text-black text-5xl font-extrabold text-center tracking-wide
+                            drop-shadow-[2px_2px_2px_rgba(0,0,0,0.3)]
+                            dark:text-white dark:drop-shadow-[2px_2px_2px_rgba(255,255,255,0.2)]
+                        "
+                    >
+                        iConcepts in Orthodontics
+                    </h2>
+                </div>
+
             </div>
 
             {/* 탭 + 콘텐츠 영역 */}

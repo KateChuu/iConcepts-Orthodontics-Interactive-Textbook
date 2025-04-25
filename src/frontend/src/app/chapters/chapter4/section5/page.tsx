@@ -1,5 +1,8 @@
 import SectionPage from '@/components/sectionPage';
 
+import React from 'react';
+
+
 export default function page() {
     return (
         <SectionPage
@@ -10,7 +13,7 @@ export default function page() {
             chapterHref="/chapters/chapter4"
         >
         <div className="mb-8">
-            <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+            <h3 className="text-xl font-bold text-black dark:text-white mb-2 uppercase">
                 H5P Learning Experience
             </h3>
             <div className="w-full max-w-[683px] mb-[30px]">
