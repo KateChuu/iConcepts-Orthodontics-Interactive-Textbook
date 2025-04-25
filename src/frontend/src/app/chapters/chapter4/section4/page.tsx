@@ -79,18 +79,20 @@ export default function page() {
             </div>
 
         <div className="mb-8">
-            <div className="relative w-full max-w-2xl" style={{ paddingTop: '75%' }}>
+            <div className="w-full max-w-[683px] mb-[30px]">
                 <iframe
-                    src="https://unimelb.h5p.com/content/1291908039474101649/embed"
-                    title="Ectopic / Impacted Dental Units"
+                    src="https://unimelb.h5p.com/content/1291914114391997729/embed"
+                    aria-label="Removable Orthodontic"
+                    width="683"
+                    height="828" // This height is needed because when you click on the iframe, it will expand
                     allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
-                    allowFullScreen
-                    className="absolute top-0 left-0 w-full h-full border border-zinc-300 dark:border-zinc-700 rounded-md"
+                    className="w-full"
                 ></iframe>
             </div>
-            <p className="text-sm leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
-                    Bidjan, D., Sallmann, R., Eliades, T., & Papageorgiou, S. N. (2020). Orthopedic Treatment for Class II Malocclusion with Functional
-                    Appliances and Its Effect on Upper Airways: A Systematic Review with Meta-Analysis. <em> Journal of clinical medicine</em>, 9(12), 3806.
+            
+            <p className="text-sm italic text-zinc-500 mt-2 text-center">
+                Bidjan, D., Sallmann, R., Eliades, T., & Papageorgiou, S. N. (2020). Orthopedic Treatment for Class II Malocclusion with Functional
+                Appliances and Its Effect on Upper Airways: A Systematic Review with Meta-Analysis. <em> Journal of clinical medicine</em>, 9(12), 3806.
                 <a
                     href="https://doi.org/10.3390/jcm9123806"
                     target="_blank"
@@ -150,4 +152,3 @@ export default function page() {
         </SectionPage>
     );
 }
-
