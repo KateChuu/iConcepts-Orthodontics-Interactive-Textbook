@@ -79,6 +79,7 @@ export default function page() {
             </div>
 
         <div className="mb-8">
+            
             <div className="w-full max-w-[683px] mb-[30px]">
                 <iframe
                     src="https://unimelb.h5p.com/content/1291914114391997729/embed"
@@ -89,7 +90,8 @@ export default function page() {
                     className="w-full"
                 ></iframe>
             </div>
-            
+
+
             <p className="text-sm italic text-zinc-500 mt-2 text-center">
                 Bidjan, D., Sallmann, R., Eliades, T., & Papageorgiou, S. N. (2020). Orthopedic Treatment for Class II Malocclusion with Functional
                 Appliances and Its Effect on Upper Airways: A Systematic Review with Meta-Analysis. <em> Journal of clinical medicine</em>, 9(12), 3806.
@@ -108,6 +110,7 @@ export default function page() {
                 <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
                     Bass Appliance now konown as Dynamax System
                 </p>
+                
                 <div className="flex justify-center my-4">
                     <img
                         src="https://res.cloudinary.com/difs4tswt/image/upload/v1745114944/J-Clin_m7su6n.png"
