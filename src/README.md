@@ -13,7 +13,6 @@ URL: <https://iconcepts.vercel.app/>
     - [For End Users](#for-end-users)
     - [For Developers](#for-developers)
   - [Requirements](#requirements)
-    - [(Optional) Dev Container](#optional-dev-container)
     - [Prettier](#prettier)
     - [Git Large File Storage](#git-large-file-storage)
     - [Dependencies](#dependencies)
@@ -78,21 +77,6 @@ npm run dev
 
 ## Requirements
 
-### (Optional) Dev Container
-
-> [!NOTE]
-> The dev container is a convenient way to synchronize the development environment among the developers in the same repository. You don't need to manually configure the environment if you use Dev Containers.
->
-> You need fundamental understandings about containerization. Otherwise, please **safely skip this section**.
-
-1. Run [Docker](https://www.docker.com/).
-2. Open VS Code.
-3. Install the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension.
-4. Use the command in the terminal of VS Code:
-
-```sh
-devcontainer open .
-```
 
 ### Prettier
 

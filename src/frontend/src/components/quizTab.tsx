@@ -2,38 +2,39 @@
 
 import Link from 'next/link';
 
-export default function QuizTab() {
+export default function VideoTab() {
     const videos = [
         {
-            title: 'Quiz 1: Removable Orthodontic',
+            title: 'H5P 1: Removable Orthodontic',
             description: 'Chapter 4',
-            thumbnail: '',
+            thumbnail: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745504228/blue_red_enuj04.png',
             href: '/chapters/chapter4/section4',
         },
         {
-            title: 'Quiz 2: Class II Elastics',
+            title: 'H5P 2: Class II Elastics',
             description: 'Chapter 4',
-            thumbnail: '',
+            thumbnail: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745504228/Class_II_Elastics_cdjqnr.png',
             href: '/chapters/chapter4/section5',
         },
         {
-            title: 'Quiz 3: Tooth Wear',
+            title: 'H5P 3: Tooth Wear',
             description: 'Chapter 4',
-            thumbnail: '',
+            thumbnail: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745504229/dental_chip_nejjmp.png',
             href: '/chapters/chapter4/section5',
         },
         {
-            title: 'Quiz 4: Frontal Anterior Occlusal',
+            title: 'H5P 4: Frontal Anterior Occlusal',
             description: 'Chapter 4',
-            thumbnail: '',
+            thumbnail: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745504229/before_and_after_xy8lye.png',
             href: '/chapters/chapter4/section5',
         },
         {
-            title: 'Quiz 5: Impacted Dental Units',
+            title: 'H5P 5: Impacted Dental Units',
             description: 'Chapter 4',
-            thumbnail: '',
+            thumbnail: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745504228/xray_s3e9ge.png',
             href: '/chapters/chapter4/section5',
         },
+        
     ];
 
     return (

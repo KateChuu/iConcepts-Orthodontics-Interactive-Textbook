@@ -9,20 +9,20 @@ export default function page() {
             nextHref="/chapters/chapter3/section1"
             chapterHref="/chapters/chapter3"
         >
-            {/* Fish Image */}
+            {/* Teeth Image */}
             <div className='my-4 flex justify-center'>
                 <img 
-                    src="https://res.cloudinary.com/difs4tswt/image/upload/v1745114785/how-finding-nemo-works-5-26_b6y2t8.jpg"
-                    alt="Fish image" 
+                    src="https://res.cloudinary.com/difs4tswt/image/upload/v1745114847/droppedImage-small-91_xjimwl.png"
+                    alt="Teeth image" 
                     className="my-4 w-1/2 mx-auto" 
                 />
             </div>
 
-            {/* Dentist Image */}
+            {/* Skeleton Image */}
             <div className='my-4 flex justify-center'>
                 <img 
-                    src="https://res.cloudinary.com/difs4tswt/image/upload/v1745114788/FindingNemo2003720pHDRiP-4-24_ftcr58.jpg"
-                    alt="Dentist image" 
+                    src="https://res.cloudinary.com/difs4tswt/image/upload/v1745114848/LateralCeph-92_r6tjrt.jpg"
+                    alt="Skeleton image" 
                     className="my-4 w-1/2 mx-auto" 
                 />
             </div>
