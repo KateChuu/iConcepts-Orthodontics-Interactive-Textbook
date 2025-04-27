@@ -79,18 +79,20 @@ export default function page() {
             </div>
 
         <div className="mb-8">
-                <div className="flex justify-center my-4">
-                    <iframe
-                        src="https://unimelb.h5p.com/content/1291914114391997729/embed"
-                        aria-label="Removable Orthodontic"
-                        width="480"
-                        height="850"
-                        allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
-                    ></iframe>
-                </div>
-                <p className="text-sm italic text-zinc-500 mt-2 text-center">
-                    Bidjan, D., Sallmann, R., Eliades, T., & Papageorgiou, S. N. (2020). Orthopedic Treatment for Class II Malocclusion with Functional
-                    Appliances and Its Effect on Upper Airways: A Systematic Review with Meta-Analysis. <em> Journal of clinical medicine</em>, 9(12), 3806.
+            <div className="w-full max-w-[683px] mb-[30px]">
+                <iframe
+                    src="https://unimelb.h5p.com/content/1291914114391997729/embed"
+                    aria-label="Removable Orthodontic"
+                    width="683"
+                    height="828" // This height is needed because when you click on the iframe, it will expand
+                    allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"
+                    className="w-full"
+                ></iframe>
+            </div>
+            
+            <p className="text-sm italic text-zinc-500 mt-2 text-center">
+                Bidjan, D., Sallmann, R., Eliades, T., & Papageorgiou, S. N. (2020). Orthopedic Treatment for Class II Malocclusion with Functional
+                Appliances and Its Effect on Upper Airways: A Systematic Review with Meta-Analysis. <em> Journal of clinical medicine</em>, 9(12), 3806.
                 <a
                     href="https://doi.org/10.3390/jcm9123806"
                     target="_blank"
