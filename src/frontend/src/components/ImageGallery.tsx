@@ -12,6 +12,15 @@ type Props = {
 };
 
 export default function ImageGallery({ images }: Props) {
+    // Check if images is a valid array and contains at least one image
+    if (!Array.isArray(images) || images.length === 0) {
+        return (
+            <div className="text-center text-red-500">
+                No images available.
+            </div>
+        );
+    }
+
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const goToPrev = () => {
