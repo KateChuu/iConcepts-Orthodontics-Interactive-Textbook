@@ -54,9 +54,9 @@ Please **do not** name your branch with your name (e.g., `feat/alex`).
 
 ### Commit Rules
 
--   Please merge your branch to `<type>/<short-name>/code-review`, **DO NOT** merge your branches directly into `main`.
--   Raise a Pull Request before merging into `<type>/<short-name>/code-review`.
--   At the end of each sprint, we will raise a PR to merge `<type>/<short-name>/code-review` into `main`, since the code on `main` should always be working.
+-   Please merge your branch to `code-review`, **DO NOT** merge your branches directly into `main`.
+-   Raise a Pull Request before merging into `code-review`.
+-   At the end of each sprint, we will raise a PR to merge `code-review` into `main`, since the code on `main` should always be working.
 
 ## Additional Resources
 
