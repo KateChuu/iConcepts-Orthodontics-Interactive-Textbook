@@ -16,15 +16,8 @@ URL: <https://iconcepts.vercel.app/>
     - [Prettier](#prettier)
     - [Git Large File Storage](#git-large-file-storage)
     - [Dependencies](#dependencies)
-  - [Testing](#testing)
-    - [Online Testing](#online-testing)
-    - [Offline Testing](#offline-testing)
+  - [Workflow](#workflow) 
   - [Additional Resources](#additional-resources)
-  - [Workflow](#workflow)
-    - [Shared Repository Initialization](#shared-repository-initialization)
-  - [Collaborative Commits and PRs](#collaborative-commits-and-prs)
-    - [Committing](#committing)
-    - [Branching](#branching)
   - [Contributiors](#contributiors)
 
 <!-- TOC end -->
@@ -155,6 +148,8 @@ Install dependencies for JavaScript (Node.js 20.x).
 cd IC-src/frontend
 npm install
 ```
+## Workflow
+See [README.md](https://github.com/FEIT-COMP90082-2025-SM1/IC-RedBack/blob/main/README.md#styles--conventions) in the parent folder for styles and conventions.
 
 ## Additional Resources
 
@@ -163,96 +158,10 @@ npm install
 - [Next.js GitHub Repository](https://github.com/vercel/next.js)
 - [Vercel Deployment With GitHub Actions](https://youtu.be/FHVaWZjWec4)
 
-## Workflow
-
-This section introduces a _sharing with hiding_ workflow where two teams collaborate on source code in a shared repository while keeping documentation in their separate repositories. The workflow was defined and is maintained by [@wille-wang](https://github.com/wille-wang).
-
-### Shared Repository Initialization
-
-This section guides you to connect the team's repository to this `IC-src` repository/submodule.
-
-> [!WARNING]
-> This section should only be done once in a team's repository.
-
-1. Ensure that your team's repository has the following structure:
-
-```plaintext
-.
-├── src/  # contains only source code
-└── ...
-```
-
-2. Back-up `src/`, then remove `src/` from the repository.
-3. Execute the following command at the team's repository root:
-
-```sh
-git submodule add https://github.com/feit-comp90082/IC-src src
-```
-
-4. Check the team's repository. It should have a new following structure:
-
-```plaintext
-.
-├── src/
-├── .gitmodule
-└── ...
-```
-
-5. Push the changes to the remote repository. You will notice the team's repository on GitHub has a hashed `src/` folder.
-
-![repo-commit-hash](img/repo-commit-hash.png)
-
-## Collaborative Commits and PRs
-
-This project utilizes a shared repository for source code implementation to efficiently and effectively separate the responsibility of documentation and code (i.e., the _sharing with hiding_ workflow).
-
-> [!IMPORTANT]
-> Since October 2nd, 2024, we have [streamlined our workflow](./mgtRisk#simplified-workflow) by creating new branches directly from `main` and merging them back into `main`, rather than branching from both `main` and `bluering` and merging in reverse order. As a result, this repository functions more as it served a ten-member team rather than two teams working in the same repository.
-
-1. When a member needs to develop a feature, they create a **feature branch** named `<team-name>-<type>-<specifics>` (e.g., `bluering-feat-pageflip`) from the `main` branch directly.
-2. After implementing a feature, the member submits a pull request to merge their commits from the feature branch into the `main` branch (e.g., `main` <- `bluering-feat-pageflip`).
-3. The tester (e.g., QA Lead in Bluering) implements the tests corresponding to the new feature on the feature branch.
-4. The final reviewer (e.g., GitOps Practioner in Bluering) reviews all the commits and decides whether or not to approve the merge.
-
-![new-workflow-example](https://github.com/user-attachments/assets/662b1a90-98d4-4542-a61d-4a358bf64119)
-
-N.B.: At the end of the sprint, each team must use the following commands in their team's repository (e.g., `IC-Bluering`). Please ensure the latest commit hash in `IC-src` is identical to that of the team's repository (e.g., `IC-Bluering`).
-
-```sh
-# pull changes from the IC-src submodule
-cd src
-git checkout main
-git pull
-
-# commit the submodule changes
-cd ..  # back to the repo root
-git add src
-git commit -m "chore: update the submodule"
-git push
-```
-
-![repo-commit-hash](img/repo-commit-hash.png)
-
-![submodule-commit-hash](img/submodule-commit-hash.png)
-
-### Committing
-
-This repository intends to use [Conventional Commits](https://www.conventionalcommits.org/en/), which was adapted from the [Angular Commit Style](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#commit-message-format).
-
-### Branching
-
-- **main branch** (`main`): stable deliverable
-- **feature branch** (`TTT-feat-xxx`): implementation of one new feature
-- **bugfix Branches** (`TTT-fix-xxx`): bug fixes
-- **release Branches** (`release-xxx`): for production release
-
-> [!TIP]
-> You can also use the type tags following the [commit convention](#committing).
-
 ## Contributiors
 
-Product Owner : Po-Yun Hsiao (Harold) 
-Scrum Master : Sangmoon Han 
-Quality Assurance Lead :  Man-Hua Chu (Kate)
-Development Environment Lead / Deployment Lead : Soyeon Park
-Architecture Lead : Yu-Tse Ling (Zona) 
+- Product Owner : Po-Yun Hsiao (Harold) 
+- Scrum Master : Sangmoon Han 
+- Quality Assurance Lead :  Man-Hua Chu (Kate)
+- Development Environment Lead / Deployment Lead : Soyeon Park
+- Architecture Lead : Yu-Tse Ling (Zona) 
