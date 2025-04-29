@@ -23,7 +23,7 @@ Project milestones and issues can be checked to the [Issues](https://github.com/
 ├── README.md               // project intro and workflow
 ├── package.json
 ├── package-lock.json
-├── .github/                // GitHub-related configs
+├── .github/workflow        // code review configuration
 ├── docs/                   // documentation
 │   └──                     // (resources folder not visible in image)
 ├── node_modules/           // dependencies
