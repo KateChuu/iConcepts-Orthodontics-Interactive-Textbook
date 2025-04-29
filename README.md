@@ -30,7 +30,7 @@ Project milestones and issues can be checked to the [Issues](https://github.com/
 ├── src/                    // source code folder
 │   ├── backend/            // backend code
 │   ├── frontend/           // frontend code
-|   ├── README.md           // frontend confihuration
+|   ├── README.md           // frontend configuration
 |   └── .DS_Store
 
 ```
