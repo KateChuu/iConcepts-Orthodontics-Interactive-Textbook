@@ -31,22 +31,28 @@ URL: <https://iconcepts.vercel.app/>
 
 ## Main Technologies
 
-- **Next.js (JavaScript)**: The source code is built with Next.js using [create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-- **Vercel**: The source code is hosted on [Vercel](https://vercel.com/), providing a fast and scalable web application without the need for a backend. Only pushes and commits on the `main` branch will be synchronized with the deployment. Please ensure that you configure deployment settings under `./frontend/`.
-- **Clerk**: The application integrates [Clerk](https://clerk.com/) for user authentication and management, enhancing security and user experience.
+| Area           | Tech Stack                                                                                                 | Description                                                                                                                                | 
+|----------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| Language       | [TypeScript](https://www.typescriptlang.org/), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) | TypeScript is used for type safety and scalability, while JavaScript ensures compatibility and flexibility in front-end development.       |
+| Framework      | [React](https://reactjs.org/), [Next.js](https://nextjs.org/)                                              | React provides a component-based UI structure, and Next.js enhances it with server-side rendering, routing, and performance optimisation.  |
+| Styling        | [Tailwind CSS](https://tailwindcss.com/), [PostCSS](https://postcss.org/)                                  | Tailwind offers a utility-first CSS approach for rapid UI development, while PostCSS enables advanced CSS transformations and plugins.     |
+| Authentication | [Clerk](https://clerk.dev/)                                                                                | The application integrates Clerk for user authentication and management, enhancing security and user experience.                           |
+| Deployment     | [Vercel](https://vercel.com/)                                                                              | The source code is hosted on Vercel, providing a fast and scalable web application without the need for a backend.                         |
+| Cloud Storage  | [Cloudinary](https://cloudinary.com/)                                                                      | Images and Videos are transferred and stored on a third-party cloud service to improve performance by reducing the amount of data loaded. |
+
 
 ## Directory Structure
 
 ```plaintext
 .
-├── backend      # backend placeholder
-├── frontend/    # Next.js framework
-│   ├── public   # Next.js resources
-│   ├── src      # Next.js source code
-│   └── testing  # Next.js testing files
-├── img          # resources for README.md
-├── tests        # de jure testing files
-└── README.md
+
+├── backend/            // backend code
+├── frontend/           // frontend code
+│   ├── public          // Next.js icons or logos
+│   ├── src             // Next.js source code
+├── README.md           // frontend configuration
+└── .DS_Store
+
 ```
 
 ## Usage
@@ -150,21 +156,6 @@ cd IC-src/frontend
 npm install
 ```
 
-## Testing
-
-### Online Testing
-
-Online testing is automatically done via [GitHub Actions workflows](https://github.com/feit-comp90082/IC-src/actions).
-
-### Offline Testing
-
-Run the following commands in your terminal:
-
-```sh
-cd frontend
-npm run test
-```
-
 ## Additional Resources
 
 - [Learn Next.js](https://nextjs.org/learn)
@@ -260,12 +251,8 @@ This repository intends to use [Conventional Commits](https://www.conventionalco
 
 ## Contributiors
 
-|        | BlueRing     | RedBack      |
-| ------ | ------------ | ------------ |
-| PO     | `Wang-Xiran` | `alexzhang`  |
-| SM     | `wille-wang` | `zhuyuW`     |
-| QA     | `Eric0707`   | `CesarYYH`   |
-| DEL    | `monasun666` |              |
-| DL     | `zhangdout`  | `hhhobbittt` |
-| AL     | `Eric0707`   | `imswagk727` |
-| GitOps | `wille-wang` | `imswagk727` |
+Product Owner : Po-Yun Hsiao (Harold) 
+Scrum Master : Sangmoon Han 
+Quality Assurance Lead :  Man-Hua Chu (Kate)
+Development Environment Lead / Deployment Lead : Soyeon Park
+Architecture Lead : Yu-Tse Ling (Zona) 
