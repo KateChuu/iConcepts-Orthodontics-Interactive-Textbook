@@ -18,11 +18,21 @@ Project milestones and issues can be checked to the [Issues](https://github.com/
 
 ```         
 .
-├── README.md
-├── docs/                     // documentation
-│   ├── resources/            // supporting files
-│   ├── group_contract.md
-├── src/                      // source code folder
+├── .DS_Store
+├── .prettierrc
+├── README.md               // project intro and workflow
+├── package.json
+├── package-lock.json
+├── .github/workflow        // code review configuration
+├── docs/                   // documentation
+│   └──                     // (resources folder not visible in image)
+├── node_modules/           // dependencies
+├── src/                    // source code folder
+│   ├── backend/            // backend code
+│   ├── frontend/           // frontend code
+|   ├── README.md           // frontend configuration
+|   └── .DS_Store
+
 ```
 
 ## Styles & Conventions
