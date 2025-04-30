@@ -1,6 +1,6 @@
 # IC-src
 
-This shared repository contains the source code of the iConcepts application, collaboratively maintained by IC-BlueRing and IC-RedBack teams.
+This shared repository contains the source code of the iConcepts application, maintained by IC-RedBack.
 
 URL: <https://iconcepts.vercel.app/>
 
