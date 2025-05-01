@@ -1,8 +1,7 @@
 # IC-src
 
 This shared repository contains the source code of the iConcepts application, maintained by IC-RedBack.
-
-URL: <https://iconcepts.vercel.app/>
+[Website](https://ic-red-back.vercel.app)
 
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
 
@@ -52,7 +51,7 @@ URL: <https://iconcepts.vercel.app/>
 
 ### For End Users
 
-1. Open <https://iconcepts.vercel.app/>.
+1. Open <https://ic-red-back.vercel.app>.
 2. Register an account or sign-in the account.
 
 ### For Developers
