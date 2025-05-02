@@ -59,16 +59,6 @@ This repository contains the source code of the iConcepts application, maintaine
 1. Install software following [Requirements](#requirements).
 2. Activate the frontend in the terminal.
 
-> [!NOTE]
->
-> Before starting the development server, you must install all project dependencies.  
-> Run the following command inside the `frontend` directory:
->
-> ```sh
-> cd IC-src/frontend
-> npm install
-> ```
-
 ```sh
 cd IC-src/frontend
 npm run dev
