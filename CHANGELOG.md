@@ -1,4 +1,4 @@
-# Changelog – Sprint 2
+# Sprint 2
 
 ## New Features
 - Introduced a redesigned layout for the interactive textbook to enhance readability and navigation.
