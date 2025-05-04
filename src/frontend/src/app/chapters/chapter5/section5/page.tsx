@@ -1,28 +1,24 @@
 import SectionPage from '@/components/sectionPage';
+import VideoPlayer from '@/components/videoPlayer';
 
-export default function page() {
+export default function Section5FinalLecturePage() {
     return (
         <SectionPage
-            title="Section 5: Final Lecture" 
+            title="Section 5: Final Lecture"
             subtitle="Published in 2024 · Views: 19723 · Average Reading Time: 17min"
             prevHref="/chapters/chapter5/section4"
             nextHref={undefined}
             chapterHref="/chapters/chapter5"
         >
             <div className="mb-8">
-                <video
-                    className="w-full border border-gray-400 flex items-center object-cover justify-center text-sm text-gray-500 italic"
-                    controls
-                >
-                    <source
-                        src="https://res.cloudinary.com/difs4tswt/video/upload/v1745115007/lecture-video-compressed_oiht5b.mp4"
-                        type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                </video>
-                
+                <VideoPlayer
+                    cloudName="difs4tswt"
+                    publicId="lecture-video-compressed_oiht5b"
+                    sourceUrl="https://res.cloudinary.com/difs4tswt/video/upload/v1745115007/lecture-video-compressed_oiht5b.mp4"
+                    videoId="Final_Lecture"
+                    caption="Final lecture video of the course."
+                />
             </div>
-
         </SectionPage>
     );
 }

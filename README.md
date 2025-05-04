@@ -18,11 +18,20 @@ Project milestones and issues can be checked to the [Issues](https://github.com/
 
 ```         
 .
-├── README.md
-├── docs/                     // documentation
-│   ├── resources/            // supporting files
-│   ├── group_contract.md
-├── src/                      // source code folder
+├── .DS_Store
+├── .prettierrc
+├── README.md               // project intro and workflow
+├── package.json
+├── package-lock.json
+├── .github/workflow        // code review configuration
+├── docs/                   // documentation
+├── node_modules/           // dependencies
+├── src/                    // source code folder
+│   ├── backend/            // backend code
+│   ├── frontend/           // frontend code
+|   ├── README.md           // frontend configuration
+|   └── .DS_Store
+
 ```
 
 ## Styles & Conventions
@@ -54,9 +63,9 @@ Please **do not** name your branch with your name (e.g., `feat/alex`).
 
 ### Commit Rules
 
--   Please **DO NOT** merge your branches directly into `dev` or `main`.
--   Raise a Pull Request before merging into `dev`.
--   At the end of each sprint, we will raise a PR to merge `dev` into `main`, since the code on `main` should always be working.
+-   Please merge your branch to `code-review`, **DO NOT** merge your branches directly into `main`.
+-   Raise a Pull Request before merging into `code-review`.
+-   At the end of each sprint, we will raise a PR to merge `code-review` into `main`, since the code on `main` should always be working.
 
 ## Additional Resources
 
