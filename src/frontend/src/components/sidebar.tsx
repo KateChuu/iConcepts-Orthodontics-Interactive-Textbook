@@ -25,7 +25,7 @@ export default function Sidebar({ isOpen, onToggle }: SidebarProps) {
                 <Link href="/contact" onClick={onToggle} className="hover:text-zinc-600">Contact</Link>
 
                 <SignedIn>
-                    <SignOutButton signOutCallback={onToggle}>
+                    <SignOutButton>
                         <button className="text-red-700 hover:text-zinc-600 text-left">
                         Sign Out
                         </button>
