@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { useSearchParams } from 'next/navigation'; 
 
 type Section = {
     id: number;
@@ -17,6 +18,9 @@ type ChapterMainProps = {
 };
 
 export default function ChapterMain({ title, description, sections }: ChapterMainProps) {
+    const searchParams = useSearchParams();
+	const fromTab = searchParams.get('tab') || 'chapters'; // 기본값: chapters
+
     return (
         <div className="max-w-screen-md mx-auto px-4 py-10 space-y-4">
             <div className="pb-6 border-zinc-300 dark:border-zinc-700 ">
@@ -32,7 +36,7 @@ export default function ChapterMain({ title, description, sections }: ChapterMai
                 {sections.map((section, index) => (
                     <Link
                         key={section.id}
-                        href={section.href}
+                        href={`${section.href}?tab=${fromTab}`}
                         className="flex items-center gap-4 p-4 bg-white dark:bg-zinc-800 rounded-xl shadow hover:shadow-md transition hover:bg-zinc-100 dark:hover:bg-zinc-700"
                     >
                         <img
@@ -52,7 +56,10 @@ export default function ChapterMain({ title, description, sections }: ChapterMai
                 ))}
 
                 <div className="pt-4 text-center">
-                    <Link href="/" className="text-sm text-zinc-500 dark:text-zinc-400">
+                    <Link 
+                        href={`/?tab=${fromTab}`}
+                        className="text-sm text-zinc-500 dark:text-zinc-400"
+                    >
                         Home
                     </Link>
                 </div>
