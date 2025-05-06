@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { ReactNode } from 'react';
+import { useSearchParams } from 'next/navigation';
 
 type SectionPageProps = {
     title: string;
@@ -20,6 +21,10 @@ export default function SectionPage({
     nextHref,
     chapterHref,
 }: SectionPageProps) {
+
+    const searchParams = useSearchParams();
+	const fromTab = searchParams.get('tab') || 'chapters';
+
     return (
         <div className="w-full max-w-screen-md mx-auto px-4 py-10">
             <div className="w-full bg-white dark:bg-zinc-900 rounded-2xl shadow-md px-6 py-4">
@@ -72,7 +77,7 @@ export default function SectionPage({
                                 Chapter
                             </Link>
                         )}
-                        <Link href="/" className="hover:underline">
+                        <Link href={`/?tab=${fromTab}`} className="hover:underline">
                             Home
                         </Link>
                     </div>
