@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useSearchParams, useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
 import ChapterTab from '../components/chapterTab';
 import VideoTab from '../components/videoTab';
 import QuizTab from '../components/quizTab';
@@ -35,28 +36,29 @@ const slides = [
 
 
 export default function Home() {
-    const [activeTab, setActiveTab] = useState<'chapters' | 'videos' | 'quizzes'>('chapters');
+    const searchParams = useSearchParams();
+    const router = useRouter();
+
+    const initialTab = (searchParams.get('tab') as 'chapters' | 'videos' | 'quizzes') || 'chapters';
+    const [activeTab, setActiveTab] = useState<'chapters' | 'videos' | 'quizzes'>(initialTab);
+
+
+    useEffect(() => {
+        setActiveTab(initialTab);
+    }, [initialTab]);
+
+    const changeTab = (tab: 'chapters' | 'videos' | 'quizzes') => {
+        router.push(`/?tab=${tab}`);
+        setActiveTab(tab);
+    };
 
     const renderTabContent = () => {
         switch (activeTab) {
-            case 'chapters':
-                return <ChapterTab />;
-            case 'videos':
-                return <VideoTab />;
-            case 'quizzes':
-                return <QuizTab />;
+            case 'chapters': return <ChapterTab />;
+            case 'videos': return <VideoTab />;
+            case 'quizzes': return <QuizTab />;
         }
     };
-
-    const [index, setIndex] = useState(0);
-
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setIndex((prev) => (prev + 1) % slides.length);
-        }, 4000); // 4초마다 전환
-
-        return () => clearInterval(timer);
-    }, []);
 
     return (
         <div className="flex flex-col items-center">
@@ -97,7 +99,7 @@ export default function Home() {
                             return (
                                 <button
                                     key={tab}
-                                    onClick={() => setActiveTab(tab as 'chapters' | 'videos' | 'quizzes')}
+                                    onClick={() => changeTab(tab as 'chapters' | 'videos' | 'quizzes')}
                                     className={`
                                         flex-1 py-3 text-center text-sm font-semibold transition-colors
                                         border border-zinc-300 dark:border-zinc-700
