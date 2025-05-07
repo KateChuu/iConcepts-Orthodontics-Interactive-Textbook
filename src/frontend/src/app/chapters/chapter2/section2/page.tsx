@@ -132,7 +132,7 @@ export default function page() {
                 />
 
             <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
-                CAT Clear Aligenr Therapy with locked positions in grey in lower buccal segments prevents future impactions for 8's. This patient has congenitally missing 35 45.
+                CAT Clear Aligenr Therapy with locked positions in grey in lower buccal segments prevents future impactions for 8&apos;s. This patient has congenitally missing 35 45.
             </p>
         </div>
 
