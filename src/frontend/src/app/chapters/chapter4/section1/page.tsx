@@ -25,7 +25,7 @@ export default function page() {
                     History
                 </h3>
                 <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">                
-                    The first inclined plane was used in the 19th century. Robin's Monobloc was developed in 1902 to prevent glossoptosis in neonates suffering from Pierre Robin Syndrome. This appliance was modified by
+                    The first inclined plane was used in the 19th century. Robin&apos;s Monobloc was developed in 1902 to prevent glossoptosis in neonates suffering from Pierre Robin Syndrome. This appliance was modified by
                     Andresen in 1930s, and was used for the first time on his very own daughter. She had a mild skeletal II base. Andresen provided her
                     with what was later termed as Andresen or Norwegian appliance. With night time use only when she went off to summer camp as instructed
                     by her Dad, there was a marked improvement in the profile when she returned. Thus, this opened a new horizon of improving profiles and
