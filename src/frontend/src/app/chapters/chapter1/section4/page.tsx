@@ -1,6 +1,6 @@
 import SectionPage from '@/components/sectionPage';
 import ImageGallery from '@/components/ImageGallery';
-import { extraOralIntraOralImages, interceptiveApplianceImages } from './section4Images.ts';
+import { extraOralIntraOralImages, interceptiveApplianceImages } from './section4Images';
 
 export default function Section4() {
     return (
