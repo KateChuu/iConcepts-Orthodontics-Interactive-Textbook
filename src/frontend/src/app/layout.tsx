@@ -1,6 +1,7 @@
 'use client';
 
 import { Analytics } from '@vercel/analytics/react'; 
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { ClerkProvider, SignedIn, SignedOut, RedirectToSignIn } from '@clerk/nextjs';
 import { useState, useEffect } from 'react';
 import Sidebar from '../components/sidebar';
@@ -52,6 +53,7 @@ export default function RootLayout({
                     </SignedOut>
 
                     <Analytics />
+                    <SpeedInsights/>
                 </body>
             </html>
         </ClerkProvider>
