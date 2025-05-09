@@ -1,5 +1,6 @@
 'use client';
 
+import { Analytics } from '@vercel/analytics/react'; 
 import { ClerkProvider, SignedIn, SignedOut, RedirectToSignIn } from '@clerk/nextjs';
 import { useState, useEffect } from 'react';
 import Sidebar from '../components/sidebar';
@@ -49,6 +50,8 @@ export default function RootLayout({
                     <SignedOut>
                         <RedirectToSignIn />
                     </SignedOut>
+
+                    <Analytics />
                 </body>
             </html>
         </ClerkProvider>
