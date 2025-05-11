@@ -2,7 +2,7 @@
 
 This repository contains the source code of the iConcepts application, maintained by IC-RedBack.
 
-[iConcepts Website](https://ic-red-back.vercel.app)
+[iConcepts Website](https://iconceptsorthodontics.vercel.app/)
 
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
 
@@ -51,7 +51,7 @@ This repository contains the source code of the iConcepts application, maintaine
 
 ### For End Users
 
-1. Open <https://ic-red-back.vercel.app>.
+1. Open <https://iconceptsorthodontics.vercel.app/>.
 2. Register an account or sign-in the account.
 
 ### For Developers
