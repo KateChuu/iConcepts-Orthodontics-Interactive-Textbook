@@ -19,6 +19,55 @@ export default function Section5FinalLecturePage() {
                     caption="Final lecture video of the course."
                 />
             </div>
+
+            <div className="text-sm md:text-base text-zinc-700 dark:text-zinc-200 leading-relaxed space-y-4 max-w-3xl mx-auto px-4">
+                <p>
+                    This lightboard lecture with Prezi shows the steps in:
+                </p>
+                <ul className="list-disc list-inside pl-4">
+                    <li>Diagnosis</li>
+                    <li>Treatment planning</li>
+                    <li>Logical deduction</li>
+                    <li>Decision making for orthodontic cases</li>
+                </ul>
+                <p>
+                    Including considerations for important issues like <strong>IOTN</strong> (Index of Orthodontic Treatment Needs).
+                </p>
+                <p>
+                    With over 25 years of experience, Dr. Shazia Naser-ud-Din summarizes the decision-making process into a simple step-by-step sequence.
+                </p>
+                <p>
+                    With Gratitude / Herzlichen Groß
+                </p>
+                <p className="italic">
+                    Dr. S. Naser-ud-Din<br />
+                    PhD Orthodontics (UniAdelaide), MSc (UCL), Membership in Orthodontics RCSEd.<br />
+                    BDS, CFD, DPHDent (UniSydney), DCPSP-HPE, FICCDE<br />
+                    Convenor DDS 2 & 4 | Orthodontics<br />
+                    <a 
+                        href="https://findanexpert.unimelb.edu.au/profile/1026392-shazia-naser-ud-din" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300"
+                    >
+                        https://findanexpert.unimelb.edu.au/profile/1026392-shazia-naser-ud-din
+                    </a>
+                </p>
+            </div>
+
+            <div className="mb-8">
+                <iframe 
+                    src="https://prezi.com/p/embed/tZUgOi5bsVbcypTzSyYw/"
+                    id="iframe_container"
+                    frameborder="0"
+                    allow="autoplay; fullscreen"
+                    allowFullScreen
+                    webkitallowfullscreen
+                    mozallowfullscreen
+                    className="w-full h-auto aspect-video"
+                />
+            </div>
+
         </SectionPage>
     );
 }

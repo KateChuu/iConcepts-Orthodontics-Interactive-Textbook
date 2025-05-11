@@ -19,7 +19,6 @@ export default function page() {
                 </p>
 
             </div>
-           
 
         </SectionPage>
     );
