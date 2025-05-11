@@ -23,7 +23,7 @@ export default function VideoTab() {
             href: '/chapters/chapter2/intro',
         },
         {
-            title: 'Video 4: Depp Traumatic Bite',
+            title: 'Video 4: Deep Traumatic Bite',
             description: 'Chapter 2',
             thumbnail: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745503310/DeepTraumaticBite_vgdczo.png',
             href: '/chapters/chapter2/section4',
