@@ -1,6 +1,6 @@
 // src/app/chapters/chapter3/page.tsx
-import Chapter6Main from '@/app/chapters/chapter6/chapter6Main';
+import Chapter7Main from '@/app/chapters/chapter7/chapter7Main';
 
-export default function Chapter5Page() {
-    return <Chapter6Main />;
+export default function Chapter7Page() {
+    return <Chapter7Main />;
 }

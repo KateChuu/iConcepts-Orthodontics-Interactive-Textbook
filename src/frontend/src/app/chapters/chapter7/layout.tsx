@@ -10,7 +10,7 @@ const sections = [
     { id: 'video3', title: 'Video 3' },
 ];
 
-export default function Chapter6Layout({
+export default function Chapter7Layout({
     children,
 }: {
     children: ReactNode;
@@ -20,7 +20,7 @@ export default function Chapter6Layout({
 
     return (
         <div className="flex">
-            <TableOfContents sections={sections} current={currentId} chapterSlug="chapter6" />
+            <TableOfContents sections={sections} current={currentId} chapterSlug="chapter7" />
             <div className="flex-1 px-4">{children}</div>
         </div>
     );
