@@ -1,5 +1,6 @@
 import SectionPage from '@/components/sectionPage';
 import ImageGallery from '@/components/ImageGallery'; 
+import VideoPlayer from '@/components/videoPlayer'
 
 const gallery1Images = [
     {
@@ -379,16 +380,14 @@ export default function Section6() {
                 <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
                     Moment to Enjoy AI Majaz WaterFront Sharjah UAE
                 </p>
-                <video
-                    className="w-full border border-gray-400 flex items-center object-cover justify-center text-sm text-gray-500 italic"
-                    controls
-                >
-                    <source
-                        src="https://res.cloudinary.com/difs4tswt/video/upload/v1745114806/AlMajazSharjah-60_hblm7d.mp4"
-                        type="video/mp4"
-                    />
-                    Your browser does not support the video tag.
-                </video>
+                <VideoPlayer
+                    cloudName="difs4tswt"
+                    publicId="AlMajazSharjah-60_hblm7d"
+                    sourceUrl="https://res.cloudinary.com/difs4tswt/video/upload/v1745114806/AlMajazSharjah-60_hblm7d.mp4"
+                    videoId="AlMajazSharjah"
+                    caption="Moment to Enjoy AI Majaz WaterFront Sharjah UAE"
+                />
+
             </div>
 
 

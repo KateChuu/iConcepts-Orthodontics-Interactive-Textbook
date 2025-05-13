@@ -1,5 +1,6 @@
 import SectionPage from '@/components/sectionPage';
 import ImageGallery from '@/components/ImageGallery';
+import VideoPlayer from '@/components/videoPlayer';
 
 const gallery2Images = [
     {
@@ -122,19 +123,16 @@ export default function page() {
                 Gallery 2.3
             </h3>
             
-            <video 
-                className="w-full border border-gray-400 flex items-center object-cover justify-center text-sm text-gray-500 italic"
-                controls
-            >
-                <source
-                    src="https://res.cloudinary.com/difs4tswt/video/upload/v1745114829/Screen_Recording_2024-09-16_at_4.31.58_AM-207_mocrwx.mov"
-                    type="video/mp4"
+            <VideoPlayer
+                cloudName="difs4tswt"
+                publicId="Screen_Recording_2024-09-16_at_4.31.58_AM-207_mocrwx"
+                sourceUrl="https://res.cloudinary.com/difs4tswt/video/upload/v1745114829/Screen_Recording_2024-09-16_at_4.31.58_AM-207_mocrwx.mov"
+                videoId="class_ii_1_gallery_2_3"
+                caption="CAT Clear Aligner Therapy with locked positions in grey in lower buccal segments prevents future impactions for 8's. This patient has congenitally missing 35 45."
                 />
-                Your browser does not support the video tag.
-            
-            </video>
+
             <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
-                CAT Clear Aligenr Therapy with locked positions in grey in lower buccal segments prevents future impactions for 8's. This patient has congenitally missing 35 45.
+                CAT Clear Aligenr Therapy with locked positions in grey in lower buccal segments prevents future impactions for 8&apos;s. This patient has congenitally missing 35 45.
             </p>
         </div>
 

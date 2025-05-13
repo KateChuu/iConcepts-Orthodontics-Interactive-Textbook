@@ -1,8 +1,8 @@
 # IC-src
 
-This shared repository contains the source code of the iConcepts application, collaboratively maintained by IC-BlueRing and IC-RedBack teams.
+This repository contains the source code of the iConcepts application, maintained by IC-RedBack.
 
-URL: <https://iconcepts.vercel.app/>
+[iConcepts Website](https://ic-red-back.vercel.app)
 
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
 
@@ -14,7 +14,6 @@ URL: <https://iconcepts.vercel.app/>
     - [For Developers](#for-developers)
   - [Requirements](#requirements)
     - [Prettier](#prettier)
-    - [Git Large File Storage](#git-large-file-storage)
     - [Dependencies](#dependencies)
   - [Workflow](#workflow) 
   - [Additional Resources](#additional-resources)
@@ -52,7 +51,7 @@ URL: <https://iconcepts.vercel.app/>
 
 ### For End Users
 
-1. Open <https://iconcepts.vercel.app/>.
+1. Open <https://ic-red-back.vercel.app>.
 2. Register an account or sign-in the account.
 
 ### For Developers
@@ -84,61 +83,6 @@ This extension ensures a consistent style for frontend coding files.
 1. Install [Prettier on VS Code](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode).
 2. Use Prettier to format files. You can also configure "Format on Save."
 
-### Git Large File Storage
-
-> [!IMPORTANT]
->
-> Please follow the instructions below carefully. Failure to do so may result in issues accessing large media files.
-
-This project uses [Git Large File Storage (LFS)](https://git-lfs.com/) to reference files larger than 100 MB.
-
-1. [Install `git-lfs`](https://github.com/git-lfs/git-lfs#installing): Follow the instructions below to install `git-lfs` for your OS.
-
-```sh
-brew install git-lfs   # macOS
-choco install git-lfs  # Windows
-```
-
-2. **Initialize `git-lfs`**:
-
-```sh
-git lfs install
-git lfs version  # verify the installation
-```
-
-3. (_optional_) **Track large files**: Use the `git lfs track` command to specify which file types `git-lfs` should track.
-
-> [!NOTE]
->
-> You can safely skip this step if you don't have new file types to track.
-
-```sh
-git lfs track "*.<extension>"
-# git lfs track "*.mp4"  # track all `.mp4` files
-```
-
-4. (_optional_) **Commit the `.gitattributes` file**:
-
-> [!IMPORTANT]
-> This step only needs to be done once by the first person setting up `git-lfs` in the repository. Please delete this step after the initial configuration.
-
-```sh
-git add .gitattributes
-git commit -m "chore: track large files using Git LFS"
-```
-
-5. **Add large files**: Add and commit large files as you do with normal files.
-
-```sh
-# only for example
-git add <filename.extension>  # `video.mp4`, for example
-git commit -m "chore: add a large file"
-```
-
-For more information, please visit:
-
-- [Git LFS Official Site](https://git-lfs.com/)
-- [Git LFS GitHub repository](https://github.com/git-lfs/git-lfs)
 
 ### Dependencies
 

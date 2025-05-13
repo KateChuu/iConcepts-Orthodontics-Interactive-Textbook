@@ -25,7 +25,6 @@ Project milestones and issues can be checked to the [Issues](https://github.com/
 ├── package-lock.json
 ├── .github/workflow        // code review configuration
 ├── docs/                   // documentation
-│   └──                     // (resources folder not visible in image)
 ├── node_modules/           // dependencies
 ├── src/                    // source code folder
 │   ├── backend/            // backend code
