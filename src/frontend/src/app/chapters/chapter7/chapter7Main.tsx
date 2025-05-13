@@ -1,8 +1,8 @@
 import ChapterMain from '@/components/chapterMain';
 
 export default function Chapter6Page() {
-    const title = 'Chapter 6: Growth and Development in Oral Facial Region with reference to Orthodontics';
-    const description = 'Craniofacial growth is fundamental to orthodontic diagnosis and treatment. This chapter introduces key concepts like remodeling, displacement, and pubertal growth timing, helping clinicians align interventions with skeletal development for optimal outcomes.';
+    const title = 'Chapter 7: Guest Lecture';
+    const description = 'This guest lecture series features Prof. Em. Dr.Dr. Rainer-Reginald Miethke from Charité University in Germany, sharing over 50 years of clinical experience in Orthodontics. Through three insightful videos, learners explore key topics such as age-specific treatment strategies, long-term follow-up cases, interdisciplinary collaboration, and reflections on innovations like Invisalign. The final fireside discussion provides valuable perspectives on patient trust, aesthetics, and lifelong learning—offering a rare opportunity to absorb wisdom from a global leader in the field.';
     const sections = [
         { id: 0, title: '', href: '/chapters/chapter7/intro', icon: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745402176/Intro_ChatGPT_Image_ziurdw.png' },
         { id: 1, title: 'Readings', href: '/chapters/chapter7/section1', icon: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114337/section1_dxosw4.png' },
