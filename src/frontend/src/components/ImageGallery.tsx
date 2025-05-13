@@ -14,6 +14,14 @@ type Props = {
 export default function ImageGallery({ images }: Props) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
+    if (!Array.isArray(images) || images.length === 0) {
+        return (
+            <div className="text-center text-red-500">
+                No images available.
+            </div>
+        );
+    }
+
     const goToPrev = () => {
         setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
     };
@@ -34,7 +42,7 @@ export default function ImageGallery({ images }: Props) {
                     {images[currentIndex].caption}
                 </p>
             )}
-            
+
             {/* Left Arrow */}
             <button
                 onClick={goToPrev}
@@ -53,7 +61,6 @@ export default function ImageGallery({ images }: Props) {
                 ›
             </button>
 
-            {/* Optional: Image counter */}
             <div className="text-center mt-2 text-sm text-gray-500">
                 Image {currentIndex + 1} of {images.length}
             </div>
