@@ -1,6 +1,5 @@
 import SectionPage from '@/components/sectionPage';
 import VideoPlayer from '@/components/videoPlayer';
-import InteractiveButtons from '@/components/interactiveButtons';
 
 export default function Video1Page() {
     return (
@@ -13,27 +12,14 @@ export default function Video1Page() {
         >
 
             {/* Video Player */}
-            {/*
             <VideoPlayer
                 cloudName="difs4tswt"
-                publicId=""
-                sourceUrl=""
-                videoId="Tip_Torque_Biomechanics"
+                publicId="Part2_Growth_and_Dev-s1-full_nnrudn"
+                sourceUrl="https://res.cloudinary.com/difs4tswt/video/upload/v1746031090/Part2_Growth_and_Dev-s1-full_nnrudn.mp4"
+                videoId="Ch6_part2"
                 caption="Dr Shazia Naser ud Din 2022"
-                interactiveButtons={
-                    <>
-                        <InteractiveButtons
-                            videoId="Tip_Torque_Biomechanics"
-                            timestamp={0}
-                            duration={5}
-                            x="50%"
-                            y="35%"
-                            text="Midline Diastema and AOB = Anterior Open Bite"
-                        />
-                    </>
-                }
+                
             />
-            */}
 
             <div className="mb-8 mt-8"> 
                 <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
