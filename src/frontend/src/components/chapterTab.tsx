@@ -43,19 +43,19 @@ export default function ChapterTab() {
         {
             title: 'Chapter 6',
             description: 'Growth and Development in Oral Facial Region with reference to Orthodontics',
-            image: '',
+            image: 'https://res.cloudinary.com/difs4tswt/image/upload/v1747180703/Ch6_thumbnail_xudlkn.png',
             href: '/chapters/chapter6',
         },
         {
             title: 'Chapter 7',
             description: 'Guest Lecture',
-            image: '',
+            image: 'https://res.cloudinary.com/difs4tswt/image/upload/v1747180660/Ch7_thumbnail_puvkqa.png',
             href: '/chapters/chapter7',
         },
         {
             title: 'Chapter 8',
             description: 'TMD (Temporo-Mandibular Disorders) and Occlusion ',
-            image: '',
+            image: 'https://res.cloudinary.com/difs4tswt/image/upload/v1747180741/Ch8_thumbnail_r1s6p2.png',
             href: '/chapters/chapter8',
         },
     ];

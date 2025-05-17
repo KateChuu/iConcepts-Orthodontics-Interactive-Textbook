@@ -16,8 +16,18 @@ export default function page() {
                     rel="noopener noreferrer"
                     className="underline font-semibold"
                 >
-                    https://prezi.com/view/Q6xef2XfcngYGkgqdpX0/
                 </a>
+                
+                <iframe 
+                    src="https://prezi.com/p/embed/Q6xef2XfcngYGkgqdpX0/"
+                    id="iframe_container"
+                    frameborder="0"
+                    allow="autoplay; fullscreen"
+                    allowFullScreen
+                    webkitallowfullscreen
+                    mozallowfullscreen
+                    className="w-full h-auto aspect-video"
+                />
             </p>
 
             <div className="mb-8">
