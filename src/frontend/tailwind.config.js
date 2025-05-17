@@ -1,23 +1,20 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 module.exports = {
     content: [
-        "./src/app/**/*.{js,ts,jsx,tsx}",    
-        "./src/components/**/*.{js,ts,jsx,tsx}",
-        "./src/**/*.css",
+        './src/**/*.{js,ts,jsx,tsx}',
     ],
-    darkMode: 'class',
     theme: {
         extend: {
-            animation: {
-                slide: 'slide 30s linear infinite',
-            },
             keyframes: {
-                slide: {
-                    '0%': { transform: 'translateX(0%)' },
+                'infinite-scroll': {
+                    '0%': { transform: 'translateX(0)' },
                     '100%': { transform: 'translateX(-50%)' },
                 },
+            },
+            animation: {
+                'infinite-scroll': 'infinite-scroll 40s linear infinite',
             },
         },
     },
     plugins: [],
-}
+};

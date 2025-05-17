@@ -6,7 +6,6 @@ import ChapterTab from '../components/chapterTab';
 import VideoTab from '../components/videoTab';
 import QuizTab from '../components/quizTab';
 
-
 const slides = [
     {
         title: 'Preface',
@@ -34,14 +33,12 @@ const slides = [
     },
 ];
 
-
 export default function Home() {
     const searchParams = useSearchParams();
     const router = useRouter();
 
     const initialTab = (searchParams.get('tab') as 'chapters' | 'videos' | 'quizzes') || 'chapters';
     const [activeTab, setActiveTab] = useState<'chapters' | 'videos' | 'quizzes'>(initialTab);
-
 
     useEffect(() => {
         setActiveTab(initialTab);
@@ -62,55 +59,51 @@ export default function Home() {
 
     return (
         <div className="flex flex-col items-center">
-            {/* 이미지 영역 */}
-            <div className="relative w-full overflow-hidden mb-6">
-                <div className="w-full overflow-hidden">
-                    <div className="flex gap-4 animate-slide whitespace-nowrap w-[200%] will-change-transform">
-                        {slides.concat(slides).map((slide, i) => (
+            {/* Slide */}
+            <div className="relative w-full overflow-hidden mb-6 
+                [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+
+                <div className="flex animate-infinite-scroll w-[200%]">
+                    <div className="flex w-1/2 gap-8">
+                        {slides.map((slide, index) => (
                             <img
-                                key={i}
+                                key={`main-${index}`}
                                 src={slide.image}
                                 alt={slide.title}
-                                className="w-[240px] md:w-[280px] lg:w-[300px] aspect-[16/9] flex-shrink-0 rounded-xl object-cover opacity-60"
+                                className="h-[180px] w-[300px] flex-shrink-0 rounded-xl object-cover"
+                            />
+                        ))}
+                    </div>
+                    <div className="flex w-1/2 gap-8" aria-hidden="true">
+                        {slides.map((slide, index) => (
+                            <img
+                                key={`clone-${index}`}
+                                src={slide.image}
+                                alt={slide.title}
+                                className="h-[180px] w-[300px] flex-shrink-0 rounded-xl object-cover"
                             />
                         ))}
                     </div>
                 </div>
-
-                {/* 중앙 텍스트 */}
-                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <h2
-                        className="text-black text-5xl font-extrabold text-center tracking-wide
-                                drop-shadow-[2px_2px_2px_rgba(0,0,0,0.3)]
-                                dark:text-white dark:drop-shadow-[2px_2px_2px_rgba(255,255,255,0.2)]"
-                    >
-                        iConcepts in Orthodontics
-                    </h2>
-                </div>
             </div>
 
 
-
-            {/* 탭 + 콘텐츠 영역 */}
+            {/* 탭 영역 */}
             <div className="w-full px-4 mb-8">
                 <div className="max-w-screen-xl mx-auto">
                     {/* 탭 버튼 */}
                     <div className="flex rounded-t-xl overflow-hidden">
                         {['chapters', 'videos', 'quizzes'].map((tab) => {
                             const isActive = activeTab === tab;
-
                             return (
                                 <button
                                     key={tab}
                                     onClick={() => changeTab(tab as 'chapters' | 'videos' | 'quizzes')}
-                                    className={`
-                                        flex-1 py-3 text-center text-sm font-semibold transition-colors
-                                        border border-zinc-300 dark:border-zinc-700
-                                        rounded-t-xl
+                                    className={`flex-1 py-3 text-center text-sm font-semibold transition-colors
+                                        border border-zinc-300 dark:border-zinc-700 rounded-t-xl
                                         ${isActive
                                             ? 'bg-white dark:bg-zinc-900 text-blue-600 dark:text-blue-400 border-b-0'
-                                            : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300'}
-                                    `}
+                                            : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300'}`}
                                 >
                                     {tab.charAt(0).toUpperCase() + tab.slice(1)}
                                 </button>
@@ -118,7 +111,7 @@ export default function Home() {
                         })}
                     </div>
 
-                    {/* 콘텐츠 영역 */}
+                    {/* 콘텐츠 */}
                     <div className="w-full bg-white dark:bg-zinc-900 rounded-b-xl p-6 border border-t-0 border-zinc-300 dark:border-zinc-700">
                         {renderTabContent()}
                     </div>
