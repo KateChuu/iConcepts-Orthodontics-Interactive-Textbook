@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 
-export default function VideoTab() {
+export default function QuizTab() {
     const videos = [
         {
             title: 'H5P 1: Removable Orthodontic',
