@@ -64,7 +64,9 @@ export default function Home() {
         <div className="flex flex-col items-center">
             {/* 이미지 영역 */}
             <div className="relative w-full overflow-hidden mb-6 px-4">
-                <div className="flex w-max gap-4 animate-slide whitespace-nowrap will-change-transform">
+                {/* 슬라이드 트랙 */}
+                <div className="flex gap-4 animate-slide whitespace-nowrap w-[200%]">
+                    {/* 원본 + 복제 (총 2배 이미지) */}
                     {slides.concat(slides).map((slide, i) => (
                         <img
                             key={i}
@@ -75,16 +77,15 @@ export default function Home() {
                     ))}
                 </div>
 
+                {/* 중앙 텍스트 */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <h2
-                        className="text-black text-5xl font-extrabold text-center tracking-wide
-                                drop-shadow-[2px_2px_2px_rgba(0,0,0,0.3)]
-                                dark:text-white dark:drop-shadow-[2px_2px_2px_rgba(255,255,255,0.2)]"
-                    >
+                    <h2 className="text-black text-5xl font-extrabold text-center tracking-wide drop-shadow-[2px_2px_2px_rgba(0,0,0,0.3)] dark:text-white dark:drop-shadow-[2px_2px_2px_rgba(255,255,255,0.2)]">
                         iConcepts in Orthodontics
                     </h2>
                 </div>
             </div>
+
+
 
 
             {/* 탭 + 콘텐츠 영역 */}
