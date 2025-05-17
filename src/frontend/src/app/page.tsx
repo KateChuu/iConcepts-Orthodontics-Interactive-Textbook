@@ -63,28 +63,31 @@ export default function Home() {
     return (
         <div className="flex flex-col items-center">
             {/* 이미지 영역 */}
-            <div className="relative w-full overflow-hidden mb-6 px-4">
-                {/* 슬라이드 트랙 */}
-                <div className="flex gap-4 animate-slide whitespace-nowrap w-[200%]">
-                    {/* 원본 + 복제 (총 2배 이미지) */}
-                    {slides.concat(slides).map((slide, i) => (
-                        <img
-                            key={i}
-                            src={slide.image}
-                            alt={slide.title}
-                            className="w-[240px] md:w-[280px] lg:w-[300px] aspect-[16/9] flex-shrink-0 rounded-xl object-cover opacity-60"
-                        />
-                    ))}
+            <div className="relative w-full overflow-hidden mb-6">
+                <div className="w-full overflow-hidden">
+                    <div className="flex gap-4 animate-slide whitespace-nowrap w-[200%] will-change-transform">
+                        {slides.concat(slides).map((slide, i) => (
+                            <img
+                                key={i}
+                                src={slide.image}
+                                alt={slide.title}
+                                className="w-[240px] md:w-[280px] lg:w-[300px] aspect-[16/9] flex-shrink-0 rounded-xl object-cover opacity-60"
+                            />
+                        ))}
+                    </div>
                 </div>
 
                 {/* 중앙 텍스트 */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <h2 className="text-black text-5xl font-extrabold text-center tracking-wide drop-shadow-[2px_2px_2px_rgba(0,0,0,0.3)] dark:text-white dark:drop-shadow-[2px_2px_2px_rgba(255,255,255,0.2)]">
+                    <h2
+                        className="text-black text-5xl font-extrabold text-center tracking-wide
+                                drop-shadow-[2px_2px_2px_rgba(0,0,0,0.3)]
+                                dark:text-white dark:drop-shadow-[2px_2px_2px_rgba(255,255,255,0.2)]"
+                    >
                         iConcepts in Orthodontics
                     </h2>
                 </div>
             </div>
-
 
 
 
