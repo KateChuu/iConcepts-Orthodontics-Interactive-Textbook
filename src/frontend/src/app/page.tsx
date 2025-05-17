@@ -64,7 +64,7 @@ export default function Home() {
         <div className="flex flex-col items-center">
             {/* 이미지 영역 */}
             <div className="relative w-full overflow-hidden mb-6 px-4">
-                <div className="flex gap-4 animate-slide whitespace-nowrap">
+                <div className="flex gap-4 animate-slide whitespace-nowrap min-w-fit will-change-transform">
                     {slides.concat(slides).map((slide, i) => (
                         <img
                             key={i}
@@ -74,6 +74,7 @@ export default function Home() {
                         />
                     ))}
                 </div>
+
 
                 {/* 중앙에 고정된 제목 */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
