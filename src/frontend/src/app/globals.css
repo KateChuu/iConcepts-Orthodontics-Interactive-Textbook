@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@400;700&family=Dancing+Script:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html.dark {
-    @apply dark:bg-zinc-900 dark:text-white;
+  @apply dark:bg-zinc-900 dark:text-white;
+}
+
+html,
+body {
+  font-family: 'Lora', sans-serif;
+}
+
+p,
+li {
+  font-family: 'Lato', sans-serif !important;
 }
