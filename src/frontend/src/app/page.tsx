@@ -56,7 +56,7 @@ export default function Home() {
         if (!slider) return;
 
         let x = 0;
-        let width = slider.scrollWidth / 2;
+        const width = slider.scrollWidth / 2;
 
         const step = () => {
             x -= 1;
@@ -80,7 +80,8 @@ export default function Home() {
         <div className="flex flex-col items-center">
             {/* 이미지 영역 */}
             <div className="relative w-full overflow-hidden mb-6 px-4">
-                <div ref={sliderRef} className="flex whitespace-nowrap will-change-transform transition-none">
+                <div ref={sliderRef} className="flex gap-4 whitespace-nowrap will-change-transform transition-none">
+
                     {slides.concat(slides).map((slide, i) => (
                         <img
                             key={i}
