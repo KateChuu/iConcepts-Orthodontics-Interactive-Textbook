@@ -38,7 +38,6 @@ export default function page() {
                 </ul>
 
             </div>
-           
 
         </SectionPage>
     );
