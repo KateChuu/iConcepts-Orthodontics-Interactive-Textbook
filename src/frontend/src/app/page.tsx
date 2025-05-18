@@ -6,7 +6,7 @@ import ChapterTab from '../components/chapterTab';
 import VideoTab from '../components/videoTab';
 import QuizTab from '../components/quizTab';
 
-
+// List of slides for the horizontal scrolling carousel
 const slides = [
     {
         title: 'Preface',
@@ -34,24 +34,26 @@ const slides = [
     },
 ];
 
-
 export default function Home() {
     const searchParams = useSearchParams();
     const router = useRouter();
 
+    // Read the 'tab' query parameter from the URL or default to 'chapters'
     const initialTab = (searchParams.get('tab') as 'chapters' | 'videos' | 'quizzes') || 'chapters';
     const [activeTab, setActiveTab] = useState<'chapters' | 'videos' | 'quizzes'>(initialTab);
 
-
+    // Update the active tab state when the query param changes
     useEffect(() => {
         setActiveTab(initialTab);
     }, [initialTab]);
 
+    // Handle tab changes and update the URL
     const changeTab = (tab: 'chapters' | 'videos' | 'quizzes') => {
         router.push(`/?tab=${tab}`);
         setActiveTab(tab);
     };
 
+    // Render the appropriate tab content
     const renderTabContent = () => {
         switch (activeTab) {
             case 'chapters': return <ChapterTab />;
@@ -62,9 +64,10 @@ export default function Home() {
 
     return (
         <div className="flex flex-col items-center">
-            {/* 이미지 영역 */}
+            {/* Image Carousel Section (Header) */}
             <div className="relative w-full overflow-hidden mb-6 px-4">
                 <div className="flex gap-4 animate-slide whitespace-nowrap">
+                    {/* Duplicate slides for seamless looping effect */}
                     {slides.concat(slides).map((slide, i) => (
                         <img
                             key={i}
@@ -75,23 +78,22 @@ export default function Home() {
                     ))}
                 </div>
 
-                {/* 중앙에 고정된 제목 */}
+                {/* Centered fixed title over the carousel */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                     <h2
                         className="text-black text-5xl font-extrabold text-center tracking-wide
-                                drop-shadow-[2px_2px_2px_rgba(0,0,0,0.3)]
-                                dark:text-white dark:drop-shadow-[2px_2px_2px_rgba(255,255,255,0.2)]"
+                                   drop-shadow-[2px_2px_2px_rgba(0,0,0,0.3)]
+                                   dark:text-white dark:drop-shadow-[2px_2px_2px_rgba(255,255,255,0.2)]"
                     >
                         iConcepts in Orthodontics
                     </h2>
                 </div>
             </div>
 
-
-            {/* 탭 + 콘텐츠 영역 */}
+            {/* Tab Navigation and Content Section */}
             <div className="w-full px-4 mb-8">
                 <div className="max-w-screen-xl mx-auto">
-                    {/* 탭 버튼 */}
+                    {/* Tab Buttons */}
                     <div className="flex rounded-t-xl overflow-hidden">
                         {['chapters', 'videos', 'quizzes'].map((tab) => {
                             const isActive = activeTab === tab;
@@ -115,7 +117,7 @@ export default function Home() {
                         })}
                     </div>
 
-                    {/* 콘텐츠 영역 */}
+                    {/* Tab Content Area */}
                     <div className="w-full bg-white dark:bg-zinc-900 rounded-b-xl p-6 border border-t-0 border-zinc-300 dark:border-zinc-700">
                         {renderTabContent()}
                     </div>
