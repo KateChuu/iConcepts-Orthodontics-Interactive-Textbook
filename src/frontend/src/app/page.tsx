@@ -16,7 +16,7 @@ export default function ChapterCarousel() {
 
     // Get the initial tab from the URL search params or default to 'chapters'
     // If the tab is not valid, default to 'chapters'
-    const tabParam = searchParams.get('tab');
+    const tabParam = searchParams?.get('tab') ?? null;
 
     const validTabs = ['chapters', 'videos', 'quizzes'] as const;
     type TabType = typeof validTabs[number];
@@ -93,13 +93,13 @@ export default function ChapterCarousel() {
         'chapter4_frontpage_1_joun81',
         'paint_zot9yc',
         'Ch6_thumbnail_xudlkn',
-        'Ch7_thumbnail_puvkqa',
+        'Ch7_thumbnail_puvkqa', 
     ];
 
     return (
         <div className="flex flex-col items-center">
             {/* Carousel */}
-            <div id="carousel-example" className="relative w-full max-w-5xl mx-auto px-4 md:px-8 py-6" data-carousel="slide">
+            <div id="carousel-example" className="relative w-full max-w-screen-xl mx-auto px-4 py-10" data-carousel="slide">
                 {/* Slide images */}
                 <div className="relative h-64 overflow-hidden rounded-lg md:h-96">
                     {images.map((id, idx) => (
@@ -120,13 +120,13 @@ export default function ChapterCarousel() {
                 </div>
 
                 {/* Indicators */}
-                <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
+                <div className="absolute z-30 flex -translate-x-1/2 bottom-12 left-1/2 space-x-3">
                     {images.map((_, idx) => (
                         <button
                             key={idx}
                             type="button"
                             data-carousel-indicator
-                            aria-label={`Slide ${idx + 1}`}
+                            aria-label={`Slide ${idx + 1}`} 
                             className="w-3 h-3 rounded-full"
                         />
                     ))}
