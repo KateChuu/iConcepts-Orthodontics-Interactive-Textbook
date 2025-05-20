@@ -16,7 +16,7 @@ export default function ChapterCarousel() {
 
     // Get the initial tab from the URL search params or default to 'chapters'
     // If the tab is not valid, default to 'chapters'
-    const tabParam = searchParams.get('tab');
+    const tabParam = searchParams?.get('tab') ?? null;
 
     const validTabs = ['chapters', 'videos', 'quizzes'] as const;
     type TabType = typeof validTabs[number];
