@@ -126,7 +126,7 @@ export default function ChapterCarousel() {
                             key={idx}
                             type="button"
                             data-carousel-indicator
-                            aria-label={`Slide ${idx + 1}`}
+                            aria-label={`Slide ${idx + 1}`} 
                             className="w-3 h-3 rounded-full"
                         />
                     ))}
