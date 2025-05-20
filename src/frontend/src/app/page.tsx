@@ -93,7 +93,7 @@ export default function ChapterCarousel() {
         'chapter4_frontpage_1_joun81',
         'paint_zot9yc',
         'Ch6_thumbnail_xudlkn',
-        'Ch7_thumbnail_puvkqa',
+        'Ch7_thumbnail_puvkqa', 
     ];
 
     return (
