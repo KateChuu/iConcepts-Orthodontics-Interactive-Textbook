@@ -14,8 +14,18 @@ export default function ChapterCarousel() {
     const searchParams = useSearchParams();
     const router = useRouter();
 
-    const initialTab = (searchParams.get('tab') as 'chapters' | 'videos' | 'quizzes') || 'chapters';
-    const [activeTab, setActiveTab] = useState<'chapters' | 'videos' | 'quizzes'>(initialTab);
+    // Get the initial tab from the URL search params or default to 'chapters'
+    // If the tab is not valid, default to 'chapters'
+    const tabParam = searchParams.get('tab');
+
+    const validTabs = ['chapters', 'videos', 'quizzes'] as const;
+    type TabType = typeof validTabs[number];
+
+    const initialTab: TabType = validTabs.includes(tabParam as TabType)
+        ? (tabParam as TabType)
+        : 'chapters';
+
+    const [activeTab, setActiveTab] = useState<TabType>(initialTab);
 
     useEffect(() => {
         setActiveTab(initialTab);
