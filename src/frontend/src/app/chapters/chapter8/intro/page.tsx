@@ -18,15 +18,13 @@ export default function page() {
                 >
                 </a>
                 
-                <iframe 
+                <iframe
                     src="https://prezi.com/p/embed/Q6xef2XfcngYGkgqdpX0/"
                     id="iframe_container"
-                    frameborder="0"
+                    frameBorder="0"
                     allow="autoplay; fullscreen"
                     allowFullScreen
-                    webkitallowfullscreen
-                    mozallowfullscreen
-                    className="w-full h-auto aspect-video"
+                    className="w-full aspect-video"
                 />
             </p>
 

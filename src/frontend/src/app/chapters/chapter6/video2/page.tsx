@@ -17,7 +17,7 @@ export default function Video1Page() {
                 publicId="Part2_Growth_and_Dev-s1-full_nnrudn"
                 sourceUrl="https://res.cloudinary.com/difs4tswt/video/upload/v1746031090/Part2_Growth_and_Dev-s1-full_nnrudn.mp4"
                 videoId="Ch6_part2"
-                caption="Dr Shazia Naser ud Din 2022"
+                caption="Dr Shazia Naser ud Din 2024"
                 
             />
 

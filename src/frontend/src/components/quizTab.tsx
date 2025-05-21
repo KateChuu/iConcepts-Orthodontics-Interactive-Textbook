@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 
-export default function VideoTab() {
+export default function QuizTab() {
     const videos = [
         {
             title: 'H5P 1: Removable Orthodontic',
@@ -42,7 +42,7 @@ export default function VideoTab() {
 
             <div className="flex flex-col gap-4">
                 {videos.map((item, index) => (
-                    <Link key={index} href={`${item.href}?tab=quizzes`}>
+                    <Link key={index} href={`${item.href}?tab=quizes`}>
                         <div className="flex items-center p-4 min-h-[96px] bg-zinc-100 dark:bg-zinc-800 rounded-2xl shadow-sm hover:bg-gray-200 dark:hover:bg-zinc-700 transition">
                             <img
                                 src={item.thumbnail}
