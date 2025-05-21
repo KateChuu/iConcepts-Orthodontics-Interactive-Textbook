@@ -9,26 +9,26 @@ export default function page() {
             nextHref="/chapters/chapter8/section1"
             chapterHref="/chapters/chapter8"
         >
-            <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
-                <a
-                    href="https://prezi.com/view/Q6xef2XfcngYGkgqdpX0/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline font-semibold"
-                >
-                </a>
-                
-                <iframe
-                    src="https://prezi.com/p/embed/Q6xef2XfcngYGkgqdpX0/"
-                    id="iframe_container"
-                    frameBorder="0"
-                    allow="autoplay; fullscreen"
-                    allowFullScreen
-                    className="w-full aspect-video"
-                />
-            </p>
-
             <div className="mb-8">
+                <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-2">
+                    <a
+                        href="https://prezi.com/view/Q6xef2XfcngYGkgqdpX0/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline font-semibold"
+                    >
+                        Click here to view the Prezi presentation.
+                    </a>
+                    
+                    <iframe
+                        src="https://prezi.com/p/embed/Q6xef2XfcngYGkgqdpX0/"
+                        id="iframe_container"
+                        allow="autoplay; fullscreen"
+                        allowFullScreen
+                        className="w-full aspect-video"
+                    />
+                </p>
+                
                 <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
                     This interactive Prezi Presentation will provide a unique overview of learning experience to navigate on different foundation terms, concepts, published evidence and videos embedded. 
                     Just scroll on the screen to read and learn.
@@ -52,14 +52,6 @@ export default function page() {
                     <li className="marker:font-bold">Bruxism latest MedTech innovations (watch this space &#128578;)</li>
                 </ol>
             </div>
-
-            {/* Prezi image */}
-            <div className="mb-8">
-                <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
-                    Prezi image
-                </p>
-            </div>
-
 
         </SectionPage>
     );

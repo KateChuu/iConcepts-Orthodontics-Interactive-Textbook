@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react';
 import ChapterTab from '../components/chapterTab';
 import VideoTab from '../components/videoTab';
 import QuizTab from '../components/quizTab';
-
 import { Carousel } from 'flowbite';
 import type { CarouselItem, CarouselOptions, CarouselInterface } from 'flowbite';
 import type { InstanceOptions } from 'flowbite';
@@ -31,11 +30,13 @@ export default function ChapterCarousel() {
         setActiveTab(initialTab);
     }, [initialTab]);
 
+    // Handle tab changes and update the URL
     const changeTab = (tab: 'chapters' | 'videos' | 'quizzes') => {
         router.push(`/?tab=${tab}`);
         setActiveTab(tab);
     };
 
+    // Render the appropriate tab content
     const renderTabContent = () => {
         switch (activeTab) {
             case 'chapters': return <ChapterTab />;
@@ -131,7 +132,6 @@ export default function ChapterCarousel() {
                         />
                     ))}
                 </div>
-
                 {/* Button */}
                 <button id="carousel-prev" type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group">
                     <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/60">
@@ -158,9 +158,6 @@ export default function ChapterCarousel() {
                 </div>
             </div>
 
-            {/* Tabs and Content Area */}
-            <div className="w-full px-4 mb-8">
-                <div className="max-w-screen-xl mx-auto">
                     <div className="flex rounded-t-xl overflow-hidden">
                         {['chapters', 'videos', 'quizzes'].map((tab) => {
                             const isActive = activeTab === tab;

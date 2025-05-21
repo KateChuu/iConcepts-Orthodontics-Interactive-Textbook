@@ -7,7 +7,7 @@ export default function Section5FinalLecturePage() {
             title="Section 5: Final Lecture"
             subtitle="Published in 2024 · Views: 19723 · Average Reading Time: 17min"
             prevHref="/chapters/chapter5/section4"
-            nextHref={undefined}
+            nextHref="/chapters/chapter6/intro"
             chapterHref="/chapters/chapter5"
         >
             <div className="mb-8">
@@ -50,9 +50,15 @@ export default function Section5FinalLecturePage() {
                         rel="noopener noreferrer"
                         className="text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300"
                     >
-                        https://findanexpert.unimelb.edu.au/profile/1026392-shazia-naser-ud-din
+                        Click here to view the Prezi presentation.
                     </a>
                 </p>
+                <iframe
+                    src="https://prezi.com/p/embed/tZUgOi5bsVbcypTzSyYw/"
+                    allow="autoplay; fullscreen"
+                    allowFullScreen
+                    className="w-full max-w-3xl h-[400px] rounded shadow-md"
+                ></iframe>
             </div>
 
             <div className="mb-8">
