@@ -53,13 +53,6 @@ export default function page() {
                 </ol>
             </div>
 
-            {/* Prezi image */}
-            <div className="mb-8">
-                <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
-                    Prezi image
-                </p>
-            </div>
-
 
         </SectionPage>
     );
