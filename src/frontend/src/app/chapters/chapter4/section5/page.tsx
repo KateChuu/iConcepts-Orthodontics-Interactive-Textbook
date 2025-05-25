@@ -63,7 +63,7 @@ export default function page() {
                 Relax in nature and have hobbies that enhance your creativity :)
             </h3>
             <img 
-                src="https://res.cloudinary.com/difs4tswt/image/upload/v1745114943/nature_aoizq7.jpg"
+                src="https://res.cloudinary.com/difs4tswt/image/upload/v1748140850/4-5_uqriyw.jpg"
                 alt="Functional Appliance" 
                 className="my-4 w-1/2 mx-auto" 
             />

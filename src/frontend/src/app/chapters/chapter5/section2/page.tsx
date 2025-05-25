@@ -29,7 +29,7 @@ export default function page() {
                     Initially survey or skim through the entire MODULE. Question yourself to awaken you interest and curiosity into the subject e.g. what could anchorage mean? what does treatment modality mean? in the interactive version you can also start with quizzes and ignite your intrigue about the subject matter.
                 </p>
                 <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
-                    Read the content with undivided attention (hence all the material is provided user friendly format). Highlight and add notes mark the points you were unable to recall. This will enable you to see next time if you remember or not the points you missed out earlier. Use green self learning space to add notes.
+                    Read the content with undivided attention (hence all the material is provided user friendly format). Highlight and add notes mark the points you were unable to recall. This will enable you to see next time if you remember or not the points you missed out earlier. 
                 </p>
             </div>
 

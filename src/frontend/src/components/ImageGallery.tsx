@@ -6,11 +6,9 @@ type ImageItem = {
     src: string;
     caption?: string;
 };
-
 type Props = {
     images: ImageItem[];
 };
-
 export default function ImageGallery({ images }: Props) {
     const validImages = Array.isArray(images)
         ? images.filter(
@@ -18,12 +16,11 @@ export default function ImageGallery({ images }: Props) {
         )
         : [];
 
-    const [currentIndex, setCurrentIndex] = useState(0);
 
+    const [currentIndex, setCurrentIndex] = useState(0);
     const goToPrev = () => {
         setCurrentIndex((prev) => (prev === 0 ? validImages.length - 1 : prev - 1));
     };
-
     const goToNext = () => {
         setCurrentIndex((prev) => (prev === validImages.length - 1 ? 0 : prev + 1));
     };
@@ -38,12 +35,22 @@ export default function ImageGallery({ images }: Props) {
         window.addEventListener('keydown', handleKeyDown);
         return () => window.removeEventListener('keydown', handleKeyDown);
     }, []);
+    if (validImages.length === 0) {
+        return <div className="text-center text-red-500">No valid images available.</div>;
+    }
+    const currentImage = validImages[currentIndex];
+
+
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, []);
 
     if (validImages.length === 0) {
         return <div className="text-center text-red-500">No valid images available.</div>;
     }
 
     const currentImage = validImages[currentIndex];
+
 
     return (
         <div
