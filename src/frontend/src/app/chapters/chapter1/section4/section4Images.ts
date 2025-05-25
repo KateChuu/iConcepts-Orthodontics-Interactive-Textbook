@@ -27,10 +27,7 @@ export const extraOralIntraOralImages = [
         src: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114791/IMG_5919-48_aovemb.jpg',
         caption: 'Intra Oral Occlusal front observe OJ OB Centre lines and Oral health status',
     },
-    {
-        src: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114790/BG_QH-34_hcnejq.jpg',
-        caption: 'Upper Occlusal view (Mirror image)',
-    },
+
     {
         src: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114791/IMG_5926-52_rdn6v9.jpg',
         caption: 'Lower occlusal view (Mirror Image)',

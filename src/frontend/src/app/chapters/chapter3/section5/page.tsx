@@ -48,6 +48,11 @@ export default function Section5Page() {
                     }
                 />
             </div>
+            <div className="mb-8">
+                <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
+                    Click on plus +
+                </p>
+            </div>
         </SectionPage>
     );
 }

@@ -66,7 +66,7 @@ export default function page() {
                     <em>efficiency, effectiveness and continuous improvement</em>. The endeavor here is the same with added interactivity to be
                     clinic ready! Look forward to your comments on{' '}
                     <a
-                        href="https://au.linkedin.com/in/dr-s-naser-ud-din-phd-morth-rcsed-msc-35962465"
+                        href="https://www.linkedin.com/in/drshazianaser-ud-din/"
                         target="_blank"
                         className="text-red-500 hover:underline"
                     >

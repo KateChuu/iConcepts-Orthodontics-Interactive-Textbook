@@ -48,7 +48,15 @@ export default function Section4() {
 
             <div className="mb-8">
                 <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
-                    Another example of Interceptive Orthodontics is <strong>Serial Extractions</strong> introduced by Kjellgren in 1948. However, it is not used in its traditional protocol due to excessive extraction episodes – but <strong>Guided Eruption</strong> with extractions of C’s followed by D’s may be considered in special circumstances to prevent excessive crowding in permanent dentition.
+                    Another example of Interceptive Orthodontics is 
+                    <a
+                        href="https://iconceptsorthodontics.vercel.app/chapters/chapter7/video1"
+                        target="_blank"
+                        className="text-red-500 hover:underline"
+                    >
+                        <strong> Serial Extractions </strong> 
+                    </a>
+                    introduced by Kjellgren in 1948. However, it is not used in its traditional protocol due to excessive extraction episodes – but <strong>Guided Eruption</strong> with extractions of C’s followed by D’s may be considered in special circumstances to prevent excessive crowding in permanent dentition.
                 </p>
             </div>
 

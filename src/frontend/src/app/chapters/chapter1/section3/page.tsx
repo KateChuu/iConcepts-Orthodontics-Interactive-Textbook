@@ -65,7 +65,7 @@ export default function Section3() {
 
             <div className="mb-8">
                 <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
-                    Above have enhanced the quality of treatment delivery, along with efficiency and effectiveness and excellence.
+                    Above have enhanced the quality of treatment delivery, along with efficiency, effectiveness and excellence.
                 </p>
             </div>
 

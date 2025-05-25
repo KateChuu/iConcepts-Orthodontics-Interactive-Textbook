@@ -90,6 +90,9 @@ export default function page() {
                     className="w-full"
                 ></iframe>
             </div>
+            <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
+                Tab on image.
+            </p>
 
 
             <p className="text-sm italic text-zinc-500 mt-2 text-center">

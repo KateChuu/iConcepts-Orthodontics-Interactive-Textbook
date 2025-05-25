@@ -98,7 +98,8 @@ export default function page() {
                 Both Straight Wire Appliance (SWA) and Tip-Edge have found success in treatment of Class II / 1 cases. 
                 However, it is considered that Tip-Edge produces better results in severe Class II /1 cases due to the use of 
                 intra oral elastics, having a functional component associated with it. Usually extractions form an important part of 
-                the Fixed appliance treatment. Currently custom made fixed appliances are considered ideal.
+                the Fixed appliance treatment. Currently custom made fixed appliances are considered ideal. 
+                Forsus is the innovatioin. Now see the video Dr. Anka.
             </p>
         </div>
         

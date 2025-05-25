@@ -16,7 +16,10 @@ export default function page() {
             <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
                 Both upper and lower twin parts of CTB are fitted at the same appointment. If the child finds it a mouthful at first, give a
                 training period of 2 weeks where the patient is encouraged to wear the functional appliance at home, during quiet homework or while
-                watching the television. One of the greatest esthetic advantages CTB has, it provides an immediate esthetic result by giving a pleasing
+                watching the television.
+            </p>
+            <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
+                One of the greatest esthetic advantages CTB has, it provides an immediate esthetic result by giving a pleasing
                 profile, and the patient prefers to wear it right from the start. Eating with the appliance in situ helps to correct the jaw
                 relationship faster, and every effort should be made to encourage the patient to eat with the appliance. CTB is the only appliance where masticatory forces can be utilized.
             </p>
@@ -75,7 +78,7 @@ export default function page() {
                     />
                 </div>
                 <p className="text-sm italic text-zinc-500 mt-2 text-center">
-                    Cervical Vertebrae Maturation Index (CVMI) proposed by Baccetti et al. 14 and the region of the vertebrae as seen in the initial lateral teleradiograph
+                    Cervical Vertebrae Maturation Index (CVMI) proposed by Baccetti et al. 1-4 and the region of the vertebrae as seen in the initial lateral teleradiograph
                 </p>
         </div>
 

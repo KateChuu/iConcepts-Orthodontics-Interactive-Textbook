@@ -23,6 +23,22 @@ export default function contactPage() {
                         dr.shazia.icorthodontics@gmail.com
                     </a>
                 </p>
+                <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
+                    <a
+                        href="https://www.linkedin.com/in/drshazianaser-ud-din/"
+                        className="text-blue-500 underline"
+                    >
+                        https://www.linkedin.com/in/drshazianaser-ud-din/
+                    </a>
+                </p>
+                <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
+                    <a
+                        href="https://doi.org/10.26188/25556394.v1"
+                        className="text-blue-500 underline"
+                    >
+                        https://doi.org/10.26188/25556394.v1
+                    </a>
+                </p>
             </div>
 
             <div className="mb-8">
