@@ -1,5 +1,7 @@
 'use client';
+
 import { useEffect, useState } from 'react';
+
 type ImageItem = {
     src: string;
     caption?: string;
@@ -13,6 +15,8 @@ export default function ImageGallery({ images }: Props) {
                 (img) => img && typeof img.src === 'string' && img.src.trim() !== ''
         )
         : [];
+
+
     const [currentIndex, setCurrentIndex] = useState(0);
     const goToPrev = () => {
         setCurrentIndex((prev) => (prev === 0 ? validImages.length - 1 : prev - 1));
@@ -20,12 +24,14 @@ export default function ImageGallery({ images }: Props) {
     const goToNext = () => {
         setCurrentIndex((prev) => (prev === validImages.length - 1 ? 0 : prev + 1));
     };
+
     // Add keyboard arrow support
     useEffect(() => {
         const handleKeyDown = (e: KeyboardEvent) => {
             if (e.key === 'ArrowLeft') goToPrev();
             if (e.key === 'ArrowRight') goToNext();
         };
+
         window.addEventListener('keydown', handleKeyDown);
         return () => window.removeEventListener('keydown', handleKeyDown);
     }, []);
@@ -33,6 +39,19 @@ export default function ImageGallery({ images }: Props) {
         return <div className="text-center text-red-500">No valid images available.</div>;
     }
     const currentImage = validImages[currentIndex];
+
+
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, []);
+
+    if (validImages.length === 0) {
+        return <div className="text-center text-red-500">No valid images available.</div>;
+    }
+
+    const currentImage = validImages[currentIndex];
+
+
     return (
         <div
             className="relative w-full max-w-xs mx-auto"
@@ -48,6 +67,7 @@ export default function ImageGallery({ images }: Props) {
             {currentImage.caption && (
                 <p className="text-sm italic text-zinc-500 mt-2 text-center">{currentImage.caption}</p>
             )}
+
             {/* Previous button */}
             <button
                 onClick={goToPrev}
@@ -57,6 +77,7 @@ export default function ImageGallery({ images }: Props) {
             >
                 ‹
             </button>
+
             {/* Next button */}
             <button
                 onClick={goToNext}
@@ -66,6 +87,7 @@ export default function ImageGallery({ images }: Props) {
             >
                 ›
             </button>
+
             {/* Pagination info */}
             <div className="text-center mt-2 text-sm text-gray-500" aria-live="polite">
                 Image {currentIndex + 1} of {validImages.length}

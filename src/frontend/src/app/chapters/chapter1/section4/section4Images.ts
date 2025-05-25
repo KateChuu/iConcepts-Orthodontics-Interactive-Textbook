@@ -1,4 +1,12 @@
 export const extraOralIntraOralImages = [
+    {},  // invalid: no src
+    { caption: "Missing src" },  // invalid
+    { src: "" },  // invalid
+    { src: "   " },  // invalid
+    { src: 123 },  // invalid: src not a string
+    "just-a-string",  // invalid: not an object
+    null,  // invalid
+    undefined,  // invalid
     {
         src: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114790/IMG_5908-36_fbtbzy.jpg',
         caption: 'Extra Oral Frontal View Relaxed',
