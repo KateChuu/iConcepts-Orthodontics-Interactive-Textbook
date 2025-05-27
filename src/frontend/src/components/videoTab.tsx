@@ -23,7 +23,7 @@ export default function VideoTab() {
             href: '/chapters/chapter1/video2',
         },
         {
-            title: 'Video 4: Class II/2',
+            title: 'Video 4: Class II/2', 
             description: 'Chapter 2',
             thumbnail: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745503311/class-ii-2_cau2lv.png',
             href: '/chapters/chapter2/intro',
