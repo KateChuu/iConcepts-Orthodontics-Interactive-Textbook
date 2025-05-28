@@ -109,5 +109,5 @@ See [README.md](https://github.com/FEIT-COMP90082-2025-SM1/IC-RedBack/blob/main/
 - Product Owner : Po-Yun Hsiao (Harold) 
 - Scrum Master : Sangmoon Han 
 - Quality Assurance Lead :  Man-Hua Chu (Kate)
-- Development Environment Lead / Deployment Lead : Soyeon Park
+- Deployment Lead : Soyeon Park
 - Architecture Lead : Yu-Tse Ling (Zona) 
