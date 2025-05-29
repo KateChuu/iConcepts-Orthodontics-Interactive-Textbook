@@ -2,7 +2,7 @@
 
 This repository contains the source code of the iConcepts application, maintained by IC-RedBack.
 
-[iConcepts Website](https://ic-red-back.vercel.app)
+[iConcepts Website](https://iconceptsorthodontics.vercel.app/)
 
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
 
@@ -30,7 +30,9 @@ This repository contains the source code of the iConcepts application, maintaine
 | Styling        | [Tailwind CSS](https://tailwindcss.com/), [PostCSS](https://postcss.org/)                                  | Tailwind offers a utility-first CSS approach for rapid UI development, while PostCSS enables advanced CSS transformations and plugins.     |
 | Authentication | [Clerk](https://clerk.dev/)                                                                                | The application integrates Clerk for user authentication and management, enhancing security and user experience.                           |
 | Deployment     | [Vercel](https://vercel.com/)                                                                              | The source code is hosted on Vercel, providing a fast and scalable web application without the need for a backend.                         |
-| Cloud Storage  | [Cloudinary](https://cloudinary.com/)                                                                      | Images and Videos are transferred and stored on a third-party cloud service to improve performance by reducing the amount of data loaded. |
+| Cloud Storage  | [Cloudinary](https://cloudinary.com/)                                                                      | Images and videos are transferred and stored on a third-party cloud service to improve performance by reducing the amount of data loaded.  |
+| Video Analytics      | [Cloudinary Video Dashboard](https://cloudinary.com/documentation/assets_onboarding_dashboard_reports_tutorial?utm_source=chatgpt.com) | Helps monitor active users, their countries, video clicks, watch time, and more to understand user engagement.                             |
+| Chapter Analytics      | [Vercel Analytics](https://vercel.com/docs/analytics/using-web-analytics)                                   | Tracks page views, bounce rate, and user behavior by chapter click data for frontend performance and usage insights.                       |
 
 
 ## Directory Structure
@@ -51,7 +53,7 @@ This repository contains the source code of the iConcepts application, maintaine
 
 ### For End Users
 
-1. Open <https://ic-red-back.vercel.app>.
+1. Open <https://iconceptsorthodontics.vercel.app/>.
 2. Register an account or sign-in the account.
 
 ### For Developers
@@ -107,5 +109,5 @@ See [README.md](https://github.com/FEIT-COMP90082-2025-SM1/IC-RedBack/blob/main/
 - Product Owner : Po-Yun Hsiao (Harold) 
 - Scrum Master : Sangmoon Han 
 - Quality Assurance Lead :  Man-Hua Chu (Kate)
-- Development Environment Lead / Deployment Lead : Soyeon Park
+- Deployment Lead : Soyeon Park
 - Architecture Lead : Yu-Tse Ling (Zona) 

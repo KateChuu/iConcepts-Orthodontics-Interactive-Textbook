@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import ChapterTab from '../components/chapterTab';
 import VideoTab from '../components/videoTab';
 import QuizTab from '../components/quizTab';
+
 import { Carousel } from 'flowbite';
 import type { CarouselItem, CarouselOptions, CarouselInterface } from 'flowbite';
 import type { InstanceOptions } from 'flowbite';
@@ -30,13 +31,11 @@ export default function ChapterCarousel() {
         setActiveTab(initialTab);
     }, [initialTab]);
 
-    // Handle tab changes and update the URL
     const changeTab = (tab: 'chapters' | 'videos' | 'quizzes') => {
         router.push(`/?tab=${tab}`);
         setActiveTab(tab);
     };
 
-    // Render the appropriate tab content
     const renderTabContent = () => {
         switch (activeTab) {
             case 'chapters': return <ChapterTab />;
@@ -98,40 +97,94 @@ export default function ChapterCarousel() {
     ];
 
     return (
-    <div className="flex flex-col items-center">
-        {/* Carousel */}
-        <div id="carousel-example" className="relative w-full max-w-screen-xl mx-auto px-4 py-10" data-carousel="slide">
-        {/* ...carousel content... */}
-        </div>
+        <div className="flex flex-col items-center">
+            {/* Carousel */}
+            <div id="carousel-example" className="relative w-full max-w-screen-xl mx-auto px-4 py-10" data-carousel="slide">
+                {/* Slide images */}
+                <div className="relative h-64 overflow-hidden rounded-lg md:h-96">
+                    {images.map((id, idx) => (
+                        <div
+                            key={idx}
+                            className="hidden duration-700 ease-in-out"
+                            data-carousel-item={idx === 0 ? 'active' : ''}
+                            id={`carousel-item-${idx}`}
+                        >
+                            <img
+                                src={`https://res.cloudinary.com/difs4tswt/image/upload/v1745114784/${id}.jpg`}
+                                alt={`Slide ${idx + 1}`}
+                                className="absolute block w-full h-full object-cover top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                            />
+                        </div>
+                    ))}
 
-        {/* Tabs Section */}
-        <div className="w-full px-4 mb-8">
-        <div className="max-w-screen-xl mx-auto">
-            {/* Tab buttons */}
-            <div className="flex rounded-t-xl overflow-hidden">
-            {['chapters', 'videos', 'quizzes'].map((tab) => {
-                const isActive = activeTab === tab;
-                return (
-                <button
-                    key={tab}
-                    onClick={() => changeTab(tab as 'chapters' | 'videos' | 'quizzes')}
-                    className={`flex-1 py-3 text-center text-sm font-semibold transition-colors border border-zinc-300 dark:border-zinc-700 rounded-t-xl ${
-                    isActive
-                        ? 'bg-white dark:bg-zinc-900 text-blue-600 dark:text-blue-400 border-b-0'
-                        : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300'
-                    }`}
-                >
-                    {tab.charAt(0).toUpperCase() + tab.slice(1)}
+                </div>
+
+                {/* Indicators */}
+                <div className="absolute z-30 flex -translate-x-1/2 bottom-12 left-1/2 space-x-3">
+                    {images.map((_, idx) => (
+                        <button
+                            key={idx}
+                            type="button"
+                            data-carousel-indicator
+                            aria-label={`Slide ${idx + 1}`} 
+                            className="w-3 h-3 rounded-full"
+                        />
+                    ))}
+                </div>
+
+                {/* Button */}
+                <button id="carousel-prev" type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group">
+                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/60">
+                        <svg className="w-4 h-4 text-white" viewBox="0 0 6 10">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1 1 5l4 4" />
+                        </svg>
+                    </span>
                 </button>
-                );
-            })}
+                <button id="carousel-next" type="button" className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group">
+                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/60">
+                        <svg className="w-4 h-4 text-white" viewBox="0 0 6 10">
+                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4" />
+                        </svg>
+                    </span>
+                </button>
+
+                {/* Centered Title */}
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-40 px-4">
+                    <h2
+                        className="bg-white/80 text-black dark:bg-black/70 dark:text-white text-3xl md:text-4xl font-extrabold text-center px-3 py-2 rounded shadow-md max-w-full"
+                    >
+                        iConcepts in Orthodontics
+                    </h2>
+                </div>
             </div>
 
-            {/* Tab Content */}
-            <div className="w-full bg-white dark:bg-zinc-900 rounded-b-xl p-6 border border-t-0 border-zinc-300 dark:border-zinc-700">
-            {renderTabContent()}
+            {/* Tabs and Content Area */}
+            <div className="w-full px-4 mb-8">
+                <div className="max-w-screen-xl mx-auto">
+                    <div className="flex rounded-t-xl overflow-hidden">
+                        {['chapters', 'videos', 'quizzes'].map((tab) => {
+                            const isActive = activeTab === tab;
+                            return (
+                                <button
+                                    key={tab}
+                                    onClick={() => changeTab(tab as 'chapters' | 'videos' | 'quizzes')}
+                                    className={`flex-1 py-3 text-center text-sm font-semibold transition-colors border border-zinc-300 dark:border-zinc-700 rounded-t-xl ${
+                                        isActive
+                                            ? 'bg-white dark:bg-zinc-900 text-blue-600 dark:text-blue-400 border-b-0'
+                                            : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300'
+                                    }`}
+                                >
+                                    {tab.charAt(0).toUpperCase() + tab.slice(1)}
+                                </button>
+                            );
+                        })}
+                    </div>
+
+                    <div className="w-full bg-white dark:bg-zinc-900 rounded-b-xl p-6 border border-t-0 border-zinc-300 dark:border-zinc-700">
+                        {renderTabContent()}
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
-    </div>
-);
+    );
+}
