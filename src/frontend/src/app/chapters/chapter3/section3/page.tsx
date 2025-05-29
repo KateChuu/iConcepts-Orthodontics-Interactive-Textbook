@@ -16,10 +16,9 @@ export default function page() {
             </h3>
             <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
                 Unfortunately, the success rate with functionals has not been as promising as 
-                for Class III cases. The disappointing results are primarily because of two 
-                reasons.Restraining mandibular growth is very difficultGrowth continues for a 
-                longer period in the mandible.Hence, although they have been used in the 
-                past extensively, have shown success with only limited cases
+                for Class II cases. The disappointing results are primarily because of two 
+                reasons. Restraining mandibular growth is very difficult. Growth continues for a 
+                longer period in the mandible. Hence, although used in the past extensively, have shown success with only limited cases.
             </p>
         </div>
 
@@ -28,17 +27,17 @@ export default function page() {
                 PROTRACTION HEAD GEAR / FACE MASK
             </h3>
             <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
-                with mild skeletal III bases.
-            </p>
-            <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
                 This too is a head gear, also known as reverse head gear as it takes support 
                 from facial bones instead of the cranium. It has shown success in patients with 
-                favorable skeletal features i.e.<br />Low SNA value where point A is to be brought 
-                forward<br />Reduced lower face height, where rotating mandible downwards and 
-                backwards is preferred, in order to  increase the face height<br />No dental 
-                compensations are present<br />SNB is either normal or low<br />Peak growth has 
-                not yet occurred
+                favorable skeletal features i.e.
             </p>
+            <ul className="list-disc list-outside pl-5 mt-1 text-zinc-800 dark:text-zinc-100 mb-2">
+                <li>Low SNA value where point A is to be brought forward with mild skeletal III bases</li>
+                <li>Reduced lower face height, where rotating mandible downwards and backwards is preferred, in order to  increase the face height</li>
+                <li>No dental compensations are present</li>
+                <li>SNB is either normal or low</li>
+                <li>Peak growth has not yet occurred</li>
+            </ul>
             <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
                 Usually the face mask is prescribed to patients very early at about the age of 
                 8 years and where ANB would be less than -2. The face mask utilizes anchorage 
@@ -74,8 +73,8 @@ export default function page() {
                 best to wait until active growth period is over, and then consider the case for 
                 Orthognathic surgery for best esthetic and functional results. A prudent Orthodontist 
                 would never consider extractions, particularly in mandible in growing Class III case, 
-                just incase later surgery would be required; because Orthodontic decompensation of the 
-                lower arch becomes very difficult if previous extractions have taken place. Moreover, 
+                just incase later surgery would be required; because <strong>Orthodontic decompensation of the 
+                lower arch becomes very difficult if previous extractions have taken place.</strong> Moreover, 
                 the extraction pattern for an Orthognathic case is just the reverse of Orthodontic 
                 camouflage treatment.In order to have a stable end result, positive overbite and 
                 overjet are essential. Edge-to-edge incisor relationship can fall back and cause 

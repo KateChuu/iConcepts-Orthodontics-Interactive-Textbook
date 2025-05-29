@@ -208,13 +208,13 @@ export default function Section6() {
                     Bimaxillary Proclination
                 </h3>
                 <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
-                    Concomitant proclination of upper and lower labial dental units is usually racial i.e. common feature in Afro-Caribbean, Orientals, 
-                    and Negroid population and is best left untreated. However, if treatment is required to improve facial aesthetics and reduce overjet 
+                    Concomitant proclination of upper and lower labial dental units is found in some ethnicities common feature in Afro-Caribbean or Orientals, and is best left untreated. 
+                    However, if treatment is required to improve facial aesthetics and reduce overjet 
                     or enhance lip competence, it is essential to assess each case on its own merits i.e. soft tissue like flaccid or everted lips or skeletal pattern. 
                     Usually, these cases are treated with extractions of premolars in crowded cases, 
                     but it is important to note that extractions should not be done only for incisor retraction, 
                     as long-term response is poor and risk of overjet returning and reopening the extraction space is always present. 
-                    Best long-term stability is seen with joint Orthodontic and Orthognathic approach in severe skeletal cases.
+                    Best long-term stability is seen with collaboration Orthodontic and Orthognathic approach in severe skeletal cases.
                 </p>
             </div>
 

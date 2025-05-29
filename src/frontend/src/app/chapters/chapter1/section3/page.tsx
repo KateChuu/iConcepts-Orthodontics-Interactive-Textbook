@@ -1,4 +1,6 @@
 import SectionPage from '@/components/sectionPage';
+import VideoPlayer from '@/components/videoPlayer';
+import InteractiveButtons from '@/components/interactiveButtons';
 
 export default function Section3() {
     return (
@@ -62,10 +64,20 @@ export default function Section3() {
                     <li className="marker:font-bold"><strong>LASERs</strong></li>
                 </ol>
             </div>
+            <div className="mb-8">
+                <VideoPlayer
+                    cloudName="difs4tswt"
+                    publicId="Prof_G_Anka_Nippon_2025-compressed_di8ish"
+                    sourceUrl="https://res.cloudinary.com/difs4tswt/video/upload/v1748148858/Prof_G_Anka_Nippon_2025-compressed_di8ish.mp4"
+                    videoId="Prof_G_Anka_Nippon_2025-compressed_di8ish"
+                    caption="Prof G Anka Nippon 2025"
+                />
+            </div>
+
 
             <div className="mb-8">
                 <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
-                    Above have enhanced the quality of treatment delivery, along with efficiency and effectiveness and excellence.
+                    Above have enhanced the quality of treatment delivery, along with efficiency, effectiveness and excellence.
                 </p>
             </div>
 

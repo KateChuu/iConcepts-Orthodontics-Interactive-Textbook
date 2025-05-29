@@ -48,12 +48,12 @@ export default function page() {
         <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
           It is similar to the conventional URA with molar capping with bite
           blocks. The bite block is limited to the posterior end of the arch
-          with an inclined plane at 70 on the mesial end. This engages a similar
+          with an inclined plane at 70º on the mesial end. This engages a similar
           slope in the lower twin. A midline screw is incorporated to produce
           upper arch expansion as antero-posterior jaw relationship is
           corrected. Special Delta clasps or conventional Adam&apos;s cribs can
-          be used on 6 4 / 4 6 for enhanced retention. If 4s have not erupted Ds
-          are clasped. Short coils or Flying EOTs are incorporated for attaching
+          be used on <span className="underline">6 4 / 4 6</span> for enhanced retention. If 4s have not erupted Ds
+          are clasped. Historically short coils or Flying EOTs are incorporated for attaching
           the face bow of the head gear. Finally, anterior retention is provided
           by a labial bow.
         </p>
@@ -65,7 +65,7 @@ export default function page() {
         </h3>
         <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
           Again similar to the lower removable appliance. It takes retention
-          from Adam&apos;s cribs on 6 4 / 4 6 and special ball ended clasps in
+          from Adam&apos;s cribs on  <span className="underline">6 4 / 4 6</span> and special ball ended clasps in
           between the lower central and lateral incisors. In order to prevent
           lower labial segment proclination, a labial bow, Southend clasp or
           acrylic incisal capping can be used. The bite blocks are restricted to
@@ -80,13 +80,13 @@ export default function page() {
         </h3>
         <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">
           Soft modeling wax is placed onto the Project® or wooden sticks with
-          midline mark. The mandible is postured forward almost in an
+          midline mark. Historically the mandible is postured forward almost in an
           edge-to-edge occlusion. An opening of 5-7mm is usually sufficient. If
           overjet is massive it is best to protrude the mandible half way and
           later either construct another CTB or activate the existing appliance
           with cold cure acrylic on the inclined plane of the lower twin. At the
           time of writing digital 3D printing provide greater precision and
-          ease.
+          ease and bite registration.
         </p>
       </div>
     </SectionPage>

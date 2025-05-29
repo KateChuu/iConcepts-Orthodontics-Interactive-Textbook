@@ -1,4 +1,12 @@
 export const extraOralIntraOralImages = [
+    {},  // invalid: no src
+    { caption: "Missing src" },  // invalid
+    { src: "" },  // invalid
+    { src: "   " },  // invalid
+    { src: 123 },  // invalid: src not a string
+    "just-a-string",  // invalid: not an object
+    null,  // invalid
+    undefined,  // invalid
     {
         src: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114790/IMG_5908-36_fbtbzy.jpg',
         caption: 'Extra Oral Frontal View Relaxed',
@@ -27,10 +35,7 @@ export const extraOralIntraOralImages = [
         src: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114791/IMG_5919-48_aovemb.jpg',
         caption: 'Intra Oral Occlusal front observe OJ OB Centre lines and Oral health status',
     },
-    {
-        src: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114790/BG_QH-34_hcnejq.jpg',
-        caption: 'Upper Occlusal view (Mirror image)',
-    },
+
     {
         src: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114791/IMG_5926-52_rdn6v9.jpg',
         caption: 'Lower occlusal view (Mirror Image)',
@@ -42,7 +47,7 @@ export const extraOralIntraOralImages = [
     {
         src: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114790/IMG_5921-56_iaqfpu.jpg',
         caption: 'Intra Oral Left side erupting 35',
-    },
+    }, 
 ];
   
     export const interceptiveApplianceImages = [

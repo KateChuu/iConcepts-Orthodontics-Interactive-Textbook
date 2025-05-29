@@ -9,14 +9,14 @@ module.exports = {
     theme: {
         extend: {
             animation: {
-                slide: 'slide 30s linear infinite',
+                'infinite-scroll': 'infinite-scroll 25s linear infinite',
             },
             keyframes: {
-                slide: {
-                    '0%': { transform: 'translateX(0%)' },
-                    '100%': { transform: 'translateX(-50%)' },
-                },
-            },
+                'infinite-scroll': {
+                    from: { transform: 'translateX(0)' },
+                    to: { transform: 'translateX(-50%)' },
+                }
+            }
         },
     },
     plugins: [],

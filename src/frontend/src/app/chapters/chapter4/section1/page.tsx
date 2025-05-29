@@ -25,11 +25,11 @@ export default function page() {
                     History
                 </h3>
                 <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">                
-                    The first inclined plane was used in the 19th century. Robin's Monobloc was developed in 1902 to prevent glossoptosis in neonates suffering from Pierre Robin Syndrome. This appliance was modified by
+                    The first inclined plane was used in the 19th century. Robin&apos;s Monobloc was developed in 1902 to prevent glossoptosis in neonates suffering from Pierre Robin Syndrome. This appliance was modified by
                     Andresen in 1930s, and was used for the first time on his very own daughter. She had a mild skeletal II base. Andresen provided her
-                    with what was later termed as Andresen or Norwegian appliance. With night time use only when she went off to summer camp as instructed
+                    with what was later termed as <strong>Andresen or Norwegian appliance.</strong> With night time use only when she went off to summer camp as instructed
                     by her Dad, there was a marked improvement in the profile when she returned. Thus, this opened a new horizon of improving profiles and
-                    occlusions through re-education of orofacial musculature. A large number of functional appliances were developed thereafter, usually named after the originator.
+                    occlusions through re-education of orofacial musculature. A large number of functional appliances were developed thereafter, usually named after the innovator.
                 </p>
             </div>
 
@@ -40,7 +40,7 @@ export default function page() {
                 <p className="text-justify leading-relaxed text-zinc-700 dark:text-zinc-200 mb-1">                
                     A large number of functional appliances are available to the Orthodontist today. The choice is largely a personal one depending
                     upon the preference and familiarity of the specialist, as the mode of action of all is very similar apart from a few special
-                    circumstances. Other factors determining the choice of a functional appliance are laboratory facilities, economic constraints and degree
+                    circumstances. Other factors determining the choice of a functional appliance are buccal or lingual shields and lip pads, laboratory facilities, economic constraints and degree
                     of compliance of the patient. The following is a list of different functional appliances:
                 </p>
                 <ul className="list-disc list-outside pl-5 mt-1 text-zinc-800 dark:text-zinc-100">
@@ -54,6 +54,7 @@ export default function page() {
                     <li>Minator</li>
                     <li>Bass Appliance</li>
                     <li>Medium Opening Activator (MOA)</li>
+                    <li>Forsus</li>
                     <li>Herbst</li>
                     <li>Jasper Jumper</li>
                     <li>Buccal or lingual shields and lip pads</li>
