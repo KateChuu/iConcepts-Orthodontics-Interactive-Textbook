@@ -47,7 +47,7 @@ export const extraOralIntraOralImages = [
     {
         src: 'https://res.cloudinary.com/difs4tswt/image/upload/v1745114790/IMG_5921-56_iaqfpu.jpg',
         caption: 'Intra Oral Left side erupting 35',
-    },
+    }, 
 ];
   
     export const interceptiveApplianceImages = [
