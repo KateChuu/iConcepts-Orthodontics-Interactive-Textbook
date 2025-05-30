@@ -5,6 +5,7 @@
 Project iConcepts is aimed at developing an interactive textbook in orthodontics that enables medical students to learn at their own pace.
 
 Please sign up for an account to access our website [here](https://iconceptsorthodontics.vercel.app/)
+(or use demo account ID:sangmoonh / password:sangmoonh)
 
 ## Additional Note
 
