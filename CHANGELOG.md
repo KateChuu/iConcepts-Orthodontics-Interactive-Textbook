@@ -1,33 +1,27 @@
-# Sprint 2
+# Sprint 4
 
 ## New Features
-- Introduced a redesigned layout for the interactive textbook to enhance readability and navigation.
+- Completed all the new chapters and updated the textbook.
 
-- Implemented a dark mode toggle, allowing users to switch to a low-light viewing mode for better accessibility.
+- Integrated the analytics dashboard from Cloudinary for tracking the views of videos.
 
-- Developed a new home page with three functional tabs: Chapters, Videos, and Quizzes, each directing users to relevant learning content.
+- Integrated the analytics dashboard from Vercel to help educators understand user behavior and adjust the content of materials by reviewing the views of chapter pages and the devices students used to access the website.
 
-- Added interactive quiz components with JavaScript-based pop-up hints to provide immediate feedback without increasing video file sizes.
+- Added a table of contents widget for easy navigation across pages in chapter sections.
 
 ## Updates
-- All media assets (images, videos, thumbnails) were migrated from local storage to Cloudinary to reduce lag time and improve performance.
+- New chapters' assets (images, videos, thumbnails) were uploaded to Cloudinary storage to reduce loading time and enhance website performance.
 
-- Quiz frames were resized for better usability, removing the need for vertical scrolling to view results.
+- The "Contact" page and "Privacy and Copyright" pages were added to explain the terms of using the website and provide contact information for users to reach out if any additional help is required.
 
-- Text layout alignment was refined to a top-to-bottom structure on each page, improving the reading flow and addressing prior confusion.
+- Created administration accounts on Vercel and Cloudinary to access the records of website analytics.
 
-- Every chapter page includes a "Chapter" and "Home" button for users to navigate back to its chapter's main page or home page.
-
-## Changes Since Sprint 1
+## Changes Since the Previous Sprint
 - Improved the Technical Requirements section by adding a clear table of technologies and justifications for their selection, including strengths and trade-offs.
 
-- Revised the Sprint Backlog by breaking down epics into refined user stories, with priorities and task dependencies for better sprint planning and tracking.
-
-- Enhanced the prototype demonstrated to the client, providing a clearer, visual representation of progress compared to Sprint 1.
+- Updated the sprint backlog to match the progress status and kept the task board contents up-to-date.
 
 ## Notes
-- The interactive elements now improve engagement without compromising performance due to optimized JavaScript usage.
+- Prepare concise documentation of the development and deployment of the website for our client to comprehend the usage easily.
 
-- The client expressed satisfaction with the improved clarity and usability of the application.
-
-- For Sprint 3, the focus will shift toward implementing the remaining chapters, developing analytics charts or dashboard for the clients to check and refining user testing based on feedback from stakehokders.
+- Edit a new version of the existing demo video to make it appealing and engaging to potential audiences.
