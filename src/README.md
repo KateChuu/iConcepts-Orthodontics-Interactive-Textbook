@@ -62,7 +62,7 @@ The system architecture of the *IConcept Orthodontics* website is built on a mod
 ### For End Users
 
 1. Open <https://iconceptsorthodontics.vercel.app/>.
-2. Register an account or sign-in the account.
+2. Register an account or sign-in the demo account (ID: sangmoonh / Password: sangmoonh).
 
 ### For Developers
 
