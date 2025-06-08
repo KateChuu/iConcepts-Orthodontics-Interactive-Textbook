@@ -16,7 +16,8 @@ Please sign up for an account to access our website:
   - [Requirements](#requirements)
     - [Prettier](#prettier)
     - [Dependencies](#dependencies)
-  - [Workflow](#workflow) 
+  - [Workflow](#workflow)
+  - [Deployment Manuals](#deployment-manuals)
   - [Additional Resources](#additional-resources)
   - [Contributiors](#contributiors)
 
@@ -98,6 +99,40 @@ npm install
 ## Workflow
 See [README.md](https://github.com/FEIT-COMP90082-2025-SM1/IC-RedBack/blob/main/README.md#styles--conventions) in the parent folder for styles and conventions.
 
+## Deployment Manuals
+### 🚀 Deployment via Vercel
+This project is connected to **Vercel** through **GitHub integration**. Each push to the `main` branch of the origin repository will trigger a new deployment automatically via Vercel’s built-in **CI/CD pipeline**.
+
+**Repository:**
+[https://github.com/icredback/iConcepts-Orthodontics](https://github.com/icredback/iConcepts-Orthodontics)
+
+
+### 🔄 Automatic Deployment (CI/CD)
+1. Ensure your changes are pushed to the `main` branch.
+2. Vercel will automatically deploy the latest version using its CI/CD workflow.
+3. You can monitor build status and live deployments directly on your [Vercel Dashboard](https://vercel.com/).
+
+### ⚙️ Environment Variables
+Environment variables must be configured in your Vercel project settings:
+> **Vercel → Project Settings → Environment Variables**
+
+**Important Guidelines:**
+* **Do NOT commit credentials** or sensitive information to Git.
+* Add `.env`, `.env.local`, and similar files to `.gitignore`.
+* Only expose variables using the `NEXT_PUBLIC_` prefix if they need to be available on the client side (e.g., in the browser).
+* Cloudinary API **keys should not be exposed**; only use public delivery URLs (e.g., `https://res.cloudinary.com/...`).
+
+### 🔒 Security Notes
+* Do **not hardcode passwords** or secrets in the codebase.
+* The project uses [LastPass](https://lastpass.com/) for secure password sharing.
+  Contact the management team if access is needed.
+
+### 📒 Additional Notes
+* This project is a **front-end-only** educational platform.
+* There is **no custom backend** or database configured.
+* User authentication is handled via [Clerk](https://clerk.dev/).
+* All media content (images/videos) is hosted and optimized via [Cloudinary](https://cloudinary.com/).
+ 
 ## Additional Resources
 
 - [Learn Next.js](https://nextjs.org/learn)
