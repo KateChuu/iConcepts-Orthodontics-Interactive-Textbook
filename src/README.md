@@ -9,6 +9,7 @@ Please sign up for an account to access our website:
 
 - [IC-src](#ic-src)
   - [Main Technologies](#main-technologies)
+  - [Design Architecture](#design-architecture)
   - [Directory Structure](#directory-structure)
   - [Usage](#usage)
     - [For End Users](#for-end-users)
@@ -35,6 +36,11 @@ Please sign up for an account to access our website:
 | Cloud Storage  | [Cloudinary](https://cloudinary.com/)                                                                      | Images and videos are transferred and stored on a third-party cloud service to improve performance by reducing the amount of data loaded.  |
 | Video Analytics      | [Cloudinary Video Dashboard](https://cloudinary.com/documentation/assets_onboarding_dashboard_reports_tutorial?utm_source=chatgpt.com) | Helps monitor active users, their countries, video clicks, watch time, and more to understand user engagement.                             |
 | Chapter Analytics      | [Vercel Analytics](https://vercel.com/docs/analytics/using-web-analytics)                                   | Tracks page views, bounce rate, and user behavior by chapter click data for frontend performance and usage insights.                       |
+
+## Design Architecture
+The system architecture of the *IConcept Orthodontics* website is built on a modern serverless stack. The frontend is developed using **Next.js** and styled with **Tailwind CSS**, and it is deployed via **Vercel**. User authentication is handled by **Clerk**, while media assets are managed and stored using **Cloudinary**. Users interact with the application through their browser, and all services are seamlessly integrated into the Vercel deployment.
+
+<img width="950" alt="image" src="https://github.com/user-attachments/assets/70a0cdcb-d54e-4496-be73-fccb7f4ff498" />
 
 
 ## Directory Structure
